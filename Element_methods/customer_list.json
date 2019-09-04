@@ -1,16 +1,22 @@
 {
-  "Denglu_tast_account" : "maxiaocui",
-  "Denglu_test_password" : "123456",
-  "Denglu_test_verifycode" : "0000",
+  "test_licenseno" : "京PG1776",
+  "test_vin" : "LSVXZ65N8H2067616",
+  "test_chezhuxingming" : "梁浩",
+  "test_kehumingcheng" : "梁浩途观",
+  "test_kehudianhua1": "17600142826",
+  "test_kehudianhua2" : "17600142827",
 
-  "Dengluzhanghao_id" : "userName",
-  "Denglumima_id":"Password",
-  "Dengluyanzhengma_id" : "VerificationCode",
-  "Denglu_anniu_css":".ant-form-item-control>span>button[type = 'button']",
-  "Denglu_errormessage_class" : "errormsg",
+  "kehuliebiao_tab_css" : ".ant-tabs-nav.ant-tabs-nav-animated>div>div",
+  "kehuliebiao_sousuo1_dropdown_css" : ".ant-select-selection__rendered>div[title = '车牌/车架']",
+    "kehuliebiao_sousuo1_dropdown_selection_css" : ".ant-select-dropdown.ant-select-dropdown--single.ant-select-dropdown-placement-bottomLeft>div>ul>li[role = 'option']",
+    "kehuliebiao_sousuo1_textbox_css" : ".ant-form-item-control-wrapper>.ant-form-item-control>span>input[placeholder = '请输入车牌号或车架号']",
 
-  "Denglu_success_dropdown_css" : ".operate>a>span[style = 'user-select: none; padding-right: 10px;']",
-  "Denglu_success_dropdown_check_text1" : "金牌续保经理武延军 (zdh01) ",
-  "Denglu_success_dropdown_check_text" : "马小翠"
+  "kehuliebiao_sousuo2_daoqishijian_css" : ".ant-form-item-control-wrapper>div>span>span>span[class = 'ant-calendar-picker-input ant-input']",
+
+
+  "kehuliebiao_sousuo_button_css" : ".floatRight.ant-col-5>button.floatRight.margiRight10.ant-btn.ant-btn-primary"
+
+
+
 }
 

@@ -223,3 +223,233 @@
 2019-09-04 13:38:20,912 - Log.py - INFO - 新增报价车牌正常操作
 2019-09-04 13:38:21,153 - Log.py - INFO - 新增报价下一步正常操作
 2019-09-04 13:38:31,400 - Log.py - INFO - 车牌号文本清空正常操作
+2019-09-04 14:53:54,006 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 14:53:54,007 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 14:53:59,166 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 14:54:04,210 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 14:54:04,212 - Log.py - INFO - open cookie
+2019-09-04 14:54:06,389 - Log.py - INFO - Maximize the current window.
+2019-09-04 14:54:06,394 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 14:54:06,436 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 14:58:14,081 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 14:58:14,082 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 14:58:19,193 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 14:58:23,733 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 14:58:23,734 - Log.py - INFO - open cookie
+2019-09-04 14:58:26,083 - Log.py - INFO - Maximize the current window.
+2019-09-04 14:58:26,093 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 14:58:58,845 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 14:58:58,846 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 14:59:03,831 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 14:59:09,802 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 14:59:09,804 - Log.py - INFO - open cookie
+2019-09-04 14:59:11,776 - Log.py - INFO - Maximize the current window.
+2019-09-04 14:59:11,782 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 14:59:23,828 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 15:03:46,500 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 15:03:46,501 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 15:03:51,608 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 15:03:54,374 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 15:03:54,375 - Log.py - INFO - open cookie
+2019-09-04 15:03:57,748 - Log.py - INFO - Maximize the current window.
+2019-09-04 15:03:57,751 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 15:05:29,153 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 15:05:29,154 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 15:05:34,278 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 15:05:37,042 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 15:05:37,043 - Log.py - INFO - open cookie
+2019-09-04 15:05:39,724 - Log.py - INFO - Maximize the current window.
+2019-09-04 15:05:39,727 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 15:07:17,894 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 15:07:17,895 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 15:07:57,012 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 15:07:57,013 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 15:10:09,378 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 15:10:09,379 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 15:11:22,269 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 15:11:22,270 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 15:11:24,936 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 15:11:27,754 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 15:11:27,755 - Log.py - INFO - open cookie
+2019-09-04 15:11:31,278 - Log.py - INFO - Maximize the current window.
+2019-09-04 15:11:31,282 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 15:11:42,277 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 15:13:33,592 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 15:13:33,593 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 15:13:36,247 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 15:13:39,142 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 15:13:39,143 - Log.py - INFO - open cookie
+2019-09-04 15:13:42,573 - Log.py - INFO - Maximize the current window.
+2019-09-04 15:13:42,577 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 15:13:56,343 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 15:16:16,221 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 15:16:16,222 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 15:16:18,897 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 15:16:21,647 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 15:16:21,648 - Log.py - INFO - open cookie
+2019-09-04 15:16:25,376 - Log.py - INFO - Maximize the current window.
+2019-09-04 15:16:25,381 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 15:16:39,143 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 15:20:28,978 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 15:20:28,979 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 15:20:31,585 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 15:20:34,364 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 15:20:34,364 - Log.py - INFO - open cookie
+2019-09-04 15:20:37,892 - Log.py - INFO - Maximize the current window.
+2019-09-04 15:20:37,895 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 15:20:51,580 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 15:21:12,487 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 15:21:12,488 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 15:21:14,649 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 15:21:19,510 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 15:21:19,510 - Log.py - INFO - open cookie
+2019-09-04 15:21:22,967 - Log.py - INFO - Maximize the current window.
+2019-09-04 15:21:22,972 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 15:21:36,717 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 15:21:38,345 - Log.py - INFO - 首访客户 打开成功
+2019-09-04 15:21:56,578 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 15:21:56,579 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 15:21:59,297 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 15:22:02,083 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 15:22:02,084 - Log.py - INFO - open cookie
+2019-09-04 15:22:05,637 - Log.py - INFO - Maximize the current window.
+2019-09-04 15:22:05,640 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 15:22:19,277 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 15:22:20,873 - Log.py - INFO - 首访客户 打开成功
+2019-09-04 16:27:37,023 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 16:27:37,024 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 16:27:39,684 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 16:27:44,301 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 16:27:44,302 - Log.py - INFO - open cookie
+2019-09-04 16:27:46,422 - Log.py - INFO - Maximize the current window.
+2019-09-04 16:27:46,426 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 16:28:00,128 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 16:28:46,420 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 16:28:46,421 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 16:28:49,104 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 16:28:52,001 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 16:28:52,003 - Log.py - INFO - open cookie
+2019-09-04 16:28:55,506 - Log.py - INFO - Maximize the current window.
+2019-09-04 16:28:55,509 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 16:29:09,198 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 16:34:41,627 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 16:34:41,628 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 16:34:43,767 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 16:34:46,526 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 16:34:46,527 - Log.py - INFO - open cookie
+2019-09-04 16:34:50,098 - Log.py - INFO - Maximize the current window.
+2019-09-04 16:34:50,101 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 16:35:03,832 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 16:35:50,393 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 16:35:50,394 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 16:35:52,562 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 16:35:55,316 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 16:35:55,317 - Log.py - INFO - open cookie
+2019-09-04 16:35:58,915 - Log.py - INFO - Maximize the current window.
+2019-09-04 16:35:58,918 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 16:36:12,553 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 16:38:39,923 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 16:38:39,924 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 16:38:42,078 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 16:38:46,520 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 16:38:46,522 - Log.py - INFO - open cookie
+2019-09-04 16:38:48,451 - Log.py - INFO - Maximize the current window.
+2019-09-04 16:38:48,454 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 16:39:02,210 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 16:41:05,489 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 16:41:05,490 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 16:41:08,174 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 16:41:11,086 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 16:41:11,087 - Log.py - INFO - open cookie
+2019-09-04 16:41:14,552 - Log.py - INFO - Maximize the current window.
+2019-09-04 16:41:14,556 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 16:41:28,382 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 16:47:43,718 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 16:47:43,718 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 16:47:46,010 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 16:47:48,759 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 16:47:48,760 - Log.py - INFO - open cookie
+2019-09-04 16:47:52,338 - Log.py - INFO - Maximize the current window.
+2019-09-04 16:47:52,343 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 16:48:06,094 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 16:52:57,218 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 16:52:57,218 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 16:52:59,931 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 16:53:02,876 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 16:53:02,877 - Log.py - INFO - open cookie
+2019-09-04 16:53:06,278 - Log.py - INFO - Maximize the current window.
+2019-09-04 16:53:06,281 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 16:53:19,952 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 16:57:15,121 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 16:57:15,123 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 16:57:17,728 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 16:57:20,496 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 16:57:20,496 - Log.py - INFO - open cookie
+2019-09-04 16:57:23,941 - Log.py - INFO - Maximize the current window.
+2019-09-04 16:57:23,944 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 16:57:37,734 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 16:57:39,440 - Log.py - INFO - 全部客户 打开成功
+2019-09-04 16:59:13,668 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 16:59:13,669 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 16:59:16,370 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 16:59:19,147 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 16:59:19,148 - Log.py - INFO - open cookie
+2019-09-04 16:59:22,600 - Log.py - INFO - Maximize the current window.
+2019-09-04 16:59:22,604 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 16:59:36,223 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 16:59:37,908 - Log.py - INFO - 全部客户 打开成功
+2019-09-04 17:01:12,091 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 17:01:12,092 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 17:01:14,804 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 17:01:17,581 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 17:01:17,582 - Log.py - INFO - open cookie
+2019-09-04 17:01:21,231 - Log.py - INFO - Maximize the current window.
+2019-09-04 17:01:21,234 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 17:01:34,959 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 17:01:36,553 - Log.py - INFO - 全部客户 打开成功
+2019-09-04 17:02:36,073 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 17:02:36,074 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 17:02:38,274 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 17:02:41,158 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 17:02:41,159 - Log.py - INFO - open cookie
+2019-09-04 17:02:44,610 - Log.py - INFO - Maximize the current window.
+2019-09-04 17:02:44,613 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 17:02:58,257 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 17:02:59,847 - Log.py - INFO - 全部客户 打开成功
+2019-09-04 17:03:16,821 - Log.py - INFO - 京J97896 搜索成功
+2019-09-04 17:26:23,091 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 17:26:23,093 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 17:26:25,299 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 17:26:28,321 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 17:26:28,323 - Log.py - INFO - open cookie
+2019-09-04 17:26:32,100 - Log.py - INFO - Maximize the current window.
+2019-09-04 17:26:32,106 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 17:26:45,838 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 17:26:51,957 - Log.py - INFO - LSVXZ65N8H2067616 搜索成功
+2019-09-04 17:27:25,153 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 17:27:25,154 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 17:27:27,308 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 17:27:30,243 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 17:27:30,246 - Log.py - INFO - open cookie
+2019-09-04 17:27:33,694 - Log.py - INFO - Maximize the current window.
+2019-09-04 17:27:33,698 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 17:27:47,363 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 17:27:53,624 - Log.py - INFO - LSVXZ65N8H2067616 搜索成功
+2019-09-04 17:33:48,275 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 17:33:48,277 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 17:33:50,970 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 17:33:53,769 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 17:33:53,771 - Log.py - INFO - open cookie
+2019-09-04 17:33:57,158 - Log.py - INFO - Maximize the current window.
+2019-09-04 17:33:57,163 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 17:34:10,915 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 17:34:17,731 - Log.py - INFO - 梁浩 搜索成功
+2019-09-04 17:53:56,445 - Log.py - INFO - You had select Chrome browser.
+2019-09-04 17:53:56,446 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-04 17:53:59,126 - Log.py - INFO - Starting Chrome browser.
+2019-09-04 17:54:02,034 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-04 17:54:02,037 - Log.py - INFO - open cookie
+2019-09-04 17:54:05,946 - Log.py - INFO - Maximize the current window.
+2019-09-04 17:54:05,951 - Log.py - INFO - Set implicitly wait 10 seconds.
+2019-09-04 17:54:19,669 - Log.py - INFO - 客户列表菜单已选中
+2019-09-04 17:54:22,880 - Log.py - INFO - daoqi 搜索成功
