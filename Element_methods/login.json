@@ -1,0 +1,8 @@
+{
+  "Dengluzhanghao_id" : "userName",
+  "Denglumima_id":"Password",
+  "Dengluyanzhengma_id" : "VerificationCode",
+  "Denglu_anniu_css":".ant-form-item-control>span>button[type = 'button']",
+  "Denglu_errormessage_class" : "errormsg"
+}
+

@@ -1,0 +1,137 @@
+{
+
+  "kehu_class_name" : "no_bar",
+  "kehuliebiao_linktext_Xpath" : "//*[@id='nodetip']/li[2]/a/span",
+  "kehuliebiao_url" : "https://bao.91bihu.com/Customer/List",
+  "kehuliebiao_first_data_link_css" : "#table > tbody > tr > td:nth-child(2) > div > span > span",
+
+
+  "kehuliebiao_test_licenseno" : "京PG1776",
+  "kehuliebiao_test_VIN" : "LSVXZ65N8H2067616",
+  "kehuliebiao_test_chezhu" : "梁浩",
+  "kehuliebiao_test_kehumingcheng" : "梁浩途观",
+  "kehuliebiao_test_kehudianhua1" : "17600142826",
+  "kehuliebiao_test_kehudianhua2" : "17600142827",
+  "kehuliebiao_test_fenpei_yewuyuan" : "王媛",
+
+
+  "kehuliebiao_total_count_class" : "count-red",
+  "kehuliebiao_select_all_css" : "#table > thead > tr:nth-child(1) > th.th-outer > div > label > span",
+  "kehuliebiao_sousuo_dropdownlist_css" : "#tipselect > div.form-group.col-md-3.col-sm-3 > div > select",
+  "kehuliebiao_sousuo_text_css" : "#tipselect > div.col-md-5.col-sm-5 > div > input",
+  "kehuliebiao_sousuo_cancel_css" : "#tipselect > div.col-md-5.col-sm-5 > div > span.close",
+  "kehuliebiao_sousuo_button_class" : "input-group-btn",
+  "kehuliebiao_quanbu_tab_css" : "#main-router-view > div.page-content > div > div.margin-bottom10 > div.form-inline.form-label.row > div > button.tabs-button.active",
+
+  "kehuliebiao_shaixuan_button_css" : "#tipselect > div.col-md-2.col-sm-2 > span",
+    "kehuliebiao_shaixuan_shangyexiandaoqishijian_id" : "businessEndDate",
+      "kehuliebiao_shaixuan_shangyexiandaoqishijian_id_queren_css" : ".pull-right>button[type = 'button'][class = 'applyBtn btn btn-small btn-sm btn-primary']",
+      "kehuliebiao_shaixuan_shangyexiandaoqishijian_id_qingchu_css" : ".pull-right>button[type = 'button'][class = 'clearBtn btn btn-small btn-sm btn-danger']",
+    "kehuliebiao_shaixuan_jiaoqiangxiandaoqishijian_css" : ".col-sm-8>input[class = 'form-control cursorPointer'][start-name = 'forceEndDateStart']",
+      "kehuliebiao_shaixuan_jiaoqiangxiandaoqishijian_css_queren_css" : ".pull-right>button[type = 'button'][class = 'applyBtn btn btn-small btn-sm btn-primary']",
+      "kehuliebiao_shaixuan_jiaoqiangxiandaoqishijian_css_qingchu_css" : ".pull-right>button[type = 'button'][class = 'clearBtn btn btn-small btn-sm btn-danger']",
+    "kehuliebiao_shaixuan_xubaozhuangtai_css" : ".ms-parent.form-control.width100>button>span",
+      "kehuliebiao_shaixuan_xubaozhuangtai_css_quanxuan_css" : ".ms-drop.bottom>ul>li>label>input.inpf",
+    "kehuliebiao_shaixuan_jindianshijian_css" : ".col-sm-8>input[start-name = 'CameraStartTime']",
+      "kehuliebiao_shaixuan_jindianshijian_css_queren_css" : ".pull-right>button[class = 'applyBtn btn btn-small btn-sm btn-primary']",
+      "kehuliebiao_shaixuan_jindianshijian_css_qingchu_css" : ".pull-right>button[class = 'clearBtn btn btn-small btn-sm btn-danger']",
+    "kehuliebiao_shaixuan_fenpeizhuangtai_weifenpei_css" : ".col-sm-8>label>span.iconfontDefault",
+    "kehuliebiao_shaixuan_fenpeizhuangtai_yifenpei_css" : ".col-sm-8>label>span.iconfontDefault",
+
+    "kehuliebiao_shaixuan_fenpeishijian_css" : ".col-sm-8>input[placeholder = '选择时间'][start-name = 'distriStartTime']",
+      "kehuliebiao_shaixuan_fenpeishijian_css_queren_css" : ".pull-right>button[type = 'button'][class = 'applyBtn btn btn-small btn-sm btn-primary']",
+      "kehuliebiao_shaixuan_fenpeishijian_css_quxiao_css" : ".pull-right>button[type = 'button'][class = 'clearBtn btn btn-small btn-sm btn-danger']",
+
+     "kehuliebiao_shaixuan_yewuyuan_css" : ".ms-parent.form-control.width100>button>span",
+      "kehuliebiao_shaixuan_yewuyuan_css_quanxuan_css" : "#tipsearch > form > div:nth-child(7) > div > div > div > ul > li.ms-select-all > label > input",
+
+     "kehuliebiao_shaixuan_jihuahuifangshijian_css" : ".col-sm-8>input[start-name = 'visitTimeStart']",
+      "kehuliebiao_shaixuan_jihuahuifangshijian_css_queren_css" : ".pull-right>button[type = 'button'][class = 'applyBtn btn btn-small btn-sm btn-primary']",
+      "kehuliebiao_shaixuan_jihuahuifangshijian_css_qingchu_css" : ".pull-right>button[type = 'button'][class = 'clearBtn btn btn-small btn-sm btn-danger']",
+
+     "kehuliebiao_shaixuan_luruhuifangriqi_css" : ".col-sm-8>input[start-name = 'inputVisitTimeStart']",
+      "kehuliebiao_shaixuan_luruhuifangriqi_css_queren_css" : ".pull-right>button[type = 'button'][class = 'applyBtn btn btn-small btn-sm btn-primary']",
+      "kehuliebiao_shaixuan_luruhuifangriqi_css_qingchu_css" : ".pull-right>button[type = 'button'][class = 'clearBtn btn btn-small btn-sm btn-danger']",
+
+     "kehuliebiao_shaixuan_baojiazhuangtai_weibaojia_css" : ".col-sm-8>label>span.iconfontDefault",
+     "kehuliebiao_shaixuan_baojiazhuangtai_baojiachenggong_css" : ".col-sm-8>label>span.iconfontDefault",
+     "kehuliebiao_shaixuan_baojiazhuangtai_baojiashibai_css" : ".col-sm-8>label>span.iconfontDefault",
+
+     "kehuliebiao_shaixuan_kehuzhuangtai_css" : ".ms-parent.form-control.width100>button>span",
+       "kehuliebiao_shaixuan_kehuzhuangtai_css_quanxuan_css" : "#tipsearch > form > div:nth-child(11) > div > div > div > ul > li.ms-select-all > label > input[type=checkbox]",
+       "kehuliebiao_shaixuan_kehuzhuangtai_css_weihuifang_css" : "#tipsearch > form > div:nth-child(11) > div > div > div > ul > li:nth-child(2) > label > input[type=checkbox]",
+       "kehuliebiao_shaixuan_kehuzhuangtai_css_mangluzhongdailianxi_css" : "#tipsearch > form > div:nth-child(11) > div > div > div > ul > li:nth-child(3) > label > input[type=checkbox]",
+       "kehuliebiao_shaixuan_kehuzhuangtai_css_yibaojiakaolvzhongputong_css" : "#tipsearch > form > div:nth-child(11) > div > div > div > ul > li:nth-child(4) > label > input[type=checkbox]",
+       "kehuliebiao_shaixuan_kehuzhuangtai_css_yibaojiakaolvzhongzhongdian_css" : "#tipsearch > form > div:nth-child(11) > div > div > div > ul > li:nth-child(5) > label > input[type=checkbox]",
+       "kehuliebiao_shaixuan_kehuzhuangtai_css_qita_css" : "#tipsearch > form > div:nth-child(11) > div > div > div > ul > li:nth-child(6) > label > input[type=checkbox]"
+       "kehuliebiao_shaixuan_kehuzhuangtai_css_yuyuedaodian_css"#tipsearch > form > div:nth-child(11) > div > div > div > ul > li:nth-child(7) > label > input[type=checkbox]
+
+
+
+
+
+
+
+
+
+
+
+
+  "kehuliebiao_shaixuan_queren_css" : ".ui-dialog-button > button[type = 'button'][i-id = 'ok']",
+
+
+  "kehuliebiao_weifenpei_tab_css" : "#main-router-view > div.page-content > div > div.margin-bottom10 > div.form-inline.form-label.row > div > button:nth-child(2)",
+  "kehuliebiao_xubaoqiweihuifang_tab_css" : "#main-router-view > div.page-content > div > div.margin-bottom10 > div.form-inline.form-label.row > div > button:nth-child(3)",
+  "kehuliebiao_jihuahuifang_tab_css" : "#main-router-view > div.page-content > div > div.margin-bottom10 > div.form-inline.form-label.row > div > button:nth-child(4)",
+  "kehuliebiao_jihuahuifang_jintian_tab_css" : "#main-router-view > div.page-content > div > div.margin-bottom10 > div.form-inline.form-result.row > div > span.form-label-2.pointer.active",
+  "kehuliebiao_jihuahuifang_mingtian_tab_css" : "#main-router-view > div.page-content > div > div.margin-bottom10 > div.form-inline.form-result.row > div > span:nth-child(2)",
+  "kehuliebiao_jihuahuifang_houtian_tab_css" : "#main-router-view > div.page-content > div > div.margin-bottom10 > div.form-inline.form-result.row > div > span:nth-child(3)",
+  "kehuliebiao_jihuahuifang_3tian_tab_Xpath" : "//*[@id='main-router-view']/div[2]/div/div[1]/div[2]/div/span[4]",
+  "kehuliebiao_jihuahuifang_4tian_tab_Xpath" : "//*[@id='main-router-view']/div[2]/div/div[1]/div[2]/div/span[5]",
+  "kehuliebiao_jihuahuifang_5tian_tab_Xpath" : "//*[@id='main-router-view']/div[2]/div/div[1]/div[2]/div/span[6]",
+  "kehuliebiao_jihuahuifang_6tian_tab_Xpath" : "//*[@id='main-router-view']/div[2]/div/div[1]/div[2]/div/span[7]",
+  "kehuliebiao_jihuahuifang_7tian_tab_Xpath" : "//*[@id='main-router-view']/div[2]/div/div[1]/div[2]/div/span[8]",
+  "kehuliebiao_jinrijindianxubaoqi_tab_css" : "#main-router-view > div.page-content > div > div.margin-bottom10 > div.form-inline.form-label.row > div > button:nth-child(5)",
+  "kehuliebiao_yuyuedaodian_tab_css" : "#main-router-view > div.page-content > div > div.margin-bottom10 > div.form-inline.form-label.row > div > button:nth-child(6)",
+  "kehuliebiao_yuqikehu_tab_css" : "#main-router-view > div.page-content > div > div.margin-bottom10 > div.form-inline.form-label.row > div > button:nth-child(7)",
+
+
+  "kehuliebiao_fenpei_button_id" : "renewalSetting",
+  "kehuliebiao_fenpei_button_id_yewumianmingcheng_css" : ".form-group.col-md-4>input[placeholder = '姓名']",
+  "kehuliebiao_fenpei_button_id_sousuo_class" : "btn btn-danger",
+  "kehuliebiao_fenpei_button_id_select_yewuyuan_css" : ".fixed-table-container>.table-responsive>table>thead>tr>th>div[class = 'pointer th-inner']",
+  "kehuliebiao_fenpei_button_id_OK_css" : ".ui-dialog-button>button[i-id = 'ok']",
+
+  "kehuliebiao_huishou_button_id" : "renewalSetting",
+  "kehuliebiao_huishou_button_id_queren_css" : ".ui-dialog-button>button[i-id = 'ok']",
+
+
+
+
+
+  "kehuliebiao_shanchu_button_id" : "deleteList",
+  "kehuliebiao_shanchu_ok_Xpath" : "/html/body/div[38]/div/table/tbody/tr[3]/td/div[2]/button[2]",
+
+
+
+
+
+  "kehuxiangqing_lurugenjin_css" : "#huifang-lr > div.btn",
+  "kehuxiangqing_lurugenjin_genjinzhuangtai_id" : "reviewStauts",
+  "kehuxiangqing_lurugenjin_xiacihuifangshijian_id" : "nextReviewDate",
+  "kehuxiangqing_lurugenjin_huifangshijian_mingtian_class" : ".col-sm-5>div>span",
+  "kehuxiangqing_lurugenjin_huifangshijian_houtian_Xpath" : ".col-sm-5>div>span",
+  "kehuxiangqing_lurugenjin_huifangshijian_santian_Xpath" : ".col-sm-5>div>span",
+  "kehuxiangqing_lurugenjin_huifangshijian_yizhou_Xpath" : ".col-sm-5>div>span",
+  "kehuxiangqing_lurugenjin_huifangshijian_liangzhou_Xpath" : ".col-sm-5>div>span",
+  "kehuxiangqing_lurugenjin_xiacihuifangshijian_id_queren_css" : "#daterangepicker_nextReviewDate > div.ranges > div > div.pull-right > button.applyBtn.btn.btn-small.btn-sm.btn-primary",
+  "kehuxiangqing_lurugenjin_bencigenjinneirong_id" : "reviewContent",
+  "kehuxiangqing_lurugenjin_ok_css" : "body > div.ui-popup.ui-popup-modal.ui-popup-show.ui-popup-focus > div > table > tbody > tr:nth-child(3) > td > div.ui-dialog-button > button",
+
+  "kehuxiangqing_kehumingcheng_css" : "[class = 'form-control'][type = 'text']",
+  "kehuxiangqing_kehudianhua1_css" : "[class = 'form-control'][type = 'text'][maxlength = '20']",
+  "kehuxiangqing_kehudianhua2_css" : "[class = 'form-control'][type = 'text'][maxlength = '20']",
+  "kehuxiangqing_kehuxinxi_save_css" : "span[data-loading-text = '保存中...'][class = 'cha_heh cursorPointer']"
+
+}
+

@@ -1,0 +1,7 @@
+2019-09-03 18:54:41,548 - Log.py - INFO - You had select Chrome browser.
+2019-09-03 18:54:41,548 - Log.py - INFO - The test server url is: http://192.168.5.208:5001/ 
+2019-09-03 18:54:46,346 - Log.py - INFO - Starting Chrome browser.
+2019-09-03 18:55:07,522 - Log.py - INFO - open url http://192.168.5.208:5001/
+2019-09-03 18:55:07,523 - Log.py - INFO - open cookie
+2019-09-03 18:55:08,762 - Log.py - INFO - Maximize the current window.
+2019-09-03 18:55:08,763 - Log.py - INFO - Set implicitly wait 10 seconds.
