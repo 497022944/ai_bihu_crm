@@ -1,3 +1,76 @@
 {
-  "kehuxinzengbaojia_classname":"no_bar"
+  "kehuxinzengbaojia_classname":"no_bar",
+
+  "客户管理_start" : "Start------------------------------------",
+    "kehuguanli_xinzengbaojia_url" : "#/DoQuote/INDEX",
+    "kehuguanli_kehuliebiao_url" : "#/Customer/List",
+    "kehuguanli_shexiangtoujindian_url" : "#/Camera/List",
+    "kehuguanli_piliangxubao_url" : "#/BatchRenewal/BatchRenewalIndex",
+    "kehuguanli_chexiandingdan_url" : "#/ORDER/orderlist",
+    "kehuguanli_feichedingdan_url" : "#/feicheshop",
+    "kehuguanli_yichubaodan_url" : "#/QuotationReceipt/QuotationReceiptList",
+    "kehuguanli_zhanbailiebiao_url" : "#/SystemSetting/DefeatHistory",
+    "kehuguanli_huishouzhan_url" : "#/Customer/RecycleList",
+  "客户管理_end" : "End------------------------------------",
+
+  "组织机构_start" : "Start------------------------------------",
+    "zuzhijigou_zuzhijiagou_url" : "#/Organization/index",
+    "zuzhijigou_yonghuquanxian_url" : "#/AuthManager/AuthManagerIndex",
+    "zuzhijigou_yonghuguanli_url" : "#/Agent/AgentList",
+  "组织机构_end" : "End------------------------------------",
+
+  "台账管理_start" : "Start------------------------------------",
+    "taizhangguanli_dangeluru_url" : "#/ReconciliationNew/LedgerEntry",
+    "taizhangguanli_pigaichepai_url" : "#/corrections/index",
+    "taizhangguanli_piliangzhuadan_url" : "#/ReconciliationNew/BatchLedger",
+    "taizhangguanli_taizhangliebiao_url" : "#/ReconciliationNew/LedgerList",
+    "taizhangguanli_gerenzijinliebiao_url" : "#/ChannelRatePolicy/CapitalList",
+  "台账管理_end" : "End------------------------------------",
+
+  "营销管理_start" : "Start------------------------------------",
+    "yingxiaoguanli_duanxinqunfa_url" : "#/smsbatch/LIST",
+    "yingxiaoguanli_shengriduanxin_url" : "#/Sms/BirthdayMes",
+    "yingxiaoguanli_duanxinfasongjilu_url" : "#/Sms/SmsInfo",
+    "yingxiaoguanli_duanxinchongzhi_url" : "#/Sms/BuySms",
+  "营销管理_end" : "End------------------------------------",
+
+  "统计模块_start" : "Start------------------------------------",
+    "tongjimokuai_yewutongji_url" : "#/Statistics/Business",
+    "tongjimokuai_kehutongji_url" : "#/Statistics/DefeatAnalyze",
+    "tongjimokuai_xubaotongji_url" : "#/Statistics/Renewal",
+    "tongjimokuai_gongzuotongji_url" : "#/Statistics/Work",
+    "tongjimokuai_liuxiangfenxi_url" : "#/Statistics/AnalysisFlowDirection",
+    "tongjimokuai_liuliangjiankong_url" : "#/Statistics/AnalysisMonitorFlow",
+    "tongjimokuai_jindiantongji_url" : "#/Statistics/EnterStatistics",
+  "统计模块_end" : "End------------------------------------",
+
+  "呼叫模块_start" : "Start------------------------------------",
+    "hujiaomokuai_hujiaotongji_url" : "#/CallStatistics/Index",
+    "hujiaomokuai_tonghuajilu_url" : "#/CallStatistics/CallRecords",
+    "hujiaomokuai_zuoxiguanli_url" : "#/sales",
+  "呼叫模块_end" : "End------------------------------------",
+
+  "系统设置_start" : "Start------------------------------------",
+    "xitongshezhi_zhanbaiyuanyinshezhi_url" : "#/SystemSetting/DefeatSetting",
+    "xitongshezhi_kehuleibieshezhi_url" : "#/SystemSetting/CustomerCategoriesSetting",
+    "xitongshezhi_kehuzhuangtaishezhi_url" : "#/SystemSetting/CustomerStatusSetting",
+    "xitongshezhi_caijishebeibangding_url" : "#/ORDER/userbinddevice",
+    "xitongshezhi_chudanyuanshezhi_url" : "#/ORDER/orderagentlist",
+    "xitongshezhi_baojiaqudao_url" : "#/Agent/AgentQuDao",
+    "xitongshezhi_qudaofeilvshezhi_url" : "#/ChannelRatePolicy/ChannelRateSetting",
+    "xitongshezhi_genjinshezhi_url" : "#/SystemSetting/FollowUpSetting",
+    "xitongshezhi_kehuliuzhuan_url" : "#/systemsetting/Circulation",
+    "xitongshezhi_zhanghaoshezhi_url" : "#/Account/AccountState",
+  "系统设置_end" : "End------------------------------------"
+
+
+
+
+
+
+
+
+
+
+
 }

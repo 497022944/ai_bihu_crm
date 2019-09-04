@@ -24,7 +24,7 @@ class Login(unittest.TestCase):
 
         ##调用菜单
         menu1 = menu()
-        menu1.quotation_Menu_case(self.driver)
+        menu1.Select_Menu_case(self.driver , '新增报价')
         #输入车牌
         quotation_license.quotation_license_input(self.driver, license='')
         quotation_license.quotation_license_click(self.driver)

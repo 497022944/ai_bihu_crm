@@ -12,7 +12,7 @@ import datetime
 from selenium.webdriver.support.ui import Select
 from Public_methods.PublicMethod import BasePage
 
-log_path = os.path.dirname(os.path.abspath('.')) + "\\Element_methods\login.json"
+log_path = os.path.dirname(os.path.abspath('.')) + "\\Element_methods\customer_list.json"
 element = open(log_path, encoding='utf-8')
 elements = json.load(element)
 shot_path = os.path.dirname(os.path.abspath('.')) + "\\picture"
