@@ -1,4 +1,8 @@
 {
+  "Test_account" : "zdh01",
+  "Test_password" : "zdh01",
+  "Test_verifycode" : "0115",
+
   "Dengluzhanghao_id" : "userName",
   "Denglumima_id":"Password",
   "Dengluyanzhengma_id" : "VerificationCode",

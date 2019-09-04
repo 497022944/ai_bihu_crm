@@ -22,17 +22,26 @@ logbug = LogBug()
 
 
 class login:
-    def login_input(driver, user, pwd, code):
+    def login_input(driver, user = elements["Test_account"], pwd = elements["Test_password"], code = elements["Test_verifycode"]):
         ActionChains(driver).double_click(driver.find_element_by_id(elements["Dengluzhanghao_id"])).perform()
         time.sleep(1)
+        # driver.find_element_by_id(elements["Dengluzhanghao_id"]).send_keys(Keys.BACKSPACE)
+        # driver.find_element_by_id(elements["Dengluzhanghao_id"]).clear()
+        # time.sleep(1)
         driver.find_element_by_id(elements["Dengluzhanghao_id"]).send_keys(user)
         time.sleep(1)
         ActionChains(driver).double_click(driver.find_element_by_id(elements["Denglumima_id"])).perform()
         time.sleep(1)
+        # driver.find_element_by_id(elements["Denglumima_id"]).send_keys(Keys.BACKSPACE)
+        # driver.find_element_by_id(elements["Denglumima_id"]).clear()
+        # time.sleep(1)
         driver.find_element_by_id(elements["Denglumima_id"]).send_keys(pwd)
         time.sleep(1)
         ActionChains(driver).double_click(driver.find_element_by_id(elements["Dengluyanzhengma_id"])).perform()
         time.sleep(1)
+        # driver.find_element_by_id(elements["Dengluyanzhengma_id"]).clear()
+        # driver.find_element_by_id(elements["Dengluyanzhengma_id"]).send_keys(Keys.BACKSPACE)
+        # time.sleep(1)
         driver.find_element_by_id(elements["Dengluyanzhengma_id"]).send_keys(code)
         time.sleep(1)
         driver.find_element_by_css_selector(elements["Denglu_anniu_css"]).click()
@@ -46,17 +55,20 @@ class login:
         driver.find_element_by_id(elements["Dengluyanzhengma_id"]).clear()
         time.sleep(1)
 
-    def login_check(self, driver, hint):
-        try:
-            test = driver.find_element_by_class_name(elements["Denglu_errormessage_class"]).text
-        except Exception:
-            print("异常内容.")
+    def login_check_errormsg(driver, hint):
+        test = driver.find_element_by_class_name(elements["Denglu_errormessage_class"]).text
+        if test == hint:
+            logger.info("传值为:{}结果为:{}".format(hint, test))
+            return True
         else:
+            logbug.debug("传值为:{}结果为:{}".format(hint, test))
+            return False
 
-            if hint == test:
-                logger.info("传值为:{}结果为:{}".format(hint,test))
-                return True
-            else:
-                logbug.debug("传值为:{}结果为:{}".format(hint,test))
-                return test
-
+    def login_check_success(driver):
+        if driver.find_element_by_css_selector(
+                elements["Denglu_success_dropdown_css"]).text == """金牌续保经理武延军 (zdh01) """:
+            logger.info("{}登录成功".format(elements["Denglu_tast_account"]))
+            return True
+        else:
+            logbug.debug("{}登录失败".format(elements["Denglu_tast_account"]))
+            return False
