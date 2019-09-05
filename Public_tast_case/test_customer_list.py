@@ -25,9 +25,8 @@ class Customer_Lict(unittest.TestCase):
         menu1 = menu()
         menu1.Select_Menu_case(self.driver , '客户列表')
         time.sleep(2)
-        customerlist.search_daoqishijian(self.driver , 'daoqi')
-        time.sleep(1)
-
+        customerlist.search_baojiazhuangtai(self.driver,'yibaojia')
+        time.sleep(2)
 
 
 
