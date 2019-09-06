@@ -48,7 +48,41 @@
   "kehuliebiao_sousuo15_baojiazhuangtai_id" : "quoteStatus",
     "kehuliebiao_sousuo15_baojiazhuangtai_input_css" : "#quoteStatus > div > div > ul > li > div > input",
 
-  "kehuliebiao_sousuo16_fenpeizhuangtai_yifenpei_css" : "#distributedStatus > label:nth-child(1) > span.ant-checkbox > input",
+  "kehuliebiao_sousuo16_fenpeizhuangtai_weifenpei_css" : "#distributedStatus > label:nth-child(1) > span.ant-checkbox > input",
+    "kehuliebiao_sousuo16_fenpeizhuangtai_yifenpei_css" : "#distributedStatus > label:nth-child(2) > span.ant-checkbox > input",
+
+  "kehuliebiao_sousuo17_fenpeishijian_id" : "distributedDateRange",
+
+  "kehuliebiao_sousuo18_yuyueshijian_id" : "plannedFollowUpDateRange",
+
+  "kehuliebiao_sousuo19_huifangshijian_id" : "followUpDateRange",
+
+  "kehuliebiao_sousuo20_lurufangshi_id" : "renewalTypes",
+    "kehuliebiao_sousuo20_lurufangshi_input_css" : "#renewalTypes > div > div > ul > li > div > input",
+
+  "kehuliebiao_sousuo21_jindianshijian_id" : "cameraTimeRange",
+
+  "kehuliebiao_sousuo22_kehudianhua_you_css" : "#isHasClientMobile > label:nth-child(1) > span.ant-checkbox > input",
+    "kehuliebiao_sousuo22_kehehudianhua_wu_css" : "#isHasClientMobile > label:nth-child(2) > span.ant-checkbox > input",
+
+  "kehuliebiao_sousuo23_yewuyuan_id" : "searchEmployeeIds",
+    "kehuliebiao_sousuo23_yewuyuan_input_css" : "#searchEmployeeIds > div > div > ul > li > div > input",
+
+  "kehuliebiao_sousuo24_bumenmingcheng_id" : "deptIds",
+    "kehuliebiao_sousuo24_bumenmingcheng_input_css" : "#deptIds > div > div > ul > li > div > input",
+
+  "kehuliebiao_sousuo25_gengxinshijian_id" : "updateTime",
+
+
+
+
+
+
+
+
+
+
+
 
 
 
