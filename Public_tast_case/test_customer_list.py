@@ -25,10 +25,15 @@ class Customer_Lict(unittest.TestCase):
         menu1 = menu()
         menu1.Select_Menu_case(self.driver , '客户列表')
         time.sleep(2)
-        customerlist.search_21_jindianshijian(self.driver,'1')
+        customerlist.customer_list_tab_select(self.driver,'全部客户')
         time.sleep(2)
-        customerlist.search_22_kehudianhua(self.driver,'有')
+        customerlist.search_1_0_chepai_gotofirst_detail(self.driver, '苏A8N3Z2')
         time.sleep(2)
+        customerlist.kehuxiangqing_kehuxinxi_beizhu1(self.driver,'lalala')
+        # self.driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
+        # time.sleep(1)
+        # customerlist.test_search(self.driver)
+        # time.sleep(2)
 
 
 

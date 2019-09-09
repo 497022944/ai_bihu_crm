@@ -97,6 +97,22 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_chepai} 搜索失败')
 
+    def search_1_0_chepai_gotofirst_detail(driver,input_chepai = elements["test_licenseno"]):
+        try:
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_dropdown_css"]).click()
+            time.sleep(1)
+            driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo1_dropdown_selection_css"])[0].click()
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_textbox_css"]).send_keys(input_chepai)
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_button_css"]).click()
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_css"]).click()
+            time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},进入{input_chepai} 详情成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},进入{input_chepai} 详情失败')
+
     def search_1_1_chejia(driver,input_chejia = elements["test_vin"]):
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_dropdown_css"]).click()
@@ -484,3 +500,142 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name},{input_kehudianhua} 搜索成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_kehudianhua} 搜索失败')
+
+
+
+    def search_23_yewuyuan(driver, input_yewuyuan=elements["test_kehudianhua1"]):
+        try:
+            driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
+            time.sleep(1)
+            driver.find_element_by_id(elements["kehuliebiao_sousuo23_yewuyuan_id"]).click()
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo23_yewuyuan_input_css"]).send_keys(input_yewuyuan)
+            time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},{input_yewuyuan} 搜索成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_yewuyuan} 搜索失败')
+
+
+    def search_24_bumenmingcheng(driver, input_bumenmingcheng=elements["test_kehudianhua1"]):
+        try:
+            driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
+            time.sleep(1)
+            driver.find_element_by_id(elements["kehuliebiao_sousuo24_bumenmingcheng_id"]).click()
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo24_bumenmingcheng_input_css"]).send_keys(input_bumenmingcheng)
+            time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},{input_bumenmingcheng} 搜索成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_bumenmingcheng} 搜索失败')
+
+    def search_25_gengxinshijian(driver, input_gengxinshijian=elements["test_kehudianhua1"]):
+        try:
+            driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
+            time.sleep(1)
+            driver.find_element_by_id(elements["kehuliebiao_sousuo25_gengxinshijian_id"]).click()
+            time.sleep(1)
+            # driver.find_element_by_css_selector(elements["kehuliebiao_sousuo24_bumenmingcheng_input_css"]).send_keys(input_bumenmingcheng)
+            # time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},{input_gengxinshijian} 搜索成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_gengxinshijian} 搜索失败')
+
+
+    def kehuxiangqing_kehuxinxi_kehuxingming(driver,input_kehuxingming = elements["test_chezhuxingming"]):
+        try:
+            # ActionChains(driver).double_click(driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_kehuxingming_id"])).perform()
+            # time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_kehuxingming_id"]).clear()
+            time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_kehuxingming_id"]).send_keys(input_kehuxingming)
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_kehuxinxi_baocun_button_css"]).click()
+            time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},{input_kehuxingming}修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_kehuxingming} 修改失败')
+
+
+    def kehuxiangqing_kehuxinxi_dianhua1(driver, input_dianhua1=elements["test_kehudianhua1"]):
+        try:
+            # ActionChains(driver).double_click(driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_kehuxingming_id"])).perform()
+            # time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_dianhua1_id"]).clear()
+            time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_dianhua1_id"]).send_keys(input_dianhua1)
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_kehuxinxi_baocun_button_css"]).click()
+            time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},{input_dianhua1}修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_dianhua1} 修改失败')
+
+    def kehuxiangqing_kehuxinxi_dianhua2(driver, input_dianhua1=elements["test_kehudianhua2"]):
+        try:
+            # ActionChains(driver).double_click(driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_kehuxingming_id"])).perform()
+            # time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_dianhua2_id"]).clear()
+            time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_dianhua2_id"]).send_keys(input_dianhua1)
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_kehuxinxi_baocun_button_css"]).click()
+            time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},{input_dianhua1}修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_dianhua1} 修改失败')
+
+    def kehuxiangqing_kehuxinxi_leibie(driver, input_leibie=elements["test_kehudianhua2"]):
+        try:
+            # ActionChains(driver).double_click(driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_kehuxingming_id"])).perform()
+            # time.sleep(1)
+            # driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_leibie_id"]).clear()
+            # time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_leibie_id"]).send_keys(input_leibie)
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_kehuxinxi_baocun_button_css"]).click()
+            time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},{input_leibie}修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_leibie} 修改失败')
+
+    def kehuxiangqing_kehuxinxi_dizhi(driver, input_dizhi=elements["test_kehudianhua2"]):
+        try:
+            # ActionChains(driver).double_click(driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_kehuxingming_id"])).perform()
+            # time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_dizhi_id"]).clear()
+            time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_dizhi_id"]).send_keys(input_dizhi)
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_kehuxinxi_baocun_button_css"]).click()
+            time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},{input_dizhi}修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_dizhi} 修改失败')
+
+    def kehuxiangqing_kehuxinxi_beizhu1(driver, input_beizhu1=elements["test_kehudianhua2"]):
+        try:
+            # ActionChains(driver).double_click(driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_kehuxingming_id"])).perform()
+            # time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_beizhu1_id"]).clear()
+            time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_beizhu1_id"]).send_keys(input_beizhu1)
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_kehuxinxi_baocun_button_css"]).click()
+            time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},{input_beizhu1}修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_beizhu1} 修改失败')
+
+    def kehuxiangqing_kehuxinxi_beizhu2(driver, input_beizhu2=elements["test_kehudianhua2"]):
+        try:
+            # ActionChains(driver).double_click(driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_kehuxingming_id"])).perform()
+            # time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_beizhu2_id"]).clear()
+            time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_beizhu2_id"]).send_keys(input_beizhu2)
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_kehuxinxi_baocun_button_css"]).click()
+            time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},{input_beizhu2}修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_beizhu2} 修改失败')

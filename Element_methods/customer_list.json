@@ -6,10 +6,13 @@
   "test_kehudianhua1": "17600142826",
   "test_kehudianhua2" : "17600142827",
 
+
+  "客户列表页start" : "start------------------------------------",
   "kehuliebiao_tab_css" : ".ant-tabs-nav.ant-tabs-nav-animated>div>div",
   "kehuliebiao_sousuo1_dropdown_css" : ".ant-select-selection__rendered>div[title = '车牌/车架']",
     "kehuliebiao_sousuo1_dropdown_selection_css" : ".ant-select-dropdown.ant-select-dropdown--single.ant-select-dropdown-placement-bottomLeft>div>ul>li[role = 'option']",
     "kehuliebiao_sousuo1_textbox_css" : ".ant-form-item-control-wrapper>.ant-form-item-control>span>input[placeholder = '请输入车牌号或车架号']",
+    "kehuliebiao_sousuo_result_css" : "#components-layout-demo-custom-trigger > div.ant-layout > div.ant-layout-content > div > div.main_content > div.ant-table-wrapper > div > div > div > div > div.ant-table-fixed-left > div > div > table > tbody > tr > td:nth-child(2) > a",
 
   "kehuliebiao_sousuo2_daoqishijian_id" : "dateTimeDueRange",
 
@@ -74,6 +77,36 @@
   "kehuliebiao_sousuo25_gengxinshijian_id" : "updateTime",
 
 
+  "kehuliebiao_sousuo_button_css" : ".floatRight.ant-col-5>button.floatRight.margiRight10.ant-btn.ant-btn-primary",
+    "kehuliebiao_chongzhi_button_css" : ".floatRight.ant-col-5>floatRight.margiRight10.ant-btn.ant-btn-default",
+    "kehuliebiao_daochu_button_link_text" : "导出",
+    "kehuliebiao_biaotoushezhi_link_text" : "表头设置",
+    "kehuliebiao_button0_1_css" : ".ant-row>div>button[class='btn-operate marginRight12 ant-btn ant-btn-default']",
+    "kehuliebiao_button2_5_css" : ".ant-row>div>span>button[class = 'btn-operate marginRight12 ant-btn ant-btn-default']",
+
+  "客户列表页end" : "end------------------------------------",
+
+  "客户详情页start" : "start------------------------------------",
+  "kehuxiangqing_kehuxinxi_baocun_button_css" : "#customerInfo > div.ant-collapse-header > div > div.collapse-operate > button",
+    "kehuxiangqing_kehuxinxi_kehuxingming_id" : "name",
+    "kehuxiangqing_kehuxinxi_dianhua1_id" : "mobile1",
+    "kehuxiangqing_kehuxinxi_dianhua2_id" : "mobile2",
+    "kehuxiangqing_kehuxinxi_leibie_id" : "categoryId",
+    "kehuxiangqing_kehuxinxi_dizhi_id" : "address",
+    "kehuxiangqing_kehuxinxi_beizhu1_id" : "remark1",
+    "kehuxiangqing_kehuxinxi_beizhu2_id" : "remark2",
+
+  "kehuxiangqing_cheliangxinxi_baocun_button_css" : "#canInfo > div.ant-collapse-header > div > div.collapse-operate > button",
+    "kehuxiangqing_cheliangxinxi_chepaihao_id" : "licenseNo",
+    "kehuxiangqing_cheliangxinxi_chejiahao_id" : "carVin",
+    "kehuxiangqing_cheliangxinxi_fadongjihao_id" : "engineNo",
+    "kehuxiangqing_cheliangxinxi_zhuceriqi_id" : "registerDate",
+    "kehuxiangqing_cheliangxinxi_pinpaixinghao_id" : "modelName",
+      "kehuxiangqing_cheliangxinxi_pinpaixinghao_sousuo_css" : "#modelName > span > button",
+    "kehuxiangqing_cheliangxinxi_chexing_id" : "vehicleName",
+    "kehuxiangqing_cheliangxinxi_xinchegouzhijia_id" : "purchasePrice",
+    "kehuxiangqing_cheliangxinxi_zuoweishu_id" : "seatCount",
+      "kehuxiangqing_cheliangxinxi_zuoweishu_css" : ".ant-select-dropdown.ant-select-dropdown--single.ant-select-dropdown-placement-bottomLeft>div>ul>li[role = 'option']"
 
 
 
@@ -89,11 +122,6 @@
 
 
 
-
-
-
-
-  "kehuliebiao_sousuo_button_css" : ".floatRight.ant-col-5>button.floatRight.margiRight10.ant-btn.ant-btn-primary"
 
 
 
