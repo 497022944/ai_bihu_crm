@@ -110,17 +110,22 @@
     "kehuxiangqing_cheliangxinxi_chexing_id" : "carInfo.vehicleName",
     "kehuxiangqing_cheliangxinxi_xinchegouzhijia_id" : "carInfo.purchasePrice",
     "kehuxiangqing_cheliangxinxi_zuoweishu_id" : "carInfo.seatCount",
-      "kehuxiangqing_cheliangxinxi_zuoweishu_css" : ".ant-select-dropdown.ant-select-dropdown--single.ant-select-dropdown-placement-bottomLeft > div > ul > li ",
-    "kehuxiangqing_cheliangxinxi_pailiang_id" : "exhaustScale",
-    "kehuxiangqing_cheliangxinxi_guohuche_id" : "isTransferCar",
-    "kehuxiangqing_cheliangxinxi_guohuriqi_id" : "transferDate",
-    "kehuxiangqing_cheliangxinxi_daikuanche_id" : "isLoans",
-    "kehuxiangqing_cheliangxinxi_diyishouyiren_id" : "beneFiciary",
+      "kehuxiangqing_cheliangxinxi_zuoweishu_css" : ".ant-select-dropdown-menu-item",
+    "kehuxiangqing_cheliangxinxi_pailiang_id" : "carInfo.exhaustScale",
+
+    "kehuxiangqing_cheliangxinxi_guohuche_shi_css" : "#carInfo\\.isTransferCar > label:nth-child(1)",
+      "kehuxiangqing_cheliangxinxi_guohuriqi_id" : "carInfo.transferDate",
+      "kehuxiangqing_cheliangxinxi_guohuche_fou_css" : "#carInfo\\.isTransferCar > label:nth-child(2)",
+
+    "kehuxiangqing_cheliangxinxi_daikuanche_shi_css" : "#carInfo\\.isLoans > label:nth-child(1)",
+      "kehuxiangqing_cheliangxinxi_diyishouyiren_id" : "carInfo.beneFiciary",
+      "kehuxiangqing_cheliangxinxi_daikuanche_fou_css" : "#carInfo\\.isLoans > label:nth-child(2)",
+
     "kehuxiangqing_cheliangxinxi_cheliangfenlei_id" : "carType",
     "kehuxiangqing_cheliangxinxi_cheliangleixing_id" : "drivlicenseCartypeValue",
     "kehuxiangqing_cheliangxinxi_zaizhongliang_id" : "carTonCount",
     "kehuxiangqing_cheliangxinxi_cheliangshiyongxingzhi_id" : "carUserdType",
-    "kehuxiangqing_cheliangxinxi_beizhuxinxi_id" : "remark",
+    "kehuxiangqing_cheliangxinxi_beizhuxinxi_id" : "carInfo.remark",
 
     "kehuxiangqing_shangniantoubaoxinxi_tab_css" : ".ditialAnchor.ant-anchor-wrapper>div>div>a[title = '上年投保信息']",
     "kehuxiangqing_shangniantoubaoxinxi_baocun_button_css" : "#preRenewalInfo > div.ant-collapse-header > div > div.collapse-operate > button",
@@ -128,8 +133,15 @@
 
     "kehuxiangqing_guanxirenxinxi_tab_css" : ".ditialAnchor.ant-anchor-wrapper>div>div>a[title = '关系人信息']",
     "kehuxiangqing_guanxirenxinxi_baocun_button_css" : "#RelevantPeopleInfo > div.ant-collapse-header > div > div.collapse-operate > button",
-      "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_beibaoxianrenxingming_id" : "insuredInfo.name",
-      "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianleixing_id" : "insuredInfo.idCardType"
+      "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_beibaoxianrenxingming_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.name",
+      "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianleixing_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.idCardType",
+        "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianleixing_css" : ".ant-select-dropdown-menu-item",
+        "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianhaoma_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.idCard",
+      "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_beibaoxianrendianhua_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.mobile",
+      "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_beibaoxianrenyouxiang_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.eMail",
+      "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhuzhi_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.address",
+      "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_minzu_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.nation",
+      "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_qianfajiguan_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.authority"
 
 
 
