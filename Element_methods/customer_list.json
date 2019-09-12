@@ -87,6 +87,8 @@
   "客户列表页end" : "end------------------------------------",
 
   "客户详情页start" : "start------------------------------------",
+
+  "客户信息start" : "start------------------------------------",
   "kehuxiangqing_kehuxinxi_tab_css" : ".ditialAnchor.ant-anchor-wrapper>div>div>a[title = '客户信息']",
   "kehuxiangqing_kehuxinxi_baocun_button_css" : "#customerInfo > div.ant-collapse-header > div > div.collapse-operate > button",
     "kehuxiangqing_kehuxinxi_kehuxingming_id" : "cutomerInfo.name",
@@ -96,7 +98,9 @@
     "kehuxiangqing_kehuxinxi_dizhi_id" : "cutomerInfo.address",
     "kehuxiangqing_kehuxinxi_beizhu1_id" : "cutomerInfo.remark1",
     "kehuxiangqing_kehuxinxi_beizhu2_id" : "cutomerInfo.remark2",
+  "客户信息end" : "end------------------------------------",
 
+  "车辆信息start" : "start------------------------------------",
   "kehuxiangqing_cheliangxinxi_tab_css" : ".ditialAnchor.ant-anchor-wrapper>div>div>a[title = '车辆信息']",
   "kehuxiangqing_cheliangxinxi_baocun_button_css" : "#canInfo > div.ant-collapse-header > div > div.collapse-operate > button",
     "kehuxiangqing_cheliangxinxi_chepaihao_id" : "carInfo.licenseNo",
@@ -126,40 +130,50 @@
     "kehuxiangqing_cheliangxinxi_zaizhongliang_id" : "carTonCount",
     "kehuxiangqing_cheliangxinxi_cheliangshiyongxingzhi_id" : "carUserdType",
     "kehuxiangqing_cheliangxinxi_beizhuxinxi_id" : "carInfo.remark",
+  "车辆信息end" : "end------------------------------------",
 
+  "上年投保信息start" : "start------------------------------------",
     "kehuxiangqing_shangniantoubaoxinxi_tab_css" : ".ditialAnchor.ant-anchor-wrapper>div>div>a[title = '上年投保信息']",
+    "kehuxiangqing_shangniantoubaoxinxi_zhankai_css" : "#preRenewalInfo > div.ant-collapse-header > div > div.collapse-operate > i",
     "kehuxiangqing_shangniantoubaoxinxi_baocun_button_css" : "#preRenewalInfo > div.ant-collapse-header > div > div.collapse-operate > button",
-      "kehuxiangqing_shangniantoubaoxinxi_toubaogongsi_id" : "source",
+      "kehuxiangqing_shangniantoubaoxinxi_toubaogongsi_id" : "preRenewalInfo.insuranceInfo.source",
+      "kehuxiangqing_shangniantoubaoxinxi_toubaogongsi_css" : ".ant-select-dropdown-menu-item",
+      "kehuxiangqing_shangniantoubaoxinxi_shangyedaoqi_id" : "preRenewalInfo.insuranceInfo.bizEndDateTime",
+      "kehuxiangqing_shangniantoubaoxinxi_jiaoqiangdaoqi_id" : "preRenewalInfo.insuranceInfo.forceEndDateTime",
+      "kehuxiangqing_shangniantoubaoxinxi_beibaoxianren_id" : "preRenewalInfo.insuranceInfo.insuredInfo.name",
+      "kehuxiangqing_shangniantoubaoxinxi_zhengjianleixing_id" : "preRenewalInfo.insuranceInfo.insuredInfo.idCardType",
+      "kehuxiangqing_shangniantoubaoxinxi_zhengjianleixing_css" : ".ant-select-dropdown-menu-item",
+  "上年投保信息end" : "end------------------------------------",
 
+  "关系人信息start" : "start------------------------------------",
     "kehuxiangqing_guanxirenxinxi_tab_css" : ".ditialAnchor.ant-anchor-wrapper>div>div>a[title = '关系人信息']",
     "kehuxiangqing_guanxirenxinxi_baocun_button_css" : "#RelevantPeopleInfo > div.ant-collapse-header > div > div.collapse-operate > button",
-      "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_beibaoxianrenxingming_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.name",
-      "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianleixing_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.idCardType",
-        "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianleixing_css" : ".ant-select-dropdown-menu-item",
-        "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianhaoma_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.idCard",
-      "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_beibaoxianrendianhua_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.mobile",
-      "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_beibaoxianrenyouxiang_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.eMail",
-      "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhuzhi_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.address",
-      "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_minzu_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.nation",
-      "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_qianfajiguan_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.authority"
+  "被保险人信息start" : "start------------------------------------",
+     "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_quickselect_gonghu_css" : "#RelevantPeopleInfo > div.ant-collapse-content.ant-collapse-content-active > div > div > div:nth-child(1) > p > button:nth-child(3)",
+     "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_quickselect_geren_css" : "#RelevantPeopleInfo > div.ant-collapse-content.ant-collapse-content-active > div > div > div:nth-child(1) > p > button:nth-child(2)",
+        "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_beibaoxianrenxingming_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.name",
+        "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianleixing_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.idCardType",
+          "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianleixing_css" : ".ant-select-dropdown-menu-item",
+          "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianhaoma_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.idCard",
+        "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_beibaoxianrendianhua_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.mobile",
+       "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_beibaoxianrenyouxiang_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.eMail",
+       "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhuzhi_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.address",
+       "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_minzu_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.nation",
+       "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_qianfajiguan_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.authority",
+  "被保险人信息end" : "end------------------------------------",
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  "投保人信息start" : "start------------------------------------",
+  "kehuxiangqing_guanxirenxinxi_toubaorenxinxi_quickselect_gonghu_css" : "#RelevantPeopleInfo > div.ant-collapse-content.ant-collapse-content-active > div > div > div:nth-child(2) > p > button:nth-child(3)",
+  "kehuxiangqing_guanxirenxinxi_toubaorenxinxi_quickselect_geren_css" : "#RelevantPeopleInfo > div.ant-collapse-content.ant-collapse-content-active > div > div > div:nth-child(2) > p > button:nth-child(2)",
+    "kehuxiangqing_guanxirenxinxi_toubaorenxinxi_toubaorenxingming_id" : "preRenewalInfo.relevantPeopleInfo.holderInfo.name",
+    "kehuxiangqing_guanxirenxinxi_toubaorenxinxi_zhengjianleixing_id" : "preRenewalInfo.relevantPeopleInfo.holderInfo.idCardType",
+      "kehuxiangqing_guanxirenxinxi_toubaorenxinxi_zhengjianleixing_css" : ".ant-select-dropdown-menu-item",
+      "kehuxiangqing_guanxirenxinxi_toubaorenxinxi_zhengjianhaoma_id" : "preRenewalInfo.relevantPeopleInfo.holderInfo.idCard",
+      "kehuxiangqing_guanxirenxinxi_toubaorenxinxi_toubaorendianhua_id" : "preRenewalInfo.relevantPeopleInfo.holderInfo.mobile",
+      "kehuxiangqing_guanxirenxinxi_toubaorenxinxi_toubaorenyouxiang_id" : "preRenewalInfo.relevantPeopleInfo.holderInfo.eMail",
+      "kehuxiangqing_guanxirenxinxi_toubaorenxinxi_zhuzhi_id" : "preRenewalInfo.relevantPeopleInfo.holderInfo.address",
+      "kehuxiangqing_guanxirenxinxi_toubaorenxinxi_minzu_id" : "preRenewalInfo.relevantPeopleInfo.holderInfo.nation",
+      "kehuxiangqing_guanxirenxinxi_toubaorenxinxi_qianfajiguan_id" : "preRenewalInfo.relevantPeopleInfo.holderInfo.authority",
+  "关系人信息end" : "end------------------------------------"
 }
 
