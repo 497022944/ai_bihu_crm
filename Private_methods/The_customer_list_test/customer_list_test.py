@@ -24,6 +24,7 @@ logbug = LogBug()
 
 class customerlist:
     def customer_list_tab_select(driver,select_tab):
+    # 选择客户列表tab
         if select_tab == '当期客户':
             try:
                 driver.find_elements_by_css_selector(elements["kehuliebiao_tab_css"])[0].click()
@@ -1179,6 +1180,8 @@ class customerlist:
             time.sleep(1)
             driver.find_element_by_id(elements["kehuxiangqing_shangniantoubaoxinxi_shangyedaoqi_id"]).click()
             time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_baocun_button_css"]).click()
+            time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name},{input_shangyedaoqi}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_shangyedaoqi}修改失败')
@@ -1191,6 +1194,8 @@ class customerlist:
             driver.find_element_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_zhankai_css"]).click()
             time.sleep(1)
             driver.find_element_by_id(elements["kehuxiangqing_shangniantoubaoxinxi_jiaoqiangdaoqi_id"]).click()
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_baocun_button_css"]).click()
             time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name},{input_jiaoqiangdaoqi}修改成功')
         except Exception:
@@ -1207,12 +1212,14 @@ class customerlist:
             time.sleep(1)
             driver.find_element_by_id(elements["kehuxiangqing_shangniantoubaoxinxi_beibaoxianren_id"]).send_keys(input_beibaoxianren)
             time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_baocun_button_css"]).click()
+            time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name},{input_beibaoxianren}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_beibaoxianren}修改失败')
 
 
-    def kehuxiangqing_shangniantoubaoxinxi_zhengjianleixing(driver,input_zhengjianleixing, input_zhengjianhao=elements["test_vin"]):
+    def kehuxiangqing_shangniantoubaoxinxi_zhengjianleixing(driver,input_zhengjianleixing, input_zhengjianhaoma=elements["test_vin"]):
         try:
 
             driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_tab_css"]).click()
@@ -1224,16 +1231,119 @@ class customerlist:
             if input_zhengjianleixing == '身份证':
                 driver.find_elements_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_zhengjianleixing_css"])[4].click()
                 time.sleep(1)
+                driver.find_element_by_id(elements["kehuxiangqing_shangniantoubaoxinxi_zhengjianhaoma_id"]).clear()
+                time.sleep(1)
+                driver.find_element_by_id(elements["kehuxiangqing_shangniantoubaoxinxi_zhengjianhaoma_id"]).send_keys(input_zhengjianhaoma)
+                time.sleep(1)
+            elif input_zhengjianleixing == '组织机构代码证':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_zhengjianleixing_css"])[5].click()
+                time.sleep(1)
+                driver.find_element_by_id(elements["kehuxiangqing_shangniantoubaoxinxi_zhengjianhaoma_id"]).clear()
+                time.sleep(1)
+                driver.find_element_by_id(elements["kehuxiangqing_shangniantoubaoxinxi_zhengjianhaoma_id"]).send_keys(input_zhengjianhaoma)
+                time.sleep(1)
+            elif input_zhengjianleixing == '营业执照/统一社会信用代码':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_zhengjianleixing_css"])[6].click()
+                time.sleep(1)
+                driver.find_element_by_id(elements["kehuxiangqing_shangniantoubaoxinxi_zhengjianhaoma_id"]).clear()
+                time.sleep(1)
+                driver.find_element_by_id(elements["kehuxiangqing_shangniantoubaoxinxi_zhengjianhaoma_id"]).send_keys(input_zhengjianhaoma)
+                time.sleep(1)
+            elif input_zhengjianleixing == '港澳居民来往内地通行证':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_zhengjianleixing_css"])[7].click()
+                time.sleep(1)
+                driver.find_element_by_id(elements["kehuxiangqing_shangniantoubaoxinxi_zhengjianhaoma_id"]).clear()
+                time.sleep(1)
+                driver.find_element_by_id(elements["kehuxiangqing_shangniantoubaoxinxi_zhengjianhaoma_id"]).send_keys(input_zhengjianhaoma)
+                time.sleep(1)
+            elif input_zhengjianleixing == '港澳身份证':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_zhengjianleixing_css"])[8].click()
+                time.sleep(1)
+                driver.find_element_by_id(elements["kehuxiangqing_shangniantoubaoxinxi_zhengjianhaoma_id"]).clear()
+                time.sleep(1)
+                driver.find_element_by_id(elements["kehuxiangqing_shangniantoubaoxinxi_zhengjianhaoma_id"]).send_keys(input_zhengjianhaoma)
+                time.sleep(1)
             else:
                 pass
+            driver.find_element_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_baocun_button_css"]).click()
+            time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name},{input_zhengjianleixing}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_zhengjianleixing}修改失败')
 
 
+    def kehuxiangqing_shangniantoubaoxinxi_jigoumingcheng(driver,input_jigoumingcheng=elements["test_vin"]):
+        try:
+
+            driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_tab_css"]).click()
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_zhankai_css"]).click()
+            time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_shangniantoubaoxinxi_jigoumingcheng_id"]).clear()
+            time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_shangniantoubaoxinxi_jigoumingcheng_id"]).send_keys(input_jigoumingcheng)
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_baocun_button_css"]).click()
+            time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},{input_jigoumingcheng}修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_jigoumingcheng}修改失败')
+
+    def kehuxiangqing_shangniantoubaoxinxi_shangyexianbaodanhao(driver,input_shangyexianbaodanhao=elements["test_vin"]):
+        try:
+
+            driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_tab_css"]).click()
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_zhankai_css"]).click()
+            time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_shangniantoubaoxinxi_shangyexianbaodanhao_id"]).clear()
+            time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_shangniantoubaoxinxi_shangyexianbaodanhao_id"]).send_keys(input_shangyexianbaodanhao)
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_baocun_button_css"]).click()
+            time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},{input_shangyexianbaodanhao}修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_shangyexianbaodanhao}修改失败')
+
+    def kehuxiangqing_shangniantoubaoxinxi_jiaoqiangxianbaodanhao(driver,input_jiaoqiangxianbaodanhao=elements["test_vin"]):
+        # 客户详情-上年投保信息-交强险保单号
+        try:
+
+            driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_tab_css"]).click()
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_zhankai_css"]).click()
+            time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_shangniantoubaoxinxi_jiaoqiangxianbaodanhao_id"]).clear()
+            time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_shangniantoubaoxinxi_jiaoqiangxianbaodanhao_id"]).send_keys(input_jiaoqiangxianbaodanhao)
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_baocun_button_css"]).click()
+            time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},{input_jiaoqiangxianbaodanhao}修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_jiaoqiangxianbaodanhao}修改失败')
+
+    def kehuxiangqing_guanxirenxinxi_shezhilinshiguanxiren(driver):
+        # 客户详情-关系人信息-设置临时关系人
+        try:
+            driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
+            time.sleep(1)
+            driver.find_element_by_css_selector(
+                elements["kehuxiangqing_guanxirenxinxi_shezhilinshiguanxiren_css"]).click()
+            time.sleep(1)
+            # driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_baocun_button_css"]).click()
+            # time.sleep(1)
+            # driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
+            # time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},修改失败')
+
 
 
     def kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_gonghu(driver):
+        # 客户详情-关系人信息-被保人信息-公户
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
             time.sleep(1)
@@ -1250,6 +1360,7 @@ class customerlist:
 
 
     def kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_geren(driver):
+        # 客户详情-关系人信息-被保人信息-个人
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
             time.sleep(1)
@@ -1266,6 +1377,7 @@ class customerlist:
 
 
     def kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_beibaoxianrenxingming(driver, input_beibaoxianrenxingming=elements["test_vin"]):
+        # 客户详情-关系人信息-被保人信息-被保险人姓名
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
             time.sleep(1)
@@ -1285,6 +1397,7 @@ class customerlist:
 
 
     def kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianleixing(driver, input_zhengjianleixing, input_zhengjianhaoma=elements["test_vin"]):
+        # 客户详情-关系人信息-被保人信息-证件类型
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
             time.sleep(1)
@@ -1294,11 +1407,17 @@ class customerlist:
                 driver.find_elements_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianleixing_css"])[4].click()
                 time.sleep(1)
                 driver.find_element_by_id(
+                    elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianhaoma_id"]).clear()
+                time.sleep(1)
+                driver.find_element_by_id(
                     elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianhaoma_id"]).send_keys(input_zhengjianhaoma)
                 time.sleep(1)
             elif input_zhengjianleixing == '组织机构代码证':
                 driver.find_elements_by_css_selector(
                     elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianleixing_css"])[5].click()
+                time.sleep(1)
+                driver.find_element_by_id(
+                    elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianhaoma_id"]).clear()
                 time.sleep(1)
                 driver.find_element_by_id(
                     elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianhaoma_id"]).send_keys(input_zhengjianhaoma)
@@ -1308,6 +1427,9 @@ class customerlist:
                     elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianleixing_css"])[6].click()
                 time.sleep(1)
                 driver.find_element_by_id(
+                    elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianhaoma_id"]).clear()
+                time.sleep(1)
+                driver.find_element_by_id(
                     elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianhaoma_id"]).send_keys(input_zhengjianhaoma)
                 time.sleep(1)
             elif input_zhengjianleixing == '港澳居民来往内地通行证':
@@ -1315,11 +1437,17 @@ class customerlist:
                     elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianleixing_css"])[7].click()
                 time.sleep(1)
                 driver.find_element_by_id(
+                    elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianhaoma_id"]).clear()
+                time.sleep(1)
+                driver.find_element_by_id(
                     elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianhaoma_id"]).send_keys(input_zhengjianhaoma)
                 time.sleep(1)
             elif input_zhengjianleixing == '港澳身份证':
                 driver.find_elements_by_css_selector(
                     elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianleixing_css"])[8].click()
+                time.sleep(1)
+                driver.find_element_by_id(
+                    elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianhaoma_id"]).clear()
                 time.sleep(1)
                 driver.find_element_by_id(
                     elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianhaoma_id"]).send_keys(input_zhengjianhaoma)
@@ -1335,6 +1463,7 @@ class customerlist:
     def kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_beibaoxianrendianhua(driver,
                                                                               input_beibaoxianrendianhua=elements[
                                                                                   "test_vin"]):
+        #客户详情-关系人信息-被保人信息-被保险人电话
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
             time.sleep(1)
@@ -1359,6 +1488,7 @@ class customerlist:
     def kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_beibaoxianrenyouxiang(driver,
                                                                               input_beibaoxianrenyouxiang=elements[
                                                                                   "test_vin"]):
+        #客户详情-关系人信息-被保人信息-被保险人邮箱
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
             time.sleep(1)
@@ -1381,6 +1511,7 @@ class customerlist:
 
 
     def kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhuzhi(driver, input_zhuzhi=elements["test_vin"]):
+        #客户详情-关系人信息-被保人信息-住址
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
             time.sleep(1)
@@ -1401,6 +1532,7 @@ class customerlist:
 
 
     def kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_minzu(driver, input_minzu=elements["test_vin"]):
+        # 客户详情-关系人信息-被保人信息-民族
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
             time.sleep(1)
@@ -1420,6 +1552,7 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_minzu} 修改失败')
 
     def kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_qianfajiguan(driver, input_qianfajiguan=elements["test_vin"]):
+        # 客户详情-关系人信息-被保人信息-签发机关
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
             time.sleep(1)
@@ -1440,6 +1573,7 @@ class customerlist:
 
 
     def kehuxiangqing_guanxirenxinxi_toubaorenxinxi_gonghu(driver):
+        # 客户详情-关系人信息-投保人信息-公户
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
             time.sleep(1)
@@ -1456,6 +1590,7 @@ class customerlist:
 
 
     def kehuxiangqing_guanxirenxinxi_toubaorenxinxi_geren(driver):
+        # 客户详情-关系人信息-投保人信息-个人
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
             time.sleep(1)
@@ -1471,6 +1606,7 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},修改失败')
 
     def kehuxiangqing_guanxirenxinxi_toubaorenxinxi_toubaorenxingming(driver, input_toubaorenxingming=elements["test_vin"]):
+        # 客户详情-关系人信息-投保人信息-投保人姓名
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
             time.sleep(1)
@@ -1490,6 +1626,7 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_toubaorenxingming} 修改失败')
 
     def kehuxiangqing_guanxirenxinxi_toubaorenxinxi_zhengjianleixing(driver, input_zhengjianleixing, input_zhengjianhaoma=elements["test_vin"]):
+        # 客户详情-关系人信息-投保人信息-证件类型
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
             time.sleep(1)
@@ -1539,6 +1676,7 @@ class customerlist:
 
 
     def kehuxiangqing_guanxirenxinxi_toubaorenxinxi_toubaorendianhua(driver, input_toubaorendianhua=elements["test_vin"]):
+        # 客户详情-关系人信息-投保人信息-投保人电话
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
             time.sleep(1)
@@ -1560,6 +1698,7 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_toubaorendianhua} 修改失败')
 
     def kehuxiangqing_guanxirenxinxi_toubaorenxinxi_toubaorenyouxiang(driver, input_toubaorenyouxiang=elements["test_vin"]):
+        # 客户详情-关系人信息-投保人信息-投保人邮箱
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
             time.sleep(1)
@@ -1582,6 +1721,7 @@ class customerlist:
 
 
     def kehuxiangqing_guanxirenxinxi_toubaorenxinxi_zhuzhi(driver, input_zhuzhi=elements["test_vin"]):
+        # 客户详情-关系人信息-投保人信息-住址
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
             time.sleep(1)
@@ -1603,6 +1743,7 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_zhuzhi} 修改失败')
 
     def kehuxiangqing_guanxirenxinxi_toubaorenxinxi_minzu(driver, input_minzu=elements["test_vin"]):
+        # 客户详情-关系人信息-投保人信息-民族
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
             time.sleep(1)
@@ -1625,6 +1766,7 @@ class customerlist:
 
 
     def kehuxiangqing_guanxirenxinxi_toubaorenxinxi_qianfajiguan(driver, input_qianfajiguan=elements["test_vin"]):
+        # 客户详情-关系人信息-投保人信息-签发机关
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
             time.sleep(1)
@@ -1644,3 +1786,385 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name},{input_qianfajiguan}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_qianfajiguan} 修改失败')
+
+
+
+    def kehuxiangqing_guanxirenxinxi_chezhuxinxi_gonghu(driver):
+        # 客户详情-关系人信息-车主信息-公户
+        try:
+            driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
+            time.sleep(1)
+            driver.find_element_by_css_selector(
+                elements["kehuxiangqing_guanxirenxinxi_chezhuxinxi_quickselect_gonghu_css"]).click()
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_baocun_button_css"]).click()
+            time.sleep(1)
+            # driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
+            # time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},修改失败')
+
+    def kehuxiangqing_guanxirenxinxi_chezhuxinxi_geren(driver):
+        # 客户详情-关系人信息-车主信息-个人
+        try:
+            driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
+            time.sleep(1)
+            driver.find_element_by_css_selector(
+                elements["kehuxiangqing_guanxirenxinxi_chezhuxinxi_quickselect_geren_css"]).click()
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_baocun_button_css"]).click()
+            time.sleep(1)
+            # driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
+            # time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},修改失败')
+
+
+    def kehuxiangqing_guanxirenxinxi_chezhuxinxi_chezhuxingming(driver, input_chezhuxingming=elements["test_vin"]):
+        #客户详情-关系人信息-车主信息-车主姓名
+        try:
+            driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
+            time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_guanxirenxinxi_chezhuxinxi_chezhuxingming_id"]).clear()
+            time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_guanxirenxinxi_chezhuxinxi_chezhuxingming_id"]).send_keys(input_chezhuxingming)
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_baocun_button_css"]).click()
+            time.sleep(1)
+            # driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
+            # time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},{input_chezhuxingming} 修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_chezhuxingming} 修改失败')
+
+    def kehuxiangqing_guanxirenxinxi_chezhuxinxi_zhengjianleixing(driver, input_zhengjianleixing, input_zhengjianhaoma=elements["test_vin"]):
+        #客户详情-关系人信息-车主信息-证件类型
+        try:
+            driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
+            time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_guanxirenxinxi_chezhuxinxi_zhengjianleixing_id"]).click()
+            time.sleep(1)
+            if input_zhengjianleixing == '身份证':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_chezhuxinxi_zhengjianleixing_css"])[4].click()
+                time.sleep(1)
+            elif input_zhengjianleixing == '组织机构代码证':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_chezhuxinxi_zhengjianleixing_css"])[5].click()
+                time.sleep(1)
+            elif input_zhengjianleixing == '营业执照/统一社会信用代码':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_chezhuxinxi_zhengjianleixing_css"])[6].click()
+                time.sleep(1)
+            elif input_zhengjianleixing == '港澳居民来往内地通行证':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_chezhuxinxi_zhengjianleixing_css"])[7].click()
+                time.sleep(1)
+            elif input_zhengjianleixing == '港澳身份证':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_chezhuxinxi_zhengjianleixing_css"])[8].click()
+                time.sleep(1)
+            else:
+                pass
+            driver.find_element_by_id(elements["kehuxiangqing_guanxirenxinxi_chezhuxinxi_zhengjianhaoma_id"]).clear()
+            time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_guanxirenxinxi_chezhuxinxi_zhengjianhaoma_id"]).send_keys(input_zhengjianhaoma)
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_baocun_button_css"]).click()
+            time.sleep(1)
+            # driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
+            # time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},{input_zhengjianleixing} 修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_zhengjianleixing} 修改失败')
+
+
+    def kehuxiangqing_baojiaxinxi_toubaodiqu(driver, input_toubaodiqu=elements["test_vin"]):
+        #客户详情-报价信息-投保地区
+        try:
+            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
+            time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_id"]).click()
+            time.sleep(1)
+            if input_toubaodiqu == '北京':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[4].click()
+                time.sleep(1)
+            elif input_toubaodiqu == '成都':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[5].click()
+                time.sleep(1)
+            elif input_toubaodiqu == '昆明':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[6].click()
+                time.sleep(1)
+            elif input_toubaodiqu == '上海':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[7].click()
+                time.sleep(1)
+            elif input_toubaodiqu == '南京':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[8].click()
+                time.sleep(1)
+            elif input_toubaodiqu == '杭州':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[9].click()
+                time.sleep(1)
+            elif input_toubaodiqu == '深圳':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[10].click()
+                time.sleep(1)
+            elif input_toubaodiqu == '东莞':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[11].click()
+                time.sleep(1)
+            elif input_toubaodiqu == '济南':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[12].click()
+                time.sleep(1)
+            elif input_toubaodiqu == '佛山':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[13].click()
+                time.sleep(1)
+            elif input_toubaodiqu == '长春':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[14].click()
+                time.sleep(1)
+            elif input_toubaodiqu == '青岛':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[15].click()
+                time.sleep(1)
+            elif input_toubaodiqu == '合肥':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[16].click()
+                time.sleep(1)
+            elif input_toubaodiqu == '宁波':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[17].click()
+                time.sleep(1)
+            elif input_toubaodiqu == '呼和浩特':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[18].click()
+                time.sleep(1)
+            elif input_toubaodiqu == '南宁':
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[19].click()
+                time.sleep(1)
+            else:
+                pass
+            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
+            time.sleep(1)
+            # driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
+            # time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},{input_toubaodiqu} 修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_toubaodiqu} 修改失败')
+
+
+    def kehuxiangqing_baojiaxinxi_shangyeqibao(driver, input_shangyeqibao=elements["test_vin"]):
+        #客户详情-报价信息-商业起保
+        try:
+            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
+            time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_shangyeqibao_id"]).click()
+            time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},{input_shangyeqibao} 修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_shangyeqibao} 修改失败')
+
+    def kehuxiangqing_baojiaxinxi_jiaoqiangqibao(driver, input_jiaoqiangqibao=elements["test_vin"]):
+        #客户详情-报价信息-交强起保
+        try:
+            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
+            time.sleep(1)
+            driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_jiaoqiangqibao_id"]).click()
+            time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},{input_jiaoqiangqibao} 修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_jiaoqiangqibao} 修改失败')
+
+    def kehuxiangqing_baojiaxinxi_baojiagongsi(driver, input_baojiagongsi=1):
+        #客户详情-报价信息-选择报价公司
+        try:
+            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
+            time.sleep(5)
+
+            # # 取消勾选--------------
+            # for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"]))):
+            #     if driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"])[xuhao].get_attribute('class') == elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checked_class"]:
+            #         driver.find_elements_by_css_selector(
+            #             elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"])[
+            #             xuhao].click()
+            #     else:
+            #         pass
+            # time.sleep(1)
+            # # 取消勾选--------------
+
+            # 勾选保险公司--------------
+            if input_baojiagongsi == 1: #太平洋
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    if driver.find_element_by_css_selector(text_path).text == '太平洋':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_baojiagongsi == 2:  # 平安
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    if driver.find_element_by_css_selector(text_path).text == '平安':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_baojiagongsi == 3:  # 平安 + 太平洋
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '平安' or driver.find_element_by_css_selector(text_path).text == '太平洋':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_baojiagongsi == 4:  # 人保
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '人保':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_baojiagongsi == 5:  # 人保 + 太平洋
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '人保' or driver.find_element_by_css_selector(text_path).text == '太平洋':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_baojiagongsi == 6:  # 人保 + 平安
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '人保' or driver.find_element_by_css_selector(text_path).text == '平安':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_baojiagongsi == 7:  # 人保 + 平安 + 太平洋
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '人保' or driver.find_element_by_css_selector(text_path).text == '平安'or driver.find_element_by_css_selector(text_path).text == '太平洋':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_baojiagongsi == 8:  # 国寿财
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '国寿财':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+
+            elif input_baojiagongsi == 9:  # 国寿财 + 太平洋
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '国寿财'or driver.find_element_by_css_selector(text_path).text == '太平洋':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_baojiagongsi == 10:  # 国寿财 + 平安
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '国寿财' or driver.find_element_by_css_selector(text_path).text == '平安':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_baojiagongsi == 11:  # 国寿财 + 平安 + 太平洋
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '国寿财' or driver.find_element_by_css_selector(text_path).text == '平安'or driver.find_element_by_css_selector(text_path).text == '太平洋':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_baojiagongsi == 12:  # 人保 + 国寿财
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '人保' or driver.find_element_by_css_selector(text_path).text == '国寿财':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_baojiagongsi == 13:  # 人保 + 国寿财 + 太平洋
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '人保' or driver.find_element_by_css_selector(text_path).text == '国寿财'or driver.find_element_by_css_selector(text_path).text == '太平洋':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_baojiagongsi == 14:  # 人保 + 国寿财 + 平安
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '人保' or driver.find_element_by_css_selector(text_path).text == '平安'or driver.find_element_by_css_selector(text_path).text == '国寿财':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_baojiagongsi == 15:  # 人保 + 平安 + 太平洋 + 国寿财
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '人保' or driver.find_element_by_css_selector(text_path).text == '平安' or driver.find_element_by_css_selector(text_path).text == '太平洋' or driver.find_element_by_css_selector(text_path).text == '国寿财':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            else:
+                pass
+
+            time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name}, {input_baojiagongsi}修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name}, {input_baojiagongsi} 修改失败')
