@@ -1949,6 +1949,8 @@ class customerlist:
             time.sleep(1)
             driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_shangyeqibao_id"]).click()
             time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
+            time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name},{input_shangyeqibao} 修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_shangyeqibao} 修改失败')
@@ -1960,26 +1962,29 @@ class customerlist:
             time.sleep(1)
             driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_jiaoqiangqibao_id"]).click()
             time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
+            time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name},{input_jiaoqiangqibao} 修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_jiaoqiangqibao} 修改失败')
 
-    def kehuxiangqing_baojiaxinxi_baojiagongsi(driver, input_baojiagongsi=1):
+    def kehuxiangqing_baojiaxinxi_baojiagongsi(driver, input_baojiagongsi):
         #客户详情-报价信息-选择报价公司
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
-            time.sleep(5)
+            time.sleep(1)
 
-            # # 取消勾选--------------
-            # for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"]))):
-            #     if driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"])[xuhao].get_attribute('class') == elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checked_class"]:
-            #         driver.find_elements_by_css_selector(
-            #             elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"])[
-            #             xuhao].click()
-            #     else:
-            #         pass
-            # time.sleep(1)
-            # # 取消勾选--------------
+            # 取消勾选--------------
+            for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"]))):
+                if driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"])[xuhao].get_attribute('class') == elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checked_class"]:
+                    driver.find_elements_by_css_selector(
+                        elements["kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css"])[
+                        xuhao].click()
+                    time.sleep(1)
+                else:
+                    pass
+            time.sleep(1)
+            # 取消勾选--------------
 
             # 勾选保险公司--------------
             if input_baojiagongsi == 1: #太平洋
@@ -2160,11 +2165,500 @@ class customerlist:
                         logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
                     else:
                         pass
-
             else:
                 pass
+            # 勾选保险公司--------------
 
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
             time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name}, {input_baojiagongsi}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name}, {input_baojiagongsi} 修改失败')
+
+
+    def kehuxiangqing_baojiaxinxi_hebaogongsi(driver, input_hebaogongsi):
+        #客户详情-报价信息-选择核保公司
+        try:
+            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
+            time.sleep(1)
+
+            # 取消勾选--------------
+            # for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"]))):
+            #     if driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"])[xuhao].get_attribute('class') == elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checked_class"]:
+            #         driver.find_elements_by_css_selector(
+            #             elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"])[
+            #             xuhao].click()
+            #         time.sleep(1)
+            #     else:
+            #         pass
+            # time.sleep(1)
+            # 取消勾选--------------
+
+            # 勾选核保公司--------------
+            if input_hebaogongsi == 1: #太平洋
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    if driver.find_element_by_css_selector(text_path).text == '太平洋':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_hebaogongsi == 2:  # 平安
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    if driver.find_element_by_css_selector(text_path).text == '平安':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_hebaogongsi == 3:  # 平安 + 太平洋
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '平安' or driver.find_element_by_css_selector(text_path).text == '太平洋':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_hebaogongsi == 4:  # 人保
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '人保':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_hebaogongsi == 5:  # 人保 + 太平洋
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '人保' or driver.find_element_by_css_selector(text_path).text == '太平洋':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_hebaogongsi == 6:  # 人保 + 平安
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '人保' or driver.find_element_by_css_selector(text_path).text == '平安':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_hebaogongsi == 7:  # 人保 + 平安 + 太平洋
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '人保' or driver.find_element_by_css_selector(text_path).text == '平安'or driver.find_element_by_css_selector(text_path).text == '太平洋':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_hebaogongsi == 8:  # 国寿财
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '国寿财':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+
+            elif input_hebaogongsi == 9:  # 国寿财 + 太平洋
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '国寿财'or driver.find_element_by_css_selector(text_path).text == '太平洋':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_hebaogongsi == 10:  # 国寿财 + 平安
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '国寿财' or driver.find_element_by_css_selector(text_path).text == '平安':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_hebaogongsi == 11:  # 国寿财 + 平安 + 太平洋
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '国寿财' or driver.find_element_by_css_selector(text_path).text == '平安'or driver.find_element_by_css_selector(text_path).text == '太平洋':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_hebaogongsi == 12:  # 人保 + 国寿财
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '人保' or driver.find_element_by_css_selector(text_path).text == '国寿财':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_hebaogongsi == 13:  # 人保 + 国寿财 + 太平洋
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '人保' or driver.find_element_by_css_selector(text_path).text == '国寿财'or driver.find_element_by_css_selector(text_path).text == '太平洋':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_hebaogongsi == 14:  # 人保 + 国寿财 + 平安
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '人保' or driver.find_element_by_css_selector(text_path).text == '平安'or driver.find_element_by_css_selector(text_path).text == '国寿财':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+
+            elif input_hebaogongsi == 15:  # 人保 + 平安 + 太平洋 + 国寿财
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"]))):
+                    text_path = elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
+                    # quoteInfo\.quoteSource > label:nth-child(1) > span:nth-child(2)
+                    if driver.find_element_by_css_selector(text_path).text == '人保' or driver.find_element_by_css_selector(text_path).text == '平安' or driver.find_element_by_css_selector(text_path).text == '太平洋' or driver.find_element_by_css_selector(text_path).text == '国寿财':
+                        driver.find_elements_by_css_selector(
+                            elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"])[xuhao].click()
+                        time.sleep(1)
+                        logger.info(f'{sys._getframe().f_code.co_name},{driver.find_element_by_css_selector(text_path).text}选择成功')
+                    else:
+                        pass
+            else:
+                pass
+            # 勾选核保公司--------------
+
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
+            time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name}, {input_hebaogongsi}修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name}, {input_hebaogongsi} 修改失败')
+
+
+
+    def kehuxiangqing_baojiaxinxi_chesun(driver, is_zhuxian = 1, is_bujimian = 1):
+        #客户详情-报价信息-车损
+        try:
+            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
+            time.sleep(5)
+            if is_zhuxian == 1 and is_bujimian == 1: #车损 + 不计免
+                # 车损
+                if driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_chesun_css"]).get_attribute('class') == elements["kehuxiangqing_baojiaxinxi_xianzhong_checked_class"]:
+                    pass
+                else:
+                    driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_chesun_css"]).click()
+                time.sleep(1)
+
+                # 不计免
+                if driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_chesun_bujimian_id"]).get_attribute('class') == elements["kehuxiangqing_baojiaxinxi_bujimian_checked_class"]:
+                    pass
+                else:
+                    driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_chesun_bujimian_id"]).click()
+
+            elif is_zhuxian == 1 and is_bujimian == 0: #车损
+                # 车损
+                if driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_chesun_css"]).get_attribute(
+                        'class') == elements["kehuxiangqing_baojiaxinxi_xianzhong_checked_class"]:
+                    pass
+                else:
+                    driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_chesun_css"]).click()
+                time.sleep(1)
+
+                # 不计免
+                if driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_chesun_bujimian_id"]).get_attribute(
+                        'class') == elements["kehuxiangqing_baojiaxinxi_bujimian_checked_class"]:
+                    driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_chesun_bujimian_id"]).click()
+                else:
+                    pass
+
+            elif is_zhuxian == 0 and is_bujimian == 0: #不上车损
+                # 车损
+                if driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_chesun_css"]).get_attribute(
+                        'class') == elements["kehuxiangqing_baojiaxinxi_xianzhong_checked_class"]:
+                    driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_chesun_css"]).click()
+                else:
+                    pass
+
+                time.sleep(1)
+
+                # 不计免
+                if driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_chesun_bujimian_id"]).get_attribute(
+                        'class') == elements["kehuxiangqing_baojiaxinxi_bujimian_checked_class"]:
+                    driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_chesun_bujimian_id"]).click()
+                else:
+                    pass
+
+            else:
+                pass
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
+            time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{is_bujimian}修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{is_bujimian}修改失败')
+
+
+    def kehuxiangqing_baojiaxinxi_sanzhe(driver, is_zhuxian = 1, is_bujimian = 1, bao_e = 5):
+        #客户详情-报价信息-三者
+        try:
+            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
+            time.sleep(5)
+            if is_zhuxian == 1 and is_bujimian == 1: #三者 + 不计免
+                # 三者
+                if driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_css"]).get_attribute('class') == elements["kehuxiangqing_baojiaxinxi_xianzhong_checked_class"]:
+                    pass
+                else:
+                    driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_css"]).click()
+                time.sleep(1)
+
+                # 保额
+                driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_id"]).click()
+                time.sleep(1)
+                if bao_e == 5:
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[5].click()
+                elif bao_e == 10:
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+                        6].click()
+                elif bao_e == 15:
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+                        7].click()
+                elif bao_e == 20:
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+                        8].click()
+                elif bao_e == 30:
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+                        9].click()
+                elif bao_e == 50:
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+                        10].click()
+                elif bao_e == 100:
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+                        11].click()
+                elif bao_e == 150:
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+                        12].click()
+                elif bao_e == 200:
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+                        13].click()
+                elif bao_e == 250:
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+                        14].click()
+                elif bao_e == 300:
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+                        15].click()
+                elif bao_e == 500:
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+                        16].click()
+                else:
+                    pass
+                time.sleep(1)
+
+                # 不计免
+                if driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_sanzhe_bujimian_id"]).get_attribute('class') == elements["kehuxiangqing_baojiaxinxi_bujimian_checked_class"]:
+                    pass
+                else:
+                    driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_sanzhe_bujimian_id"]).click()
+
+
+            elif is_zhuxian == 1 and is_bujimian == 0:  # 三者
+
+                # 三者
+
+                if driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_css"]).get_attribute(
+
+                        'class') == elements["kehuxiangqing_baojiaxinxi_xianzhong_checked_class"]:
+
+                    pass
+
+                else:
+
+                    driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_css"]).click()
+
+                time.sleep(1)
+
+                # 保额
+
+                driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_id"]).click()
+
+                time.sleep(1)
+
+                if bao_e == 5:
+
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+
+                        5].click()
+
+                elif bao_e == 10:
+
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+
+                        6].click()
+
+                elif bao_e == 15:
+
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+
+                        7].click()
+
+                elif bao_e == 20:
+
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+
+                        8].click()
+
+                elif bao_e == 30:
+
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+
+                        9].click()
+
+                elif bao_e == 50:
+
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+
+                        10].click()
+
+                elif bao_e == 100:
+
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+
+                        11].click()
+
+                elif bao_e == 150:
+
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+
+                        12].click()
+
+                elif bao_e == 200:
+
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+
+                        13].click()
+
+                elif bao_e == 250:
+
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+
+                        14].click()
+
+                elif bao_e == 300:
+
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+
+                        15].click()
+
+                elif bao_e == 500:
+
+                    driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_baoe_css"])[
+
+                        16].click()
+
+                else:
+
+                    pass
+
+                time.sleep(1)
+
+                # 不计免
+
+                if driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_sanzhe_bujimian_id"]).get_attribute(
+
+                        'class') == elements["kehuxiangqing_baojiaxinxi_bujimian_checked_class"]:
+
+                    driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_sanzhe_bujimian_id"]).click()
+
+                else:
+
+                    pass
+
+            elif is_zhuxian == 0 and is_bujimian == 0:  # 不上三者
+                # 三者
+                if driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_css"]).get_attribute(
+                        'class') == elements["kehuxiangqing_baojiaxinxi_xianzhong_checked_class"]:
+                    driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_sanzhe_css"]).click()
+                else:
+                    pass
+                time.sleep(1)
+
+                # 不计免
+                if driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_sanzhe_bujimian_id"]).get_attribute(
+                        'class') == elements["kehuxiangqing_baojiaxinxi_bujimian_checked_class"]:
+                    driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_sanzhe_bujimian_id"]).click()
+                else:
+                    pass
+
+
+            # elif is_zhuxian == 1 and is_bujimian == 0: # 三者
+            #     if driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_chesun_css"]).get_attribute(
+            #             'class') == elements["kehuxiangqing_baojiaxinxi_xianzhong_checked_class"]:
+            #         pass
+            #     else:
+            #         driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_chesun_css"]).click()
+            #     time.sleep(1)
+            #
+            #     if driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_chesun_bujimian_id"]).get_attribute(
+            #             'class') == elements["kehuxiangqing_baojiaxinxi_bujimian_checked_class"]:
+            #         driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_chesun_bujimian_id"]).click()
+            #     else:
+            #         pass
+
+            else:
+                pass
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
+            time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{is_bujimian}修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{is_bujimian}修改失败')

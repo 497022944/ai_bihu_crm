@@ -201,7 +201,20 @@
     "kehuxiangqing_baojiaxinxi_baojiagongsi_checkbox_css" : "#quoteInfo\\.quoteSource > label",
       "kehuxiangqing_baojiaxinxi_baojiagongsi_checked_class" : "ant-checkbox-wrapper ant-checkbox-wrapper-checked ant-checkbox-group-item",
       "kehuxiangqing_baojiaxinxi_baojiagongsi_unchecked_class" : "ant-checkbox-wrapper ant-checkbox-group-item",
-      "kehuxiangqing_baojiaxinxi_baojiagongsi_mingcheng_css" : "#quoteInfo\\.quoteSource > label > span",
+    "kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css" : "#quoteInfo\\.submitSource > label",
+      "kehuxiangqing_baojiaxinxi_hebaogongsi_checked_class" : "ant-checkbox-wrapper ant-checkbox-wrapper-checked ant-checkbox-group-item",
+      "kehuxiangqing_baojiaxinxi_hebaogongsi_ unchecked_class" : "ant-checkbox-wrapper ant-checkbox-group-item",
+    "kehuxiangqing_baojiaxinxi_xianzhong_checked_class" : "ant-checkbox-wrapper ant-checkbox-wrapper-checked",
+    "kehuxiangqing_baojiaxinxi_xianzhong_unchecked_class" : "ant-checkbox-wrapper",
+    "kehuxiangqing_baojiaxinxi_bujimian_checked_class" : "ant-switch ant-switch-checked ant-switch-small",
+    "kehuxiangqing_baojiaxinxi_bujimian_unchecked_class" : "ant-switch ant-switch-small",
+    "kehuxiangqing_baojiaxinxi_chesun_css" : "#quote-result-table > table > tr:nth-child(2) > td:nth-child(1) > label",
+      "kehuxiangqing_baojiaxinxi_chesun_bujimian_id" : "preRenewalInfo.xianZhong.cheSun.buJiMian",
+    "kehuxiangqing_baojiaxinxi_sanzhe_css" : "#quote-result-table > table > tr:nth-child(3) > td:nth-child(1) > label",
+      "kehuxiangqing_baojiaxinxi_sanzhe_baoe_id" : "preRenewalInfo.xianZhong.sanZhe.baoE",
+      "kehuxiangqing_baojiaxinxi_sanzhe_baoe_css" : ".ant-select-dropdown-menu-item",
+      "kehuxiangqing_baojiaxinxi_sanzhe_bujimian_id" : "preRenewalInfo.xianZhong.sanZhe.buJiMian",
+
 
 
 

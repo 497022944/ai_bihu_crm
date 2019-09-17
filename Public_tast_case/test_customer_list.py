@@ -29,7 +29,7 @@ class Customer_Lict(unittest.TestCase):
         time.sleep(2)
         customerlist.search_1_0_chepai_gotofirst_detail(self.driver, '京J97896')
         time.sleep(2)
-        customerlist.kehuxiangqing_baojiaxinxi_baojiagongsi(self.driver, 7)
+        customerlist.kehuxiangqing_baojiaxinxi_sanzhe(self.driver,0,0,5)
         time.sleep(2)
         # self.driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
         # time.sleep(1)
