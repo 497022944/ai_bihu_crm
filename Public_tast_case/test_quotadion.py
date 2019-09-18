@@ -513,7 +513,7 @@ class Login(unittest.TestCase):
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='车架号必填')
 
-    # 测试车架号投保城市传空
+    # 测试车架号投保城市传空值
     def test_i_Insured_City_vin003(self):
         new_quotation_case1 = new_quotation_case()
         login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
