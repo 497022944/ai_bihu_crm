@@ -2,7 +2,7 @@
   "kehuxinzengbaojia_classname":"no_bar",
 
   "客户管理_start" : "Start------------------------------------",
-    "kehuguanli_xinzengbaojia_url" : "#/DoQuote/INDEX",
+    "kehuguanli_xinzengbaojia_url" : "/#/DoQuote/INDEX",
     "kehuguanli_kehuliebiao_url" : "#/Customer/List",
     "kehuguanli_shexiangtoujindian_url" : "#/Camera/List",
     "kehuguanli_piliangxubao_url" : "#/BatchRenewal/BatchRenewalIndex",

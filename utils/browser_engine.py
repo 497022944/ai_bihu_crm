@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
+import configparser
 import os
 import time
 from utils.Log import Log
@@ -63,3 +64,8 @@ class BrowserEngin(object):
         logger.info("Now,Close and quit the browser.")
         self.driver.quit()
 
+    def Read_ini_loading(self):
+        root_dir = os.path.dirname(os.path.abspath('.'))  # 获取当前文件所在目录的上一级目录，即项目所在目录E:\Crawler
+        cf = configparser.ConfigParser()
+        cf.read(root_dir+"/Configs/config.ini", encoding='utf-8-sig')  # 拼接得到config.ini文件的路径，直接使用
+        return cf
