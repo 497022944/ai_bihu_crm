@@ -1,4 +1,5 @@
-import unittest,os,json
+import unittest, os, json
+from time import sleep
 from utils.Logbug import LogBug
 from utils.Log import Log
 from selenium import webdriver
@@ -19,7 +20,7 @@ c = ele.readlines()
 class new_quotation_case(unittest.TestCase):
 
     #新增报价菜单
-    def license_check(self, driver, hint):
+    def license_check(self, driver):
         #driver = webdriver.Chrome()
         try:
             #title新增报价
@@ -31,6 +32,7 @@ class new_quotation_case(unittest.TestCase):
         except Exception:
             logbug.debug("新增报价title未找到")
         finally:
+            sleep(2)
             pass
 
         try:
@@ -42,20 +44,28 @@ class new_quotation_case(unittest.TestCase):
         except Exception:
             logbug.debug("车牌号title未找到")
         finally:
+            sleep(2)
             pass
+    def license_check_hint(self, driver, hint):
         #车牌提示
         try:
-            chepaihint = driver.find_element_by_class_name(elements['chepaihint']).is_enabled()
-            if chepaihint == True:
-
-                cphint = driver.find_element_by_class_name(elements['chepaihint']).text()
-                if cphint == hint:
-                    logger.info("输入车牌提示，预期为:'车牌号必填'实际为:{}".format(cphint))
+            #cphint = driver.find_element_by_class_name(elements['chepaihint']).text()
+            hinttishi = driver.find_element_by_css_selector("body > div.ant-message").text
+            # js = '$(".ant-message").text()'
+            # js1 = driver.execute_script(js)
+            #logger.info("输入车牌提示，预期为:'车牌号必填'实际为:{}".format(hinttishi))
+            if hint == '请正确填写车牌号':
+                    logger.info("输入车牌提示，预期为:'车牌号必填'实际为:{}".format(hinttishi))
             else:
-                logbug.debug("输入车牌提示，预期为:'请输入正确的车牌号'实际为:{}".format(chepaihint))
+                logbug.debug("输入车牌提示，预期为:'请输入正确的车牌号'实际为:{}".format(hinttishi))
         except Exception:
-            logbug.debug("车牌号title未找到")
+            logbug.debug("车牌号提示不存在")
         finally:
+            sleep(2)
             pass
+
+
+
+
 if __name__ == '__main__':
     unittest.main()
