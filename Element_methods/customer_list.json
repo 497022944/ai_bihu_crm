@@ -5,6 +5,7 @@
   "test_kehumingcheng" : "梁浩途观",
   "test_kehudianhua1": "17600142826",
   "test_kehudianhua2" : "17600142827",
+  "test_shangniantoubaogongsi" : "太平洋",
 
 
   "客户列表页start" : "start------------------------------------",
@@ -25,17 +26,22 @@
 
   "kehuliebiao_sousuo5_shangniantoubaogongsi_id" : "lastYearSource",
     "kehuliebiao_sousuo5_shangniantoubaogongsi_input_css" : "#lastYearSource > div > div > div.ant-select-search.ant-select-search--inline > div > input",
+    "kehuliebiao_sousuo5_shangniantoubaogongsi_css" : ".ant-select-dropdown-menu-item",
 
   "kehuliebiao_sousuo6_shangchuanpici_id" : "batchId",
     "kehuliebiao_sousuo6_shangchuanpici_input_css" : "#batchId > div > div > div > div > input",
+    "kehuliebiao_sousuo6_shangchuanpici_css" : ".ant-select-dropdown-menu-item",
 
   "kehuliebiao_sousuo7_shangyedaoqishijian_id" : "lastBizDateRange",
 
   "kehuliebiao_sousuo8_jiaoqiangdaoqishijian_id" : "lastForceDateRange",
 
+
   "kehuliebiao_sousuo9_shangyedaoqiyuefen_id" : "lastBizMonth",
+    "kehuliebiao_sousuo9_shangyedaoqiyuefen_css" : ".ant-select-dropdown-menu-item",
 
   "kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_id" : "lastForceMonth",
+    "kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_css" : ".ant-select-dropdown-menu-item",
 
   "kehuliebiao_sousuo11_zhuceshijian_id" : "registerDate",
 
@@ -47,9 +53,11 @@
 
   "kehuliebiao_sousuo14_xubaozhuangtai_id" : "renewalStatus",
     "kehuliebiao_sousuo14_xubaozhuangtai_input_css" : "#renewalStatus > div > div > ul > li > div > input",
+    "kehuliebiao_sousuo14_xubaozhuangtai_css" : ".ant-select-dropdown-menu-item",
 
   "kehuliebiao_sousuo15_baojiazhuangtai_id" : "quoteStatus",
     "kehuliebiao_sousuo15_baojiazhuangtai_input_css" : "#quoteStatus > div > div > ul > li > div > input",
+    "kehuliebiao_sousuo15_baojiazhuangtai_css" : ".ant-select-dropdown-menu-item",
 
   "kehuliebiao_sousuo16_fenpeizhuangtai_weifenpei_css" : "#distributedStatus > label:nth-child(1) > span.ant-checkbox > input",
     "kehuliebiao_sousuo16_fenpeizhuangtai_yifenpei_css" : "#distributedStatus > label:nth-child(2) > span.ant-checkbox > input",
@@ -62,6 +70,7 @@
 
   "kehuliebiao_sousuo20_lurufangshi_id" : "renewalTypes",
     "kehuliebiao_sousuo20_lurufangshi_input_css" : "#renewalTypes > div > div > ul > li > div > input",
+    "kehuliebiao_sousuo20_lurufangshi_css" : ".ant-select-dropdown-menu-item",
 
   "kehuliebiao_sousuo21_jindianshijian_id" : "cameraTimeRange",
 
@@ -70,9 +79,11 @@
 
   "kehuliebiao_sousuo23_yewuyuan_id" : "searchEmployeeIds",
     "kehuliebiao_sousuo23_yewuyuan_input_css" : "#searchEmployeeIds > div > div > ul > li > div > input",
+    "kehuliebiao_sousuo23_yewuyuan_css" : ".ant-select-dropdown-menu-item",
 
   "kehuliebiao_sousuo24_bumenmingcheng_id" : "deptIds",
     "kehuliebiao_sousuo24_bumenmingcheng_input_css" : "#deptIds > div > div > ul > li > div > input",
+    "kehuliebiao_sousuo24_bumenmingcheng_css" : ".ant-select-dropdown-menu-item",
 
   "kehuliebiao_sousuo25_gengxinshijian_id" : "updateTime",
 
@@ -154,6 +165,9 @@
     "kehuxiangqing_guanxirenxinxi_shezhilinshiguanxiren_css" : "#RelevantPeopleInfo > div.ant-collapse-header > div > div.collapse-operate > button.ant-btn.ant-btn-link",
     "kehuxiangqing_guanxirenxinxi_baocun_button_css" : "#RelevantPeopleInfo > div.ant-collapse-header > div > div.collapse-operate > button.collapse-save.ant-btn.ant-btn-primary",
   "被保险人信息start" : "start------------------------------------",
+     "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_tongtoubaoren_css" : "#RelevantPeopleInfo > div.ant-collapse-content.ant-collapse-content-active > div > div > div:nth-child(1) > p > label.ant-checkbox-wrapper",
+     "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_tongtoubaoren_checked_class" : "ant-checkbox-wrapper ant-checkbox-wrapper-checked",
+     "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_tongtoubaoren_unchecked_class" : "ant-checkbox-wrapper",
      "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_quickselect_gonghu_css" : "#RelevantPeopleInfo > div.ant-collapse-content.ant-collapse-content-active > div > div > div:nth-child(1) > p > button:nth-child(3)",
      "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_quickselect_geren_css" : "#RelevantPeopleInfo > div.ant-collapse-content.ant-collapse-content-active > div > div > div:nth-child(1) > p > button:nth-child(2)",
         "kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_beibaoxianrenxingming_id" : "preRenewalInfo.relevantPeopleInfo.insuredInfo.name",
@@ -182,6 +196,9 @@
   "投保人信息end" : "end------------------------------------",
 
   "车主信息start" : "start------------------------------------",
+  "kehuxiangqing_guanxirenxinxi_chezhuxinxi_tongtoubaoren_css" : "#RelevantPeopleInfo > div.ant-collapse-content.ant-collapse-content-active > div > div > div:nth-child(3) > p > label.ant-checkbox-wrapper",
+  "kehuxiangqing_guanxirenxinxi_chezhuxinxi_tongtoubaoren_checked_class" : "ant-checkbox-wrapper ant-checkbox-wrapper-checked",
+  "kehuxiangqing_guanxirenxinxi_chezhuxinxi_tongtoubaoren_unchecked_class" : "ant-checkbox-wrapper",
   "kehuxiangqing_guanxirenxinxi_chezhuxinxi_quickselect_gonghu_css" : "#RelevantPeopleInfo > div.ant-collapse-content.ant-collapse-content-active > div > div > div:nth-child(3) > p > button:nth-child(3)",
   "kehuxiangqing_guanxirenxinxi_chezhuxinxi_quickselect_geren_css" : "#RelevantPeopleInfo > div.ant-collapse-content.ant-collapse-content-active > div > div > div:nth-child(3) > p > button:nth-child(2)",
     "kehuxiangqing_guanxirenxinxi_chezhuxinxi_chezhuxingming_id" : "preRenewalInfo.relevantPeopleInfo.ownerInfo.name",
