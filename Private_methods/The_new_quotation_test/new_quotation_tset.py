@@ -56,7 +56,7 @@ class new_quotation_case(unittest.TestCase):
             else:
                 logbug.debug(f'{sys._getframe().f_code.co_name},继续执行--新增报价车牌号提示异常')
         except Exception:
-            logbug.debug(f'{sys._getframe().f_code.co_name},继续执行--新增报价车牌号提示异常')
+            logbug.debug(f'{sys._getframe().f_code.co_name},except继续执行--新增报价车牌号提示异常')
         finally:
             sleep(2)
             pass
@@ -67,7 +67,7 @@ class new_quotation_case(unittest.TestCase):
             hint = driver.execupt_script(elements['fuchuang_tishi_return'])
             logbug.debug(f'{sys._getframe().f_code.co_name},{hint}继续执行--查看提示信息')
         except Exception:
-            logbug.debug(f'{sys._getframe().f_code.co_name},{hint}继续执行--查看提示信息')
+            logbug.debug(f'{sys._getframe().f_code.co_name},{hint}except继续执行--查看提示信息')
         finally:
             sleep(2)
             pass

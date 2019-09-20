@@ -14,6 +14,9 @@
   "search__field":"ant-search__field-explain",
   "chepaihao_城市":"#licenseNo > div.ant-select.ant-select-focused > div > div > div",
 
+  "客户列表_新增报价按钮": "$('#createNew').click()",
+
+
   "车牌号-新增报价页面直接报价按钮":"$('.submit.herf-primary.text-center').eq(1).click()",
   "chepaihao_toubaochengshi":"[class='ant-select-dropdown-content']",
   "chepaihao_toubaochengshi1":"ul > li:nth-child(1)",

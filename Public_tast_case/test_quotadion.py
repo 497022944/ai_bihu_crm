@@ -27,7 +27,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='')
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
@@ -40,7 +40,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='# ')
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
@@ -53,7 +53,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='123456799')
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
@@ -66,7 +66,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='JJJJJJJ')
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
@@ -79,7 +79,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='kkkkkkkk')
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
@@ -92,7 +92,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J5623JJ')
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
@@ -105,7 +105,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='9875361')
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
@@ -124,7 +124,7 @@ class Login(unittest.TestCase):
             customerlist1 = customerlist
             menu1 = menu()
             menu1.Select_Menu_case(self.driver, '客户列表')
-            customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+            quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
             quotation_license.quotation_license_input(self.driver, license1=licenseNos)# 缺少清空车牌输入框
             quotation_license.quotation_license_click(self.driver)
 
@@ -135,7 +135,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.license_cityCode(self.driver, license_cityCode='南京')
         quotation_license.license_cityCode_ming(self.driver, license_cityCode_ming='苏')
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
@@ -148,7 +148,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.Safety_Certificate_Number(self.driver, safety='')
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
@@ -161,7 +161,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.Safety_Certificate_Number(self.driver, safety='12312312311231231231')
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
@@ -174,7 +174,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.Safety_Certificate_Number(self.driver, safety='@# ￥%￥# @# ￥……&*%￥……')
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
@@ -187,7 +187,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.Safety_Certificate_Number(self.driver, safety='ADNGMKSNGBD')
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
@@ -200,7 +200,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.Safety_Certificate_Number(self.driver, safety='ADNG23456SNGBD12345')
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
@@ -212,7 +212,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.Safety_Certificate_Number(self.driver, safety='ADNG2 3456  D123')
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
@@ -225,7 +225,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.Last_year_insurance(self.driver, insurance=" ")
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
         quotation_license.All_the_tips(self.driver)
@@ -237,7 +237,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.Last_year_insurance(self.driver, insurance="# ￥@")
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
@@ -250,7 +250,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.Last_year_insurance(self.driver, insurance="123456789")
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
@@ -263,7 +263,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.Last_year_insurance(self.driver, insurance="ajsdkjsadjkl")
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
@@ -285,7 +285,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.Last_year_insurance(self.driver, insurance="ajsdkj23# %……56skl")
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
@@ -298,7 +298,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.Last_year_insurance(self.driver, insurance="人保车险")
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
@@ -311,7 +311,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_table_assert(self.driver)
 
@@ -322,7 +322,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_input(self.driver, vin="")
         quotation_license.quotation_license_click(self.driver)
@@ -335,7 +335,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_input(self.driver, vin="1234567894")
         quotation_license.quotation_license_click(self.driver)
@@ -350,7 +350,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_input(self.driver, vin="qweqwertyu")
         quotation_license.quotation_license_click(self.driver)
@@ -366,7 +366,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_input(self.driver, vin="qweqwertyuqweqwertyu")
         quotation_license.quotation_license_click(self.driver)
@@ -380,7 +380,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_input(self.driver, vin="qweqwe1234569513rtyu")
         quotation_license.quotation_license_click(self.driver)
@@ -394,7 +394,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_input(self.driver, vin="qweqwe1234569513rtyu")
         quotation_license.quotation_license_click(self.driver)
@@ -408,7 +408,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_input(self.driver, vin="OS5A3ADD7CB152216")
         quotation_license.quotation_license_click(self.driver)
@@ -422,7 +422,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_input(self.driver, vin="OS5A3ADD7CB152216")
         quotation_license.quotation_license_click(self.driver)
@@ -436,7 +436,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_input(self.driver, vin="OS5A3ADD7CB152216")
         quotation_license.quotation_license_click(self.driver)
@@ -450,7 +450,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_input(self.driver, vin="13236562398547563")
         quotation_license.quotation_license_click(self.driver)
@@ -464,7 +464,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_input(self.driver, vin="13236562398547563")
         quotation_license.quotation_license_click(self.driver)
@@ -478,7 +478,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_input(self.driver, vin="LS5A3ADD7CB152216")
         quotation_license.quotation_license_click(self.driver)
@@ -490,7 +490,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_input(self.driver, vin="WS5A3ADD7CB152216")
         quotation_license.quotation_license_click(self.driver)
@@ -502,7 +502,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_input(self.driver, vin="")
         quotation_license.engine_input(self.driver, engine='')
@@ -517,7 +517,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_input(self.driver, vin="WS5A3ADD7CB152216")
         quotation_license.engine_input(self.driver, engine='')
@@ -530,7 +530,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_input(self.driver, vin="WS5A3ADD7CB152216")
         quotation_license.engine_input(self.driver, engine='1')
@@ -543,7 +543,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_input(self.driver, vin="WS5A3ADD7CB152216")
         quotation_license.engine_input(self.driver, engine='0000000000')
@@ -556,7 +556,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_input(self.driver, vin="WS5A3ADD7CB152216")
         quotation_license.engine_input(self.driver, engine='1234567')
@@ -569,7 +569,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_input(self.driver, vin="WS5A3ADD7CB152216")
         quotation_license.engine_input(self.driver, engine='1234qwe')
@@ -582,7 +582,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_input(self.driver, vin="WS5A3ADD7CB152216")
         quotation_license.engine_input(self.driver, engine='qwerett')
@@ -595,7 +595,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_input(self.driver, vin="WS5A3ADD7CB152216")
         quotation_license.engine_input(self.driver, engine='C4KB23238')
@@ -608,7 +608,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.VIN_input(self.driver, vin="WS5A3ADD7CB152216")
         quotation_license.engine_input(self.driver, engine='C4KB23238')
         quotation_license.VIN_Last_year_insurance(self.driver, insurance2=" ")
@@ -622,7 +622,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.VIN_input(self.driver, vin="WS5A3ADD7CB152216")
         quotation_license.engine_input(self.driver, engine='C4KB23238')
         quotation_license.VIN_Last_year_insurance(self.driver, insurance2="# ￥@")
@@ -636,7 +636,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.VIN_input(self.driver, vin="WS5A3ADD7CB152216")
         quotation_license.engine_input(self.driver, engine='C4KB23238')
         quotation_license.VIN_Last_year_insurance(self.driver, insurance2="12345")
@@ -650,7 +650,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.VIN_input(self.driver, vin="WS5A3ADD7CB152216")
         quotation_license.engine_input(self.driver, engine='C4KB23238')
         quotation_license.VIN_Last_year_insurance(self.driver, insurance2="ajsdkjsadjkl")
@@ -664,7 +664,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.VIN_input(self.driver, vin="WS5A3ADD7CB152216")
         quotation_license.engine_input(self.driver, engine='C4KB23238')
         quotation_license.VIN_Last_year_insurance(self.driver, insurance2="ajsdkj23456skl")
@@ -678,7 +678,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.VIN_input(self.driver, vin="WS5A3ADD7CB152216")
         quotation_license.engine_input(self.driver, engine='C4KB23238')
         quotation_license.VIN_Last_year_insurance(self.driver, insurance2="ajsdkj23# %……56skl")
@@ -692,7 +692,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.VIN_input(self.driver, vin="WS5A3ADD7CB152216")
         quotation_license.engine_input(self.driver, engine='C4KB23238')
         quotation_license.VIN_Last_year_insurance(self.driver, insurance2="人保车险")
@@ -706,7 +706,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.VIN_cityCode(self.driver, vin_cityCode="")
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='车架号必填')
@@ -718,7 +718,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.title_VIN_click(self.driver)
         quotation_license.VIN_input(self.driver, vin="WS5A3ADD7CB152216")
         quotation_license.VIN_cityCode(self.driver, vin_cityCode="北京")
@@ -732,7 +732,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.VIN_cityCode(self.driver, vin_cityCode="南京")
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='车架号必填')
@@ -744,7 +744,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -759,7 +759,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -773,7 +773,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -787,7 +787,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -801,7 +801,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -815,7 +815,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -829,7 +829,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -843,7 +843,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -857,7 +857,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -871,7 +871,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -885,7 +885,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -899,7 +899,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -913,7 +913,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -927,7 +927,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -941,7 +941,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -955,7 +955,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -969,7 +969,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -983,7 +983,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -997,7 +997,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1012,7 +1012,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1026,7 +1026,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1040,7 +1040,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1054,7 +1054,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1068,7 +1068,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1082,7 +1082,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1096,7 +1096,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1110,7 +1110,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1124,7 +1124,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1138,7 +1138,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1152,7 +1152,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1166,7 +1166,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1180,7 +1180,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1194,7 +1194,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1210,7 +1210,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1225,7 +1225,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1240,7 +1240,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1255,7 +1255,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1270,7 +1270,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1285,7 +1285,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1300,7 +1300,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1314,7 +1314,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1328,7 +1328,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1342,7 +1342,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1356,7 +1356,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1370,7 +1370,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1384,7 +1384,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1398,7 +1398,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1412,7 +1412,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1426,7 +1426,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
@@ -1440,7 +1440,7 @@ class Login(unittest.TestCase):
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
-        customerlist1.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)

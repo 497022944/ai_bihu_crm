@@ -26,7 +26,7 @@ class menu:
 
     def Select_Menu_case(self, driver, select_menu):
         #driver = webdriver.Chrome()
-
+        sleep(2)
         #选择菜单
         if select_menu == '新增报价':
             try:

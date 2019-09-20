@@ -16,6 +16,13 @@ elements = json.load(element)
 #菜单
 class quotation_license:
 
+    def kehuxiangqiang_xinzengbaojia(driver):
+        try:
+            driver.execute_script(elements['客户列表_新增报价按钮'])
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},中断执行--客户列表_新增报价按钮点击异常')
+
+
     #车牌号-新增报价车牌号输入
     def quotation_license_input(driver, license1):
         sleep(2)
