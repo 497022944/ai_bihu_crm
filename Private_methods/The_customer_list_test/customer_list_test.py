@@ -1,6 +1,7 @@
 from utils.getConfig import *
 import sys
 from utils.Log import Log
+from time import sleep
 from utils.Logbug import LogBug
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -2662,3 +2663,10 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{is_bujimian}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{is_bujimian}修改失败')
+    #客户列表选择新增报价
+    def kehuxiangqiang_xinzengbaojia(driver):
+        try:
+            new_js = driver.execute_script(elements["kehuliebiao_xinzengbaojia"])
+            sleep(2)
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},新增报价点击失败')

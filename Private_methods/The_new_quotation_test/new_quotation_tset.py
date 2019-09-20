@@ -1,4 +1,4 @@
-import unittest, os, json
+import unittest, os, json, sys
 from time import sleep
 from utils.Logbug import LogBug
 from utils.Log import Log
@@ -49,23 +49,27 @@ class new_quotation_case(unittest.TestCase):
     def license_check_hint(self, driver, hint):
         #车牌提示
         try:
-            #cphint = driver.find_element_by_class_name(elements['chepaihint']).text()
-            hinttishi = driver.find_element_by_css_selector("body > div.ant-message").text
-            # js = '$(".ant-message").text()'
-            # js1 = driver.execute_script(js)
-            #logger.info("输入车牌提示，预期为:'车牌号必填'实际为:{}".format(hinttishi))
-            if hint == '请正确填写车牌号':
-                    logger.info("输入车牌提示，预期为:'车牌号必填'实际为:{}".format(hinttishi))
+            js = "return $('.ant-message').text()"
+            hinttishi = driver.execute_script(js)
+            if hint == '请正确填写车牌号' and hinttishi == "请正确填写车牌号":
+                logger.info(f'{sys._getframe().f_code.co_name},继续执行--新增报价车牌号提示正确')
             else:
-                logbug.debug("输入车牌提示，预期为:'请输入正确的车牌号'实际为:{}".format(hinttishi))
+                logbug.debug(f'{sys._getframe().f_code.co_name},继续执行--新增报价车牌号提示异常')
         except Exception:
-            logbug.debug("车牌号提示不存在")
+            logbug.debug(f'{sys._getframe().f_code.co_name},继续执行--新增报价车牌号提示异常')
         finally:
             sleep(2)
             pass
-
-
-
-
+    #fuchuang_tishi_return
+    def fuchuang_tishi_return(self, driver):
+        try:
+            global hint
+            hint = driver.execupt_script(elements['fuchuang_tishi_return'])
+            logbug.debug(f'{sys._getframe().f_code.co_name},{hint}继续执行--查看提示信息')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},{hint}继续执行--查看提示信息')
+        finally:
+            sleep(2)
+            pass
 if __name__ == '__main__':
     unittest.main()

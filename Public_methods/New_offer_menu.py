@@ -1,4 +1,5 @@
 import unittest,os,json
+from time import sleep
 from utils.Logbug import LogBug
 from utils.Log import Log
 from selenium import webdriver
@@ -31,6 +32,7 @@ class menu:
             try:
                 driver.get(url + elements["kehuguanli_xinzengbaojia_url"])
                 logger.info("{}菜单已选中".format(select_menu))
+                sleep(2)
             except Exception:
                 logbug.debug("{}菜单选中错误".format(select_menu))
 
@@ -38,6 +40,7 @@ class menu:
             try:
                 driver.get(url + elements["kehuguanli_kehuliebiao_url"])
                 logger.info("{}菜单已选中".format(select_menu))
+                sleep(2)
             except Exception:
                 logbug.debug("{}菜单选中错误".format(select_menu))
 
@@ -45,6 +48,7 @@ class menu:
             try:
                 driver.get(url + elements["kehuguanli_shexiangtoujindian_url"])
                 logger.info("{}菜单已选中".format(select_menu))
+                sleep(2)
             except Exception:
                 logbug.debug("{}菜单选中错误".format(select_menu))
 
@@ -52,6 +56,7 @@ class menu:
             try:
                 driver.get(url + elements["kehuguanli_piliangxubao_url"])
                 logger.info("{}菜单已选中".format(select_menu))
+                sleep(2)
             except Exception:
                 logbug.debug("{}菜单选中错误".format(select_menu))
 
@@ -59,6 +64,7 @@ class menu:
             try:
                 driver.get(url + elements["kehuguanli_chexiandingdan_url"])
                 logger.info("{}菜单已选中".format(select_menu))
+                sleep(2)
             except Exception:
                 logbug.debug("{}菜单选中错误".format(select_menu))
 
@@ -66,6 +72,7 @@ class menu:
             try:
                 driver.get(url + elements["kehuguanli_feichedingdan_url"])
                 logger.info("{}菜单已选中".format(select_menu))
+                sleep(2)
             except Exception:
                 logbug.debug("{}菜单选中错误".format(select_menu))
         else:
