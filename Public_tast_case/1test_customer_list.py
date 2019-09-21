@@ -23,7 +23,7 @@ class Customer_Lict(unittest.TestCase):
         login.login_input(self.driver)
         time.sleep(5)
         menu1 = menu()
-        menu1.Select_Menu_case(self.driver , '客户列表')
+        menu1.Select_Menu_case(self.driver, '客户列表')
         time.sleep(5)
         customerlist.customer_list_tab_select(self.driver,'全部客户')
         time.sleep(2)

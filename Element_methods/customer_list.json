@@ -94,7 +94,7 @@
     "kehuliebiao_biaotoushezhi_link_text" : "表头设置",
     "kehuliebiao_button0_1_css" : ".ant-row>div>button[class='btn-operate marginRight12 ant-btn ant-btn-default']",
     "kehuliebiao_button2_5_css" : ".ant-row>div>span>button[class = 'btn-operate marginRight12 ant-btn ant-btn-default']",
-
+    "kehuliebiao_xinzengbaojia" : "$('#createNew').click()",
   "客户列表页end" : "end------------------------------------",
 
   "客户详情页start" : "start------------------------------------",
