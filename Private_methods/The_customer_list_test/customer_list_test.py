@@ -2070,10 +2070,8 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},修改失败')
 
 
-
-
     def kehuxiangqing_guanxirenxinxi_chezhuxinxi_gonghu(driver):
-        # 客户详情-关系人信息-车主信息-公户
+        """客户详情-关系人信息-车主信息-快速选择‘公户’，无需传递参数"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
             time.sleep(1)
@@ -2089,7 +2087,7 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},修改失败')
 
     def kehuxiangqing_guanxirenxinxi_chezhuxinxi_geren(driver):
-        # 客户详情-关系人信息-车主信息-个人
+        """客户详情-关系人信息-车主信息-快速选择‘个人’，无需传递参数"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
             time.sleep(1)
@@ -2106,7 +2104,7 @@ class customerlist:
 
 
     def kehuxiangqing_guanxirenxinxi_chezhuxinxi_chezhuxingming(driver, input_chezhuxingming=elements["test_vin"]):
-        #客户详情-关系人信息-车主信息-车主姓名
+        """客户详情-关系人信息-车主信息-车主姓名，参数要传具体姓名，如‘李明’"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
             time.sleep(1)
@@ -2123,7 +2121,8 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_chezhuxingming} 修改失败')
 
     def kehuxiangqing_guanxirenxinxi_chezhuxinxi_zhengjianleixing(driver, input_zhengjianleixing, input_zhengjianhaoma=elements["test_vin"]):
-        #客户详情-关系人信息-车主信息-证件类型
+        """客户详情-关系人信息-车主信息-证件类型+号码，参数要传具体类型，如‘身份证’，与下拉框中文本保持一致
+                号码要传具体号码，如‘110100199999999999’"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"]).click()
             time.sleep(1)
@@ -2160,7 +2159,7 @@ class customerlist:
 
 
     def kehuxiangqing_baojiaxinxi_toubaodiqu(driver, input_toubaodiqu=elements["test_vin"]):
-        #客户详情-报价信息-投保地区
+        """客户详情-报价信息-投保地区，参数要传具体地区，如‘北京’，需要与下拉菜单文字保持一致"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
@@ -2226,7 +2225,7 @@ class customerlist:
 
 
     def kehuxiangqing_baojiaxinxi_shangyeqibao(driver, input_shangyeqibao=elements["test_vin"]):
-        #客户详情-报价信息-商业起保
+        """客户详情-报价信息-商业起保，此方法待完善"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
@@ -2239,7 +2238,7 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_shangyeqibao} 修改失败')
 
     def kehuxiangqing_baojiaxinxi_jiaoqiangqibao(driver, input_jiaoqiangqibao=elements["test_vin"]):
-        #客户详情-报价信息-交强起保
+        """客户详情-报价信息-交强起保，此方法待完善"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
@@ -2252,7 +2251,8 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_jiaoqiangqibao} 修改失败')
 
     def kehuxiangqing_baojiaxinxi_baojiagongsi(driver, input_baojiagongsi):
-        #客户详情-报价信息-选择报价公司
+        """客户详情-报价信息-选择报价公司，参数传数字即可，1=太平洋，2=平安，4=人保，8=国寿财
+        如需多家，则数字相加，如太平洋+平安 = 3"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
@@ -2461,7 +2461,9 @@ class customerlist:
 
 
     def kehuxiangqing_baojiaxinxi_hebaogongsi(driver, input_hebaogongsi):
-        #客户详情-报价信息-选择核保公司
+        """客户详情-报价信息-选择核保公司，参数传数字即可，1=太平洋，2=平安，4=人保，8=国寿财
+        如需多家，则数字相加，如太平洋+平安 = 3
+        另：核保公司最好和报价公司保持一致"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
@@ -2671,7 +2673,8 @@ class customerlist:
 
 
     def kehuxiangqing_baojiaxinxi_chesun(driver, is_zhuxian = 1, is_bujimian = 1):
-        #客户详情-报价信息-车损
+        """客户详情-报价信息-车损，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
+        is_bujimian为是否投保附加险，1投0不投"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
@@ -2733,7 +2736,9 @@ class customerlist:
 
 
     def kehuxiangqing_baojiaxinxi_sanzhe(driver, is_zhuxian = 1, is_bujimian = 1, bao_e = 5):
-        #客户详情-报价信息-三者
+        """客户详情-报价信息-三者，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
+        is_bujimian为是否投保附加险，1投0不投
+        bao_e为投保保额，参数要传数字，几万就传几，如5万就传5"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
@@ -2933,7 +2938,9 @@ class customerlist:
 
 
     def kehuxiangqing_baojiaxinxi_siji(driver, is_zhuxian = 1, is_bujimian = 1, bao_e = 5):
-        #客户详情-报价信息-司机
+        """客户详情-报价信息-司机，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
+        is_bujimian为是否投保附加险，1投0不投
+        bao_e为投保保额，参数要传数字，几万就传几，如5万就传5"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
@@ -3067,7 +3074,9 @@ class customerlist:
 
 
     def kehuxiangqing_baojiaxinxi_chengke(driver, is_zhuxian = 1, is_bujimian = 1, bao_e = 5):
-        #客户详情-报价信息-乘客
+        """客户详情-报价信息-乘客，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
+        is_bujimian为是否投保附加险，1投0不投
+        bao_e为投保保额，参数要传数字，几万就传几，如5万就传5"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
@@ -3201,7 +3210,8 @@ class customerlist:
 
 
     def kehuxiangqing_baojiaxinxi_daoqiang(driver, is_zhuxian = 1, is_bujimian = 1):
-        #客户详情-报价信息-盗抢
+        """客户详情-报价信息-盗抢，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
+        is_bujimian为是否投保附加险，1投0不投"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
@@ -3263,7 +3273,9 @@ class customerlist:
 
 
     def kehuxiangqing_baojiaxinxi_huahen(driver, is_zhuxian = 1, is_bujimian = 1, bao_e = 2000):
-        #客户详情-报价信息-划痕
+        """客户详情-报价信息-划痕，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
+        is_bujimian为是否投保附加险，1投0不投
+        bao_e为投保保额，参数要传数字，要传具体价格，如2000，5000，10000"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
@@ -3368,7 +3380,9 @@ class customerlist:
 
 
     def kehuxiangqing_baojiaxinxi_boli(driver, is_zhuxian = 1, bao_e = '国产'):
-        #客户详情-报价信息-玻璃
+        """客户详情-报价信息-玻璃，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
+        is_bujimian为是否投保附加险，1投0不投
+        bao_e为投保保额，参数要传‘国产’或‘进口’"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
@@ -3413,7 +3427,8 @@ class customerlist:
 
 
     def kehuxiangqing_baojiaxinxi_ziran(driver, is_zhuxian = 1, is_bujimian = 1):
-        #客户详情-报价信息-自燃
+        """客户详情-报价信息-自燃，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
+        is_bujimian为是否投保附加险，1投0不投"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
@@ -3475,7 +3490,8 @@ class customerlist:
 
 
     def kehuxiangqing_baojiaxinxi_sheshui(driver, is_zhuxian = 1, is_bujimian = 1):
-        #客户详情-报价信息-涉水
+        """客户详情-报价信息-涉水，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
+        is_bujimian为是否投保附加险，1投0不投"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
@@ -3537,7 +3553,7 @@ class customerlist:
 
 
     def kehuxiangqing_baojiaxinxi_chesunwufazhaodaodisanfang(driver, is_zhuxian = 1):
-        #客户详情-报价信息-车损无法找到第三方
+        """客户详情-报价信息-车损无法找到第三方，参数传数字即可，is_zhuxian为是否投保主险，1投0不投"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
@@ -3571,7 +3587,8 @@ class customerlist:
 
 
     def kehuxiangqing_baojiaxinxi_zhidingxiulichang(driver, is_zhuxian = 1, bao_e = '国产'):
-        #客户详情-报价信息-指定修理厂
+        """客户详情-报价信息-指定修理厂，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
+        bao_e为投保保额，参数要传‘国产’或‘进口’"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
@@ -3618,7 +3635,8 @@ class customerlist:
 
 
     def kehuxiangqing_baojiaxinxi_xinzengshebeisunshi(driver, is_zhuxian = 1, is_bujimian = 1):
-        #客户详情-报价信息-新增设备损失
+        """客户详情-报价信息-新增设备损失，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
+        is_bujimian为是否投保附加险，1投0不投"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
@@ -3685,8 +3703,8 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{is_bujimian}修改失败')
 
 
-    def kehuxiangqing_baojiaxinxi_sanzexianfujiafadingjiajiarixianefanbei(driver, is_zhuxian = 1):
-        #客户详情-报价信息-三责险附加法定节假日险翻倍险
+    def kehuxiangqing_baojiaxinxi_sanzexianfujiafadingjiejiarixianefanbei(driver, is_zhuxian = 1):
+        """客户详情-报价信息-三责险附加法定节假日限额翻倍险，参数传数字即可，is_zhuxian为是否投保主险，1投0不投"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
@@ -3726,7 +3744,9 @@ class customerlist:
 
 
     def kehuxiangqing_baojiaxinxi_xiuliqijianfeiyongbuchang(driver, is_zhuxian = 1, bao_e = 100, xishu = 1):
-        #客户详情-报价信息-修理期间费用补偿险
+        """客户详情-报价信息-修理期间费用补偿险，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
+        bao_e为投保保额，参数要传具体保额，如100，200，300，与下拉菜单选项文字保持一致
+        系数为天数，要传具体天数，如1，2"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
