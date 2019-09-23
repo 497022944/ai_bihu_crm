@@ -52,9 +52,9 @@ class new_quotation_case(unittest.TestCase):
             js = "return $('.ant-message').text()"
             hinttishi = driver.execute_script(js)
             if hint == '请正确填写车牌号' and hinttishi == "请正确填写车牌号":
-                logger.info(f'{sys._getframe().f_code.co_name},继续执行--新增报价车牌号提示正确')
+                logger.info(f'{sys._getframe().f_code.co_name},{hint},继续执行--新增报价车牌号提示正确')
             else:
-                logbug.debug(f'{sys._getframe().f_code.co_name},继续执行--新增报价车牌号提示异常')
+                logbug.debug(f'{sys._getframe().f_code.co_name},预期结果{hint},实际结果{hinttishi},继续执行--新增报价车牌号提示异常')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},except继续执行--新增报价车牌号提示异常')
         finally:

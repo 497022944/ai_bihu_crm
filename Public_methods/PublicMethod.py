@@ -196,3 +196,19 @@ class BasePage(object):
                 return a
         except:
             return f
+
+    @staticmethod
+    def element_WebDriverWait(driver, locator):
+        '''
+        结合WebDriverWait和expected_conditions判断元素是否存在,
+        每间隔0.5秒判断一次，30s超时，存在返回True,不存返回False
+        :param locator: locator为元组类型，如("id", "yoyo")
+        :return: bool值，True or False
+        使用方法：locator = (By.ID, 'name')
+        is_element_exsist2(self.driver, (By.ID, 'name'))
+        '''
+        try:
+            WebDriverWait(driver, 30, 0.5).until(EC.presence_of_element_located(locator))
+            return True
+        except:
+            return False

@@ -23,20 +23,27 @@ class quotation_license:
             logbug.debug(f'{sys._getframe().f_code.co_name},中断执行--客户列表_新增报价按钮点击异常')
 
 
-    #车牌号-新增报价车牌号输入
+    '''车牌号-新增报价车牌号输入'''
     def quotation_license_input(driver, license1):
         sleep(2)
         try:
-            #driver.find_element_by_css_selector("#licenseNo > input").send_keys(license1)
-            driver.find_element_by_class_name(elements["chepairukou_class"]).send_keys(license1)
+            dict1 = driver.find_element_by_class_name(elements["chepairukou_class"])
+            ActionChains(driver).move_to_element(dict1).perform()
+            dict1.click()
+            dict1.send_keys(license1)
+
+            #driver.find_element_by_class_name(elements["chepairukou_class"]).send_keys(license1)
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},中断执行--新增报价车牌号输入异常')
 
-    #车牌号-新增报价页面点击下一步
+    '''车牌号-新增报价页面点击下一步'''
     def quotation_license_click(driver):
         sleep(2)
         try:
-            new_js = driver.execute_script(elements["xiayibu_css"])
+            dict1 = driver.find_element_by_css_selector(elements["新增报价_下一步模拟"])
+            ActionChains(driver).move_to_element(dict1).perform()
+            dict1.click()
+            #new_js = driver.execute_script(elements["新增报价_下一步"])
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},中断执行--新增报价弹窗点击下一步按钮异常')
 

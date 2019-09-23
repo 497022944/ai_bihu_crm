@@ -23,7 +23,7 @@ class Login(unittest.TestCase):
     # 测试车牌号输入框为空
     def test_a_LicenseNo_input_box001(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -36,7 +36,7 @@ class Login(unittest.TestCase):
     #  测试车牌号输入框为特殊字符
     def test_a_LicenseNo_input_box002(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -49,7 +49,7 @@ class Login(unittest.TestCase):
     #  测试车牌号输入框长度为10
     def test_a_LicenseNo_input_box003(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -62,7 +62,7 @@ class Login(unittest.TestCase):
     #  测试车牌号输入框为纯字母大写
     def test_a_LicenseNo_input_box004(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -75,7 +75,7 @@ class Login(unittest.TestCase):
     #  测试车牌号输入框为纯字母小写
     def test_a_LicenseNo_input_box005(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -88,7 +88,7 @@ class Login(unittest.TestCase):
     #  测试车牌号输入框为字目前后数字组合
     def a_LicenseNo_input_box006(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -101,7 +101,7 @@ class Login(unittest.TestCase):
     #  测试车牌号输入框为纯数字
     def test_a_LicenseNo_input_box007(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -119,7 +119,7 @@ class Login(unittest.TestCase):
         secs = readagin.sections()  #  加载ini值
         licenseNo = readagin.get("LicenseNo", "licenseNo")
         licenseNoh = licenseNo.split(',')
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         for licenseNos in licenseNoh:
             customerlist1 = customerlist
             menu1 = menu()
@@ -131,7 +131,7 @@ class Login(unittest.TestCase):
     # 选择投保城市车牌号城市名变动
     def test_b_city_name001(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -144,7 +144,7 @@ class Login(unittest.TestCase):
     # 测试车主证件号输入空
     def test_c_city_name001(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -157,7 +157,7 @@ class Login(unittest.TestCase):
     # 测试车主证件号输入长度20位
     def test_c_city_name002(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -170,7 +170,7 @@ class Login(unittest.TestCase):
     # 测试车主证件号输入特殊字符
     def c_city_name003(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -183,7 +183,7 @@ class Login(unittest.TestCase):
     # 测试车主证件号输入字母
     def test_c_city_name004(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -196,7 +196,7 @@ class Login(unittest.TestCase):
     # 测试车主证件号输入字母数字组合
     def test_c_city_name005(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -208,7 +208,7 @@ class Login(unittest.TestCase):
     # 测试车主证件号输入字母数字空符号组合
     def test_c_city_name006(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -221,7 +221,7 @@ class Login(unittest.TestCase):
     # 测试上年投保公司全部为空提交
     def test_d_last_year_insurance001(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -233,7 +233,7 @@ class Login(unittest.TestCase):
     # 测试上年投保公司为字符提交
     def d_last_year_insurance002(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -246,7 +246,7 @@ class Login(unittest.TestCase):
     # 测试上年投保公司纯数字提交
     def test_d_last_year_insurance003(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -259,7 +259,7 @@ class Login(unittest.TestCase):
     # 测试上年投保公司纯字母提交
     def test_d_last_year_insurance004(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -272,7 +272,7 @@ class Login(unittest.TestCase):
     #  测试上年投保公司字母数字组合提交
     def test_d_last_year_insurance005(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         quotation_license.Last_year_insurance(self.driver, insurance="ajsdkj23456skl")
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
@@ -281,7 +281,7 @@ class Login(unittest.TestCase):
     #  测试上年投保公司字母数字组合字符提交
     def test_d_last_year_insurance006(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -294,7 +294,7 @@ class Login(unittest.TestCase):
     #  测试上年投保公司输入正确人保车险
     def test_d_last_year_insurance007(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -307,7 +307,7 @@ class Login(unittest.TestCase):
     #  测试车架号是否切换正确
     def test_e_vin007(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -318,7 +318,7 @@ class Login(unittest.TestCase):
     # 测试车架号输入为空提示必填
     def test_f_vin_vin001(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -331,7 +331,7 @@ class Login(unittest.TestCase):
     #  测试车架号输入十位数字提示必填
     def test_f_vin_vin002(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -343,10 +343,10 @@ class Login(unittest.TestCase):
         quotation_license.VIN_input_hint_title(self.driver, hint='车架号必填')
         new_quotation_case1.fuchuang_tishi_return(self.driver)
 
-    #  测试车架号输入十位字母提示必填
+    '''测试车架号输入十位字母提示必填'''
     def test_f_vin_vin003(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -362,7 +362,7 @@ class Login(unittest.TestCase):
     #  测试车架号输入20位字母提示必填
     def test_f_vin_vin004(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -376,7 +376,7 @@ class Login(unittest.TestCase):
     #  测试车架号输入20位字母数字组合提示必填
     def f_vin_vin005(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -390,7 +390,7 @@ class Login(unittest.TestCase):
     #  测试车架号输入20位字母数字组合提示必填
     def test_f_vin_vin006(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -404,7 +404,7 @@ class Login(unittest.TestCase):
     #  测试车架号输入17位字母数字组合o开头提示必填
     def test_f_vin_vin007(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -418,7 +418,7 @@ class Login(unittest.TestCase):
     #  测试车架号输入17位字母数字组合o开头提示必填
     def test_f_vin_vin008(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -432,7 +432,7 @@ class Login(unittest.TestCase):
     #  测试车架号输入17位字母数字组合o开头提示必填
     def test_f_vin_vin009(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -446,7 +446,7 @@ class Login(unittest.TestCase):
     #  测试车架号输入17位数字提示必填
     def test_f_vin_vin010(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -460,7 +460,7 @@ class Login(unittest.TestCase):
     #  测试车架号输入17位数字提示必填
     def test_f_vin_vin011(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -474,7 +474,7 @@ class Login(unittest.TestCase):
     #  测试车架号输入17位国产正确
     def test_f_vin_vin012(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -486,7 +486,7 @@ class Login(unittest.TestCase):
     #  测试车架号输入17位进口正确
     def test_f_vin_vin013(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -498,7 +498,7 @@ class Login(unittest.TestCase):
     #  测试车架号为空发动机号输入空
     def test_j_engine_input001(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -513,7 +513,7 @@ class Login(unittest.TestCase):
     #  测试车架号正确发动机号输入空
     def test_j_engine_input002(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -526,7 +526,7 @@ class Login(unittest.TestCase):
     #  测试车架号正确发动机号输入1
     def test_j_engine_input003(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -539,7 +539,7 @@ class Login(unittest.TestCase):
     #  测试车架号正确发动机号输入11个0
     def test_j_engine_input004(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -552,7 +552,7 @@ class Login(unittest.TestCase):
     #  测试车架号正确发动机号输入7位数
     def j_engine_input005(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -565,7 +565,7 @@ class Login(unittest.TestCase):
     #  测试车架号正确发动机号输入7位数数字字母组合
     def test_j_engine_input006(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -578,7 +578,7 @@ class Login(unittest.TestCase):
     #  测试车架号正确发动机号输入7位字母
     def j_engine_input007(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -591,7 +591,7 @@ class Login(unittest.TestCase):
     #  测试车架号正确发动机号输入C4KB23238正确
     def test_j_engine_input008(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -604,7 +604,7 @@ class Login(unittest.TestCase):
     # 测试车架号上年投保公司全部为空提交
     def h_last_year_insurance_vin001(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -618,7 +618,7 @@ class Login(unittest.TestCase):
     # 测试车架号上年投保公司全部为空提交
     def test_h_last_year_insurance_vin002(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -632,7 +632,7 @@ class Login(unittest.TestCase):
     # 测试车架号上年投保公司纯数字提交
     def h_last_year_insurance_vin003(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -646,7 +646,7 @@ class Login(unittest.TestCase):
     # 测试车架号上年投保公司纯字母提交
     def test_h_last_year_insurance_vin004(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -660,7 +660,7 @@ class Login(unittest.TestCase):
     #  测试车架号上年投保公司字母数字组合提交
     def h_last_year_insurance_vin005(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -674,7 +674,7 @@ class Login(unittest.TestCase):
     #  测试车架号上年投保公司字母数字组合字符提交
     def test_h_last_year_insurance_vin006(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -688,7 +688,7 @@ class Login(unittest.TestCase):
     #  测试车架号上年投保公司输入正确人保车险
     def test_h_last_year_insurance_vin007(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -702,7 +702,7 @@ class Login(unittest.TestCase):
     #  测试车架号投保城市传空
     def test_i_Insured_City_vin001(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -714,7 +714,7 @@ class Login(unittest.TestCase):
     #  测试车架号投保城市传空
     def test_i_Insured_City_vin002(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -728,7 +728,7 @@ class Login(unittest.TestCase):
     #  测试车架号投保城市传空值
     def test_i_Insured_City_vin003(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -740,7 +740,7 @@ class Login(unittest.TestCase):
     # 测试点击下一步跳转选择险种页面是否正确
     def test_ia_page_skipping001(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -748,14 +748,14 @@ class Login(unittest.TestCase):
         quotation_license.quotation_license_input(self.driver, license1='J97896')
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
-        sleep(30)
-        url = self.driver.current_url()
-        self.assertEqual("http://userssodev.91bihu.me/# /Customer/List?c=1", url, msg="跳转选择险种页面正确")
+        sleep(3)
+        url = self.driver.current_url
+        self.assertEqual("http://userssodev.91bihu.me/#/Customer/List?c=1", url, msg="跳转选择险种页面正确")
 
     # 测试新增报价-输入车牌-下一步-点击客户信息-输入客户名称
     def test_ia_page_skipping002(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -769,7 +769,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-输入电话1
     def test_ia_page_skipping003(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -783,7 +783,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-输入电话2
     def test_ia_page_skipping004(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -797,7 +797,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-输入类别
     def test_ia_page_skipping005(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -811,7 +811,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-输入地址
     def test_ia_page_skipping006(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -825,7 +825,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-输入地址
     def test_ia_page_skipping007(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -839,7 +839,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-输入备注1
     def test_ia_page_skipping008(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -853,7 +853,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-输入备注2
     def test_ia_page_skipping009(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -867,7 +867,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-车牌号
     def test_ia_page_skipping010(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -881,7 +881,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-车牌号类型
     def test_ia_page_skipping011(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -895,7 +895,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-车架号
     def test_ia_page_skipping012(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -909,7 +909,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-发动机号
     def test_ia_page_skipping013(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -923,7 +923,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-注册日期
     def test_ia_page_skipping014(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -937,7 +937,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-品牌型号
     def test_ia_page_skipping015(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -951,7 +951,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-车型
     def test_ia_page_skipping016(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -965,7 +965,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-新车购置价
     def test_ia_page_skipping017(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -979,7 +979,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-座位数
     def test_ia_page_skipping018(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -993,7 +993,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-排量
     def test_ia_page_skipping019(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1008,7 +1008,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-过户车
     def test_ia_page_skipping020(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1022,7 +1022,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-贷款车
     def test_ia_page_skipping021(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1036,7 +1036,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-备注信息
     def test_ia_page_skipping022(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1050,7 +1050,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-投保公司
     def test_ia_page_skipping023(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1064,7 +1064,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-商业到期时间
     def test_ia_page_skipping024(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1078,7 +1078,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-交强到期时间
     def test_ia_page_skipping025(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1092,7 +1092,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-被保险人
     def test_ia_page_skipping026(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1106,7 +1106,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-身份证
     def test_ia_page_skipping027(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1120,7 +1120,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-机构名称
     def test_ia_page_skipping028(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1134,7 +1134,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-商业险保单号
     def test_ia_page_skipping029(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1148,7 +1148,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-交强保单号
     def test_ia_page_skipping030(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1162,7 +1162,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-设置临时关系人
     def test_ia_page_skipping031(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1176,7 +1176,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-被保人信息-公户
     def test_ia_page_skipping032(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1190,7 +1190,7 @@ class Login(unittest.TestCase):
     # 测试新增报价-输入车牌-下一步-点击客户信息-被保人信息-个人
     def test_ia_page_skipping033(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1206,7 +1206,7 @@ class Login(unittest.TestCase):
     def test_ia_page_skipping034(self):
 
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1221,7 +1221,7 @@ class Login(unittest.TestCase):
     def test_ia_page_skipping035(self):
 
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1236,7 +1236,7 @@ class Login(unittest.TestCase):
     def test_ia_page_skipping036(self):
 
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1251,7 +1251,7 @@ class Login(unittest.TestCase):
     def test_ia_page_skipping037(self):
 
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1266,7 +1266,7 @@ class Login(unittest.TestCase):
     def test_ia_page_skipping038(self):
 
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1281,7 +1281,7 @@ class Login(unittest.TestCase):
     def test_ia_page_skipping039(self):
 
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1296,7 +1296,7 @@ class Login(unittest.TestCase):
     def test_ia_page_skipping040(self):
 
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1310,7 +1310,7 @@ class Login(unittest.TestCase):
     #  测试新增报价-输入车牌-下一步-点击客户信息-投保人信息-公户
     def test_ia_page_skipping041(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1324,7 +1324,7 @@ class Login(unittest.TestCase):
     #  测试新增报价-输入车牌-下一步-点击客户信息-投保人信息-个人
     def test_ia_page_skipping042(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1338,7 +1338,7 @@ class Login(unittest.TestCase):
     #  测试新增报价-输入车牌-下一步-点击客户信息-投保人信息-投保人姓名
     def test_ia_page_skipping043(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1352,7 +1352,7 @@ class Login(unittest.TestCase):
     #  测试新增报价-输入车牌-下一步-点击客户信息-投保人信息-证件类型
     def test_ia_page_skipping044(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1366,7 +1366,7 @@ class Login(unittest.TestCase):
     #  测试新增报价-输入车牌-下一步-点击客户信息-投保人信息-投保人电话
     def test_ia_page_skipping045(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1380,7 +1380,7 @@ class Login(unittest.TestCase):
     #  测试新增报价-输入车牌-下一步-点击客户信息-投保人信息-投保人邮箱
     def test_ia_page_skipping046(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1394,7 +1394,7 @@ class Login(unittest.TestCase):
     #  测试新增报价-输入车牌-下一步-点击客户信息-投保人信息-投保人住址
     def test_ia_page_skipping047(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1408,7 +1408,7 @@ class Login(unittest.TestCase):
     #  测试新增报价-输入车牌-下一步-点击客户信息-投保人信息-投保人民族
     def test_ia_page_skipping048(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1422,7 +1422,7 @@ class Login(unittest.TestCase):
     #  测试新增报价-输入车牌-下一步-点击客户信息-投保人信息-投保人签发机关
     def test_ia_page_skipping049(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1436,7 +1436,7 @@ class Login(unittest.TestCase):
     #  测试新增报价-输入车牌-下一步- 客户详情-关系人信息-车主信息-公户
     def test_ia_page_skipping050(self):
         new_quotation_case1 = new_quotation_case()
-        login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
@@ -1445,7 +1445,114 @@ class Login(unittest.TestCase):
         quotation_license.quotation_license_click(self.driver)
         quotation_license.All_the_tips(self.driver)
         sleep(30)
-        customerlist1.kehuxiangqing_guanxirenxinxi_chezhuxinxi_gonghu(self.driver)   #  客户详情-关系人信息-车主信息-公户
+        customerlist1.kehuxiangqing_guanxirenxinxi_chezhuxinxi_gonghu(self.driver)   # 客户详情-关系人信息-车主信息-公户
+
+    #  测试新增报价-输入车牌-下一步- 客户详情-关系人信息-车主信息-个人
+    def test_ia_page_skipping051(self):
+        new_quotation_case1 = new_quotation_case()
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
+        customerlist1 = customerlist
+        menu1 = menu()
+        menu1.Select_Menu_case(self.driver, '客户列表')
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.quotation_license_input(self.driver, license1='J97896')
+        quotation_license.quotation_license_click(self.driver)
+        quotation_license.All_the_tips(self.driver)
+        sleep(30)
+        customerlist1.kehuxiangqing_guanxirenxinxi_chezhuxinxi_geren(self.driver)   # 客户详情-关系人信息-车主信息-个人
+
+    #  测试新增报价-输入车牌-下一步- 客户详情-关系人信息-车主信息-车主姓名
+    def test_ia_page_skipping052(self):
+        new_quotation_case1 = new_quotation_case()
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
+        customerlist1 = customerlist
+        menu1 = menu()
+        menu1.Select_Menu_case(self.driver, '客户列表')
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.quotation_license_input(self.driver, license1='J97896')
+        quotation_license.quotation_license_click(self.driver)
+        quotation_license.All_the_tips(self.driver)
+        sleep(30)
+        customerlist1.kehuxiangqing_guanxirenxinxi_chezhuxinxi_chezhuxingming(self.driver)   # 客户详情-关系人信息-车主信息-车主姓名
+
+    #  测试新增报价-输入车牌-下一步- 客户详情-关系人信息-车主信息-证件类型
+    def test_ia_page_skipping053(self):
+        new_quotation_case1 = new_quotation_case()
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
+        customerlist1 = customerlist
+        menu1 = menu()
+        menu1.Select_Menu_case(self.driver, '客户列表')
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.quotation_license_input(self.driver, license1='J97896')
+        quotation_license.quotation_license_click(self.driver)
+        quotation_license.All_the_tips(self.driver)
+        sleep(30)
+        customerlist1.kehuxiangqing_guanxirenxinxi_chezhuxinxi_zhengjianleixing(self.driver, '身份证')   # 客户详情-关系人信息-车主信息-证件类型
+
+    #  测试新增报价-输入车牌-下一步- 客户详情-报价信息-投保地区
+    def test_ia_page_skipping054(self):
+        new_quotation_case1 = new_quotation_case()
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
+        customerlist1 = customerlist
+        menu1 = menu()
+        menu1.Select_Menu_case(self.driver, '客户列表')
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.quotation_license_input(self.driver, license1='J97896')
+        quotation_license.quotation_license_click(self.driver)
+        quotation_license.All_the_tips(self.driver)
+        sleep(30)
+        customerlist1.kehuxiangqing_baojiaxinxi_toubaodiqu(self.driver, '身份证')   # 客户详情-报价信息-投保地区
+
+    #  测试新增报价-输入车牌-下一步-客户详情-报价信息-商业起保
+    def test_ia_page_skipping055(self):
+        new_quotation_case1 = new_quotation_case()
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
+        customerlist1 = customerlist
+        menu1 = menu()
+        menu1.Select_Menu_case(self.driver, '客户列表')
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.quotation_license_input(self.driver, license1='J97896')
+        quotation_license.quotation_license_click(self.driver)
+        quotation_license.All_the_tips(self.driver)
+        sleep(30)
+        customerlist1.kehuxiangqing_baojiaxinxi_shangyeqibao(self.driver)   # 客户详情-报价信息-商业起保
+
+    #  客户详情-报价信息-交强起保
+    def test_ia_page_skipping056(self):
+        new_quotation_case1 = new_quotation_case()
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
+        customerlist1 = customerlist
+        menu1 = menu()
+        menu1.Select_Menu_case(self.driver, '客户列表')
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.quotation_license_input(self.driver, license1='J97896')
+        quotation_license.quotation_license_click(self.driver)
+        quotation_license.All_the_tips(self.driver)
+        sleep(30)
+        customerlist1.kehuxiangqing_baojiaxinxi_jiaoqiangqibao(self.driver)   # 客户详情-报价信息-交强起保
+
+        #  客户详情-报价信息-选择报价公司
+
+    def test_ia_page_skipping057(self):
+        new_quotation_case1 = new_quotation_case()
+        login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
+        customerlist1 = customerlist
+        menu1 = menu()
+        menu1.Select_Menu_case(self.driver, '客户列表')
+        quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
+        quotation_license.quotation_license_input(self.driver, license1='J97896')
+        quotation_license.quotation_license_click(self.driver)
+        quotation_license.All_the_tips(self.driver)
+        sleep(30)
+        customerlist1.kehuxiangqing_baojiaxinxi_baojiagongsi(self.driver, '2')  # 客户详情-报价信息-选择报价公司
+
+
+
+
+
+
+
+
 
 
 
@@ -1453,7 +1560,7 @@ class Login(unittest.TestCase):
 
     # 新增报价车牌
     #  def test01(self):
-    #      login.login_input(self.driver, user='zdh01', pwd='123456', code='0115')
+    #      login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
     # 
     #      # # 调用菜单
     #      # menu1 = menu()
