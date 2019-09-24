@@ -2249,7 +2249,8 @@ class customerlist:
 
 
     def kehuxiangqing_baojiaxinxi_toubaodiqu(driver, input_toubaodiqu=elements["test_vin"]):
-        """客户详情-报价信息-投保地区，参数要传具体地区，如‘北京’，需要与下拉菜单文字保持一致"""
+        """客户详情-报价信息-投保地区，参数要传具体地区，如‘北京’，需要与下拉菜单文字保持一致
+        修改后不报价，需要和后续方法一起调用"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
