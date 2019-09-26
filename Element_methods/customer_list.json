@@ -13,7 +13,11 @@
 "kehuliebiao_sousuo1_dropdown_css" : ".ant-select-selection__rendered>div[title = '车牌/车架']",
 "kehuliebiao_sousuo1_dropdown_selection_css" : ".ant-select-dropdown.ant-select-dropdown--single.ant-select-dropdown-placement-bottomLeft>div>ul>li[role = 'option']",
 "kehuliebiao_sousuo1_textbox_css" : ".ant-form-item-control-wrapper>.ant-form-item-control>span>input[placeholder = '请输入车牌号或车架号']",
-"kehuliebiao_sousuo_result_css" : "#components-layout-demo-custom-trigger > div.ant-layout > div.ant-layout-content > div > div.main_content > div.ant-table-wrapper > div > div > div > div > div.ant-table-fixed-left > div > div > table > tbody > tr > td:nth-child(2) > a",
+"kehuliebiao_sousuo_result_chepaihao_css" : "#components-layout-demo-custom-trigger > div.ant-layout > div.ant-layout-content > div > div.main_content > div.ant-table-wrapper > div > div > div > div > div.ant-table-fixed-left > div > div > table > tbody > tr > td:nth-child(2) > a",
+  "kehuliebiao_sousuo_result_kehumingcheng_css" : "#components-layout-demo-custom-trigger > div.ant-layout > div.ant-layout-content > div > div.main_content > div.ant-table-wrapper > div > div > div > div > div.ant-table-scroll > div > table > tbody > tr > td:nth-child(3) > span",
+  "kehuliebiao_sousuo_result_chejiahao_css" : "#components-layout-demo-custom-trigger > div.ant-layout > div.ant-layout-content > div > div.main_content > div.ant-table-wrapper > div > div > div > div > div.ant-table-scroll > div > table > tbody > tr > td:nth-child(4) > span",
+  "kehuliebiao_sousuo_result_pinpaixinghao_css" : "#components-layout-demo-custom-trigger > div.ant-layout > div.ant-layout-content > div > div.main_content > div.ant-table-wrapper > div > div > div > div > div.ant-table-scroll > div > table > tbody > tr > td:nth-child(5) > span",
+
 
 "kehuliebiao_sousuo2_daoqishijian_id" : "dateTimeDueRange",
 
