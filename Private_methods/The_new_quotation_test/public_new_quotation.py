@@ -36,7 +36,7 @@ class quotation_license:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},中断执行--新增报价车牌号输入异常')
 
-    '''车牌号-新增报价页面点击下一步'''
+    ''' 车牌号-新增报价页面点击下一步'''
     def quotation_license_click(driver):
         sleep(2)
         try:

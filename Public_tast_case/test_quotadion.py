@@ -56,7 +56,7 @@ class Login(unittest.TestCase):
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
         quotation_license.quotation_license_claer(self.driver)
 
-    #  测试车牌号输入框长度为10
+    # 测试车牌号输入框长度为10
     def test_a_LicenseNo_input_box003(self):
         new_quotation_case1 = new_quotation_case()
         login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')

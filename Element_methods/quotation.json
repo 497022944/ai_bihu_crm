@@ -47,5 +47,6 @@
   "ant-modal-body": "return $('.ant-modal-confirm-content').text()",
   "好的":"$('.ant-modal-confirm-btns').click()",
 
-  "浮窗返回提示":"return $('.ant-message').text()"
+  "浮窗返回提示":"return $('.ant-message').text()",
+  "结果" : "end------------------------------------——"
 }

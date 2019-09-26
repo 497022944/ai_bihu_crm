@@ -47,7 +47,7 @@ class new_quotation_case(unittest.TestCase):
             sleep(2)
             pass
     def license_check_hint(self, driver, hint):
-        #车牌提示
+        # 车牌提示
         try:
             js = "return $('.ant-message').text()"
             hinttishi = driver.execute_script(js)
