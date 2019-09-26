@@ -10,6 +10,7 @@ from Public_methods.New_offer_menu import menu
 from Private_methods.The_new_quotation_test.new_quotation_tset import new_quotation_case
 from Private_methods.The_new_quotation_test.public_new_quotation import quotation_license
 from Private_methods.The_customer_list_test.customer_list_test import customerlist
+from Private_methods.The_customer_list_test.customer_list_test_check import list_check
 
 logger = Log()
 #   说的读取配置文件
@@ -25,6 +26,7 @@ class Login(unittest.TestCase):
         new_quotation_case1 = new_quotation_case()
         login.login_input(self.driver, user='maxiaocui', pwd='maxiaocui123456', code='0000')
         customerlist1 = customerlist
+        list_check1 = list_check
         menu1 = menu()
         menu1.Select_Menu_case(self.driver, '客户列表')
         quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
@@ -32,7 +34,15 @@ class Login(unittest.TestCase):
         quotation_license.quotation_license_click(self.driver)
         new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
         quotation_license.quotation_license_claer(self.driver)
-
+        #测试数据提示信息check
+        # list_check1.Quotationzoom_check_hint(self.driver, 1)
+        # list_check1.Quotationzoom_check_hint(self.driver, 2)
+        # list_check1.Personaltemporarynameinformation_check_hint(self.driver, '姓名信息不能为空')
+        # list_check1.Temporarydocuments_check_hint(self.driver, '证件号码必填')
+        # list_check1.Temporarynumber_check_hint(self.driver, '水遁~大波岁说哈')
+        # list_check1.Temporarycall_check_hint(self.driver, '手机号必填')
+        # list_check1.Temporarymailbox_check_hint(self.driver, '水遁~大波岁说哈')
+        # list_check1.Crossstrength_check_hint(self.driver, '水遁~大波岁说哈')
     #  测试车牌号输入框为特殊字符
     def test_a_LicenseNo_input_box002(self):
         new_quotation_case1 = new_quotation_case()
