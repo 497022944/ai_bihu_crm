@@ -15,7 +15,7 @@
 
   "组织机构_start" : "Start------------------------------------",
     "zuzhijigou_zuzhijiagou_url" : "#/Organization/index",
-    "zuzhijigou_yonghuquanxian_url" : "#/AuthManager/AuthManagerIndex",
+    "zuzhijigou_juesequanxian_url" : "#/AuthManager/AuthManagerIndex",
     "zuzhijigou_yonghuguanli_url" : "#/Agent/AgentList",
   "组织机构_end" : "End------------------------------------",
 
@@ -43,6 +43,13 @@
     "tongjimokuai_liuliangjiankong_url" : "#/Statistics/AnalysisMonitorFlow",
     "tongjimokuai_jindiantongji_url" : "#/Statistics/EnterStatistics",
   "统计模块_end" : "End------------------------------------",
+
+  "进店管理_start" : "Start------------------------------------",
+    "jindianguanli_jindianliebiao_url" : "#/entry/List",
+    "jindianguanli_jindianlishi_url" : "#/entry/history",
+    "jindianguanli_jindianshezhi_url" : "#/entry/setting",
+  "进店管理_end" : "End------------------------------------",
+
 
   "呼叫模块_start" : "Start------------------------------------",
     "hujiaomokuai_hujiaotongji_url" : "#/CallStatistics/Index",

@@ -180,12 +180,22 @@ class customerlist:
 
 
 
-    def search_2_daoqishijian(driver, input_daoqishijian=elements["test_kehudianhua1"]):
-        """客户列表-到期时间搜索，此方法待完善"""
+    def search_2_daoqishijian(driver, input_daoqishijian='2019-01-11+2019-01-12'):
+        """客户列表-到期时间搜索，参数要传时间格式，包括起始时间和结束时间，必须传递两个时间，中间加号分割,如‘2019-01-01+2019-01-02’
+        另：时间必须真实存在，且与业务要求吻合，不要输入不存在，不可选择的时间"""
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
             driver.find_element_by_id(elements["kehuliebiao_sousuo2_daoqishijian_id"]).click()
+            time.sleep(1)
+            input_daoqishijian = input_daoqishijian.split('+')
+            driver.find_element_by_css_selector(
+                elements["kehuliebiao_sousuo2_daoqishijian_qishishijian_css"]).send_keys(
+                input_daoqishijian[0])
+            time.sleep(1)
+            driver.find_element_by_css_selector(
+                elements["kehuliebiao_sousuo2_daoqishijian_jieshushijian_css"]).send_keys(
+                input_daoqishijian[1])
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_button_css"]).click()
             time.sleep(1)
@@ -260,15 +270,19 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_shangchuanpici} 搜索失败')
 
 
-    def search_7_shangyedaoqishijian(driver, input_shangyedaoqishijian=elements["test_kehudianhua1"]):
-        """客户列表-商业到期时间搜索，此方法待完善"""
+    def search_7_shangyedaoqishijian(driver, input_shangyedaoqishijian='2019-01-11+2019-01-12'):
+        """客户列表-商业到期时间搜索，参数要传时间格式，包括起始时间和结束时间，必须传递两个时间，中间加号分割,如‘2019-01-01+2019-01-02’
+        另：时间必须真实存在，且与业务要求吻合，不要输入不存在，不可选择的时间"""
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
             driver.find_element_by_id(elements["kehuliebiao_sousuo7_shangyedaoqishijian_id"]).click()
             time.sleep(1)
-            # driver.find_element_by_css_selector(elements["kehuliebiao_sousuo6_shangchuanpici_input_css"]).send_keys(input_shangyedaoqishijian)
-            # time.sleep(1)
+            input_shangyedaoqishijian=input_shangyedaoqishijian.split('+')
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo7_shangyedaoqishijian_qishishijian_css"]).send_keys(input_shangyedaoqishijian[0])
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo7_shangyedaoqishijian_jieshushijian_css"]).send_keys(input_shangyedaoqishijian[1])
+            time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_button_css"]).click()
             time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name},{input_shangyedaoqishijian} 搜索成功')
@@ -276,15 +290,23 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_shangyedaoqishijian} 搜索失败')
 
 
-    def search_8_jiaoqiangdaoqishijian(driver, input_jiaoqiangdaoqishijian=elements["test_kehudianhua1"]):
-        """客户列表-交强到期时间搜索，此方法待完善"""
+    def search_8_jiaoqiangdaoqishijian(driver, input_jiaoqiangdaoqishijian='2019-01-11+2019-01-12'):
+        """客户列表-交强到期时间搜索，参数要传时间格式，包括起始时间和结束时间，必须传递两个时间，中间加号分割,如‘2019-01-01+2019-01-02’
+        另：时间必须真实存在，且与业务要求吻合，不要输入不存在，不可选择的时间"""
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
             driver.find_element_by_id(elements["kehuliebiao_sousuo8_jiaoqiangdaoqishijian_id"]).click()
             time.sleep(1)
-            # driver.find_element_by_css_selector(elements["kehuliebiao_sousuo6_shangchuanpici_input_css"]).send_keys(input_shangyedaoqishijian)
-            # time.sleep(1)
+            input_jiaoqiangdaoqishijian = input_jiaoqiangdaoqishijian.split('+')
+            driver.find_element_by_css_selector(
+                elements["kehuliebiao_sousuo8_jiaoqiangdaoqishijian_qishishijian_css"]).send_keys(
+                input_jiaoqiangdaoqishijian[0])
+            time.sleep(1)
+            driver.find_element_by_css_selector(
+                elements["kehuliebiao_sousuo8_jiaoqiangdaoqishijian_jieshushijian_css"]).send_keys(
+                input_jiaoqiangdaoqishijian[1])
+            time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_button_css"]).click()
             time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name},{input_jiaoqiangdaoqishijian} 搜索成功')
@@ -395,12 +417,22 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_jiaoqiangdaoqiyuefen} 搜索失败')
 
 
-    def search_11_zhuceshijian(driver, input_zhuceshijian=elements["test_kehudianhua1"]):
-        """客户列表-注册时间搜索，此方法待完善"""
+    def search_11_zhuceshijian(driver, input_zhuceshijian='2019-01-11+2019-01-12'):
+        """客户列表-注册时间搜索，参数要传时间格式，包括起始时间和结束时间，必须传递两个时间，中间加号分割,如‘2019-01-01+2019-01-02’
+        另：时间必须真实存在，且与业务要求吻合，不要输入不存在，不可选择的时间"""
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
             driver.find_element_by_id(elements["kehuliebiao_sousuo11_zhuceshijian_id"]).click()
+            time.sleep(1)
+            input_zhuceshijian = input_zhuceshijian.split('+')
+            driver.find_element_by_css_selector(
+                elements["kehuliebiao_sousuo7_shangyedaoqishijian_qishishijian_css"]).send_keys(
+                input_zhuceshijian[0])
+            time.sleep(1)
+            driver.find_element_by_css_selector(
+                elements["kehuliebiao_sousuo7_shangyedaoqishijian_jieshushijian_css"]).send_keys(
+                input_zhuceshijian[1])
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_button_css"]).click()
             time.sleep(1)
@@ -561,12 +593,22 @@ class customerlist:
 
 
 
-    def search_17_fenpeishijian(driver, input_fenpeishijian=elements["test_kehudianhua1"]):
-        """客户列表-分配时间搜索，此方法待完善"""
+    def search_17_fenpeishijian(driver, input_fenpeishijian='2019-01-11+2019-01-12'):
+        """客户列表-分配时间搜索，参数要传时间格式，包括起始时间和结束时间，必须传递两个时间，中间加号分割,如‘2019-01-01+2019-01-02’
+        另：时间必须真实存在，且与业务要求吻合，不要输入不存在，不可选择的时间"""
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
             driver.find_element_by_id(elements["kehuliebiao_sousuo17_fenpeishijian_id"]).click()
+            time.sleep(1)
+            input_fenpeishijian = input_fenpeishijian.split('+')
+            driver.find_element_by_css_selector(
+                elements["kehuliebiao_sousuo17_fenpeishijian_qishishijian_css"]).send_keys(
+                input_fenpeishijian[0])
+            time.sleep(1)
+            driver.find_element_by_css_selector(
+                elements["kehuliebiao_sousuo17_fenpeishijian_jieshushijian_css"]).send_keys(
+                input_fenpeishijian[1])
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_button_css"]).click()
             time.sleep(1)
@@ -577,14 +619,23 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_fenpeishijian} 搜索失败')
 
 
-    def search_18_yuyueshijian(driver, input_yuyueshijian=elements["test_kehudianhua1"]):
-        """客户列表-预约时间搜索，此方法待完善"""
+    def search_18_yuyueshijian(driver, input_yuyueshijian='2019-01-11+2019-01-12'):
+        """客户列表-预约时间搜索，参数要传时间格式，包括起始时间和结束时间，必须传递两个时间，中间加号分割,如‘2019-01-01+2019-01-02’
+        另：时间必须真实存在，且与业务要求吻合，不要输入不存在，不可选择的时间"""
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
             driver.find_element_by_id(elements["kehuliebiao_sousuo18_yuyueshijian_id"]).click()
             time.sleep(1)
-
+            input_yuyueshijian = input_yuyueshijian.split('+')
+            driver.find_element_by_css_selector(
+                elements["kehuliebiao_sousuo18_yuyueshijian_qishishijian_css"]).send_keys(
+                input_yuyueshijian[0])
+            time.sleep(1)
+            driver.find_element_by_css_selector(
+                elements["kehuliebiao_sousuo18_yuyueshijian_jieshushijian_css"]).send_keys(
+                input_yuyueshijian[1])
+            time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_button_css"]).click()
             time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name},{input_yuyueshijian} 搜索成功')
@@ -592,14 +643,23 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_yuyueshijian} 搜索失败')
 
 
-    def search_19_huifangshijian(driver, input_huifangshijian=elements["test_kehudianhua1"]):
-        """客户列表-回访时间搜索，此方法待完善"""
+    def search_19_huifangshijian(driver, input_huifangshijian='2019-01-11+2019-01-12'):
+        """客户列表-回访时间搜索，参数要传时间格式，包括起始时间和结束时间，必须传递两个时间，中间加号分割,如‘2019-01-01+2019-01-02’
+        另：时间必须真实存在，且与业务要求吻合，不要输入不存在，不可选择的时间"""
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
             driver.find_element_by_id(elements["kehuliebiao_sousuo19_huifangshijian_id"]).click()
             time.sleep(1)
-
+            input_huifangshijian = input_huifangshijian.split('+')
+            driver.find_element_by_css_selector(
+                elements["kehuliebiao_sousuo19_huifangshijian_qishishijian_css"]).send_keys(
+                input_huifangshijian[0])
+            time.sleep(1)
+            driver.find_element_by_css_selector(
+                elements["kehuliebiao_sousuo19_huifangshijian_jieshushijian_css"]).send_keys(
+                input_huifangshijian[1])
+            time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_button_css"]).click()
             time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name},{input_huifangshijian} 搜索成功')
@@ -638,12 +698,22 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_lurufangshi} 搜索失败')
 
 
-    def search_21_jindianshijian(driver, input_jindianshijian=elements["test_kehudianhua1"]):
-        """客户列表-进店时间搜索，此方法待完善"""
+    def search_21_jindianshijian(driver, input_jindianshijian='2019-01-11+2019-01-12'):
+        """客户列表-进店时间搜索，参数要传时间格式，包括起始时间和结束时间，必须传递两个时间，中间加号分割,如‘2019-01-01+2019-01-02’
+        另：时间必须真实存在，且与业务要求吻合，不要输入不存在，不可选择的时间"""
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
             driver.find_element_by_id(elements["kehuliebiao_sousuo21_jindianshijian_id"]).click()
+            time.sleep(1)
+            input_jindianshijian = input_jindianshijian.split('+')
+            driver.find_element_by_css_selector(
+                elements["kehuliebiao_sousuo21_jindianshijian_qishishijian_css"]).send_keys(
+                input_jindianshijian[0])
+            time.sleep(1)
+            driver.find_element_by_css_selector(
+                elements["kehuliebiao_sousuo21_jindianshijian_jieshushijian_css"]).send_keys(
+                input_jindianshijian[1])
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_button_css"]).click()
             time.sleep(1)
@@ -712,15 +782,23 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_bumenmingcheng} 搜索失败')
 
-    def search_25_gengxinshijian(driver, input_gengxinshijian=elements["test_kehudianhua1"]):
-        """客户列表-跟进时间搜索，此方法待完善"""
+    def search_25_gengxinshijian(driver, input_gengxinshijian='2019-01-11+2019-01-12'):
+        """客户列表-跟进时间搜索，参数要传时间格式，包括起始时间和结束时间，必须传递两个时间，中间加号分割,如‘2019-01-01+2019-01-02’
+        另：时间必须真实存在，且与业务要求吻合，不要输入不存在，不可选择的时间"""
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
             driver.find_element_by_id(elements["kehuliebiao_sousuo25_gengxinshijian_id"]).click()
             time.sleep(1)
-            # driver.find_element_by_css_selector(elements["kehuliebiao_sousuo24_bumenmingcheng_input_css"]).send_keys(input_bumenmingcheng)
-            # time.sleep(1)
+            input_gengxinshijian = input_gengxinshijian.split('+')
+            driver.find_element_by_css_selector(
+                elements["kehuliebiao_sousuo25_gengxinshijian_qishishijian_css"]).send_keys(
+                input_gengxinshijian[0])
+            time.sleep(1)
+            driver.find_element_by_css_selector(
+                elements["kehuliebiao_sousuo25_gengxinshijian_jieshushijian_css"]).send_keys(
+                input_gengxinshijian[1])
+            time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_button_css"]).click()
             time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name},{input_gengxinshijian} 搜索成功')
@@ -923,8 +1001,9 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_fadongjihao} 修改失败')
 
 
-    def kehuxiangqing_cheliangxinxi_zhuceriqi(driver, input_zhuceriqi=elements["test_vin"]):
-        """客户详情-车辆信息-注册日期修改，此方法待完善"""
+    def kehuxiangqing_cheliangxinxi_zhuceriqi(driver, input_zhuceriqi='2019-01-01'):
+        """客户详情-车辆信息-注册日期修改，参数要传时间格式，如‘2019-01-01’
+        另：时间必须真实存在，且与业务要求吻合，不要输入不存在，不可选择的时间"""
         try:
             # ActionChains(driver).double_click(driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_kehuxingming_id"])).perform()
             # time.sleep(1)
@@ -932,8 +1011,10 @@ class customerlist:
             time.sleep(1)
             driver.find_element_by_id(elements["kehuxiangqing_cheliangxinxi_zhuceriqi_id"]).click()
             time.sleep(1)
-            # driver.find_element_by_id(elements["kehuxiangqing_cheliangxinxi_fadongjihao_id"]).send_keys(input_zhuceriqi)
-            # time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_zhuceriqi_input_css"]).clear()
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_zhuceriqi_input_css"]).send_keys(input_zhuceriqi)
+            time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
             time.sleep(1)
             # driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
@@ -1070,10 +1151,9 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_pailiang} 修改失败')
 
 
-    def kehuxiangqing_cheliangxinxi_guohuche(driver , input_shifou, input_guohuriqi=elements["test_vin"]):
-        """客户详情-车辆信息-过户车修改，参数要传两个，第一个‘是’或‘否’，第二个日期
-        传‘是’，则必须传递日期，传‘否’，则无需传递日期
-        此方法待完善"""
+    def kehuxiangqing_cheliangxinxi_guohuche(driver , input_shifou = '是', input_guohuriqi='2019-01-01'):
+        """客户详情-车辆信息-过户车修改，参数要传两个，第一个‘是’或‘否’，第二个日期，格式为‘2019-01-01’
+        传‘是’，则必须传递日期，传‘否’，则无需传递日期"""
         try:
             # ActionChains(driver).double_click(driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_kehuxingming_id"])).perform()
             # time.sleep(1)
@@ -1084,6 +1164,8 @@ class customerlist:
                 time.sleep(1)
                 driver.find_element_by_id(elements["kehuxiangqing_cheliangxinxi_guohuriqi_id"]).click()
                 time.sleep(1)
+                driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_guohuriqi_input_css"]).send_keys(input_guohuriqi)
+                time.sleep(1)
             elif input_shifou == '否':
                 driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_guohuche_fou_css"]).click()
                 time.sleep(1)
@@ -1093,13 +1175,11 @@ class customerlist:
             # time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuxiangqing_cheliangxinxi_guohuriqi_id"]).click()
-            time.sleep(1)
             # driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
             # time.sleep(1)
-            logger.info(f'{sys._getframe().f_code.co_name},{input_shifou}修改成功')
+            logger.info(f'{sys._getframe().f_code.co_name},{input_shifou},{input_guohuriqi}修改成功')
         except Exception:
-            logbug.debug(f'{sys._getframe().f_code.co_name},{input_shifou} 修改失败')
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_shifou},{input_guohuriqi} 修改失败')
 
 
 
@@ -1380,8 +1460,9 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_toubaogongsi} 修改失败')
 
-    def kehuxiangqing_shangniantoubaoxinxi_shangyedaoqi(driver, input_shangyedaoqi=elements["test_vin"]):
-        """客户详情-上年投保信息-商业到期修改，此方法待完善"""
+    def kehuxiangqing_shangniantoubaoxinxi_shangyedaoqi(driver, input_shangyedaoqi='2019-01-01'):
+        """客户详情-上年投保信息-商业到期修改，参数要传时间格式，如‘2019-01-01’
+        另：时间必须真实存在，且与业务要求吻合，不要输入不存在，不可选择的时间"""
         try:
 
             driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_tab_css"]).click()
@@ -1390,21 +1471,30 @@ class customerlist:
             time.sleep(1)
             driver.find_element_by_id(elements["kehuxiangqing_shangniantoubaoxinxi_shangyedaoqi_id"]).click()
             time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_shangyedaoqi_input_css"]).clear()
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_shangyedaoqi_input_css"]).send_keys(input_shangyedaoqi)
+            time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_baocun_button_css"]).click()
             time.sleep(1)
+
             logger.info(f'{sys._getframe().f_code.co_name},{input_shangyedaoqi}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_shangyedaoqi}修改失败')
 
-    def kehuxiangqing_shangniantoubaoxinxi_jiaoqiangdaoqi(driver, input_jiaoqiangdaoqi=elements["test_vin"]):
-        """客户详情-上年投保信息-交强到期修改，此方法待完善"""
+    def kehuxiangqing_shangniantoubaoxinxi_jiaoqiangdaoqi(driver, input_jiaoqiangdaoqi='2019-01-01'):
+        """客户详情-上年投保信息-交强到期修改，参数要传时间格式，如‘2019-01-01’
+        另：时间必须真实存在，且与业务要求吻合，不要输入不存在，不可选择的时间"""
         try:
-
             driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_tab_css"]).click()
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_zhankai_css"]).click()
             time.sleep(1)
             driver.find_element_by_id(elements["kehuxiangqing_shangniantoubaoxinxi_jiaoqiangdaoqi_id"]).click()
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_jiaoqiangdaoqi_input_css"]).clear()
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_jiaoqiangdaoqi_input_css"]).send_keys(input_jiaoqiangdaoqi)
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuxiangqing_shangniantoubaoxinxi_baocun_button_css"]).click()
             time.sleep(1)
@@ -2159,7 +2249,8 @@ class customerlist:
 
 
     def kehuxiangqing_baojiaxinxi_toubaodiqu(driver, input_toubaodiqu=elements["test_vin"]):
-        """客户详情-报价信息-投保地区，参数要传具体地区，如‘北京’，需要与下拉菜单文字保持一致"""
+        """客户详情-报价信息-投保地区，参数要传具体地区，如‘北京’，需要与下拉菜单文字保持一致
+        修改后不报价，需要和后续方法一起调用"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
@@ -2224,26 +2315,48 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_toubaodiqu} 修改失败')
 
 
-    def kehuxiangqing_baojiaxinxi_shangyeqibao(driver, input_shangyeqibao=elements["test_vin"]):
-        """客户详情-报价信息-商业起保，此方法待完善"""
+    def kehuxiangqing_baojiaxinxi_shangyeqibao(driver, input_shangyeqibao='2019-01-01 00:00:00'):
+        """客户详情-报价信息-商业起保修改，参数要传时间格式，包括时分秒，如‘2019-01-01 00:00:00’
+        另：时间必须真实存在，且与业务要求吻合，不要输入不存在，不可选择的时间"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
             driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_shangyeqibao_id"]).click()
             time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_shangyeqibao_input_css"]).clear()
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_shangyeqibao_input_css"]).send_keys(input_shangyeqibao)
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_shangyeqibao_queding_button_css"]).click()
+            time.sleep(1)
+            #-----------------拖到可见
+            target = driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
             time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name},{input_shangyeqibao} 修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_shangyeqibao} 修改失败')
 
-    def kehuxiangqing_baojiaxinxi_jiaoqiangqibao(driver, input_jiaoqiangqibao=elements["test_vin"]):
-        """客户详情-报价信息-交强起保，此方法待完善"""
+    def kehuxiangqing_baojiaxinxi_jiaoqiangqibao(driver, input_jiaoqiangqibao='2019-01-01 00:00:00'):
+        """客户详情-报价信息-交强起保修改，参数要传时间格式，包括时分秒，如‘2019-01-01 00:00:00’
+        另：时间必须真实存在，且与业务要求吻合，不要输入不存在，不可选择的时间"""
         try:
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
             time.sleep(1)
             driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_jiaoqiangqibao_id"]).click()
             time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_jiaoqiangqibao_input_css"]).clear()
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_jiaoqiangqibao_input_css"]).send_keys(input_jiaoqiangqibao)
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_jiaoqiangqibao_queding_button_css"]).click()
+            time.sleep(1)
+            #-----------------拖到可见
+            target = driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
             time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name},{input_jiaoqiangqibao} 修改成功')
@@ -2452,6 +2565,10 @@ class customerlist:
                 pass
             # 勾选保险公司--------------
 
+            #-----------------拖到可见
+            target = driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
             time.sleep(1)
@@ -2662,7 +2779,10 @@ class customerlist:
             else:
                 pass
             # 勾选核保公司--------------
-
+            #-----------------拖到可见
+            target = driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
             time.sleep(1)
@@ -2727,6 +2847,10 @@ class customerlist:
 
             else:
                 pass
+            #-----------------拖到可见
+            target = driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
             time.sleep(1)
@@ -2929,6 +3053,10 @@ class customerlist:
 
             else:
                 pass
+            #-----------------拖到可见
+            target = driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
             time.sleep(1)
@@ -3065,6 +3193,10 @@ class customerlist:
 
             else:
                 pass
+            #-----------------拖到可见
+            target = driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
             time.sleep(1)
@@ -3201,6 +3333,10 @@ class customerlist:
 
             else:
                 pass
+            #-----------------拖到可见
+            target = driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
             time.sleep(1)
@@ -3264,6 +3400,10 @@ class customerlist:
 
             else:
                 pass
+            #-----------------拖到可见
+            target = driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
             time.sleep(1)
@@ -3371,6 +3511,10 @@ class customerlist:
 
             else:
                 pass
+            #-----------------拖到可见
+            target = driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
             time.sleep(1)
@@ -3765,8 +3909,8 @@ class customerlist:
                 time.sleep(1)
 
                 # 保额
-                driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_xiuliqijianfeiyongbuchang_baoe_id"]).click()
-                time.sleep(1)
+                # driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_xiuliqijianfeiyongbuchang_baoe_id"]).click()
+                # time.sleep(1)
                 # if bao_e == 100:
                 #     driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_xiuliqijianfeiyongbuchang_baoe_css"])[
                 #         5].click()
@@ -3782,6 +3926,9 @@ class customerlist:
                 # time.sleep(1)
 
                 # 系数
+                driver.find_element_by_id(
+                    elements["kehuxiangqing_baojiaxinxi_xiuliqijianfeiyongbuchang_xishu_id"]).clear()
+                time.sleep(1)
                 driver.find_element_by_id(
                     elements["kehuxiangqing_baojiaxinxi_xiuliqijianfeiyongbuchang_xishu_id"]).send_keys(xishu)
                 time.sleep(1)
@@ -3802,6 +3949,10 @@ class customerlist:
             else:
                 pass
             time.sleep(1)
+            #-----------------拖到可见
+            target = driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
             driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
             time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name}, {is_zhuxian},修改成功')
