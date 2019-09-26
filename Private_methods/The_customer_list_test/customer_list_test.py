@@ -110,7 +110,7 @@ class customerlist:
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_button_css"]).click()
             time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_css"]).click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_chepaihao_css"]).click()
             time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name},进入{input_chepai} 详情成功')
         except Exception:
@@ -804,6 +804,77 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name},{input_gengxinshijian} 搜索成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_gengxinshijian} 搜索失败')
+
+
+# 以下为客户列表check方法
+
+    def kehuliebiao_check_chepaihao(driver, input_chepaihao = elements["test_licenseno"]):
+        """客户列表-验证列表中第一个车牌号，参数传车牌号即可，如‘京PG1776’"""
+        try:
+            if input_chepaihao == driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_chepaihao_css"]).text:
+                logger.info(f'{sys._getframe().f_code.co_name}, 期望结果{input_chepaihao},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_chepaihao_css"]).text},结果正确')
+            else:
+                logbug.debug(
+                    f'{sys._getframe().f_code.co_name}, 期望结果{input_chepaihao},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_chepaihao_css"]).text},结果错误')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
+
+
+    def kehuliebiao_check_kehumingcheng(driver, input_kehumingcheng = elements["test_kehumingcheng"]):
+        """客户列表-验证列表中第一个客户名称，参数传具体名称即可，如‘xx测试’"""
+        try:
+            if input_kehumingcheng == driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_kehumingcheng_css"]).text:
+                logger.info(f'{sys._getframe().f_code.co_name}, 期望结果{input_kehumingcheng},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_kehumingcheng_css"]).text},结果正确')
+            else:
+                logbug.debug(
+                    f'{sys._getframe().f_code.co_name}, 期望结果{input_kehumingcheng},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_kehumingcheng_css"]).text},结果错误')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
+
+    def kehuliebiao_check_chejiahao(driver, input_chejiahao = elements["test_vin"]):
+        """客户列表-验证列表中第一个车架号，参数传具体车架号即可，如‘LFV3A23C8D3078082’"""
+        try:
+            if input_chejiahao == driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_chejiahao_css"]).text:
+                logger.info(f'{sys._getframe().f_code.co_name}, 期望结果{input_chejiahao},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_chejiahao_css"]).text},结果正确')
+            else:
+                logbug.debug(
+                    f'{sys._getframe().f_code.co_name}, 期望结果{input_chejiahao},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_chejiahao_css"]).text},结果错误')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
+
+    def kehuliebiao_check_pinpaixinghao(driver, input_pinpaixinghao = elements["test_vin"]):
+        """客户列表-验证列表中第一个品牌型号，参数传具体品牌型号即可，如‘大众FV7207FCDWG轿车’"""
+        try:
+            if input_pinpaixinghao == driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_pinpaixinghao_css"]).text:
+                logger.info(f'{sys._getframe().f_code.co_name}, 期望结果{input_pinpaixinghao},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_pinpaixinghao_css"]).text},结果正确')
+            else:
+                logbug.debug(
+                    f'{sys._getframe().f_code.co_name}, 期望结果{input_pinpaixinghao},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_pinpaixinghao_css"]).text},结果错误')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     def kehuxiangqing_kehuxinxi_kehuxingming(driver,input_kehuxingming = elements["test_chezhuxingming"]):
@@ -3958,3 +4029,5 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name}, {is_zhuxian},修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name}, {is_zhuxian},修改失败')
+
+
