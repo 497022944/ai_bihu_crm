@@ -853,27 +853,233 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
 
+    def kehuliebiao_check_zhuceriqi(driver, input_zhuceriqi = '13-6-21'):
+        """客户列表-验证列表中第一个注册日期，参数传具体日期即可，格式如‘13-6-21’"""
+        try:
+            if input_zhuceriqi == driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_zhuceriqi_css"]).text:
+                logger.info(f'{sys._getframe().f_code.co_name}, 期望结果{input_zhuceriqi},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_zhuceriqi_css"]).text},结果正确')
+            else:
+                logbug.debug(
+                    f'{sys._getframe().f_code.co_name}, 期望结果{input_zhuceriqi},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_zhuceriqi_css"]).text},结果错误')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
+
+    def kehuliebiao_check_shangniantoubaogongsi(driver, input_shangniantoubaogongsi = elements["test_shangniantoubaogongsi"]):
+        """客户列表-验证列表中第一个上年投保公司，参数传具体投保公司即可，如‘人保车险’，需要和列表中文字保持一致"""
+        try:
+            if input_shangniantoubaogongsi == driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_shangniantoubaogongsi_css"]).text:
+                logger.info(f'{sys._getframe().f_code.co_name}, 期望结果{input_shangniantoubaogongsi},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_shangniantoubaogongsi_css"]).text},结果正确')
+            else:
+                logbug.debug(
+                    f'{sys._getframe().f_code.co_name}, 期望结果{input_shangniantoubaogongsi},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_shangniantoubaogongsi_css"]).text},结果错误')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
+
+    def kehuliebiao_check_shangyedaoqi(driver, input_shangyedaoqi = '09-01-01'):
+        """客户列表-验证列表中第一个商业到期，参数传具体到期时间即可，如‘’，需要和列表中文字保持一致"""
+        try:
+            if input_shangyedaoqi == driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_shangyedaoqi_css"]).text:
+                logger.info(f'{sys._getframe().f_code.co_name}, 期望结果{input_shangyedaoqi},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_shangyedaoqi_css"]).text},结果正确')
+            else:
+                logbug.debug(
+                    f'{sys._getframe().f_code.co_name}, 期望结果{input_shangyedaoqi},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_shangyedaoqi_css"]).text},结果错误')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
+
+    def kehuliebiao_check_jiaoqiangdaoqi(driver, input_jiaoqiangdaoqi = '09-01-01'):
+        """客户列表-验证列表中第一个交强到期，参数传具体到期时间即可，如‘’，需要和列表中文字保持一致"""
+        try:
+            if input_jiaoqiangdaoqi == driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_jiaoqiangdaoqi_css"]).text:
+                logger.info(f'{sys._getframe().f_code.co_name}, 期望结果{input_jiaoqiangdaoqi},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_jiaoqiangdaoqi_css"]).text},结果正确')
+            else:
+                logbug.debug(
+                    f'{sys._getframe().f_code.co_name}, 期望结果{input_jiaoqiangdaoqi},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_jiaoqiangdaoqi_css"]).text},结果错误')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
+
+    def kehuliebiao_check_baojiazhuangtai(driver, input_baojiazhuangtai = '太平洋，人保，平安 (失败)'):
+        """客户列表-验证列表中第一个报价状态，参数传具体报价状态即可，如‘’，需要和列表中文字保持一致"""
+        try:
+            if input_baojiazhuangtai == driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_baojiazhuangtai_css"]).text:
+                logger.info(f'{sys._getframe().f_code.co_name}, 期望结果{input_baojiazhuangtai},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_baojiazhuangtai_css"]).text},结果正确')
+            else:
+                logbug.debug(
+                    f'{sys._getframe().f_code.co_name}, 期望结果{input_baojiazhuangtai},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_baojiazhuangtai_css"]).text},结果错误')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
+
+    def kehuliebiao_check_hebaozhuangtai(driver, input_hebaohuangtai = '太平洋，人保，平安 (失败)'):
+        """客户列表-验证列表中第一个核保状态，参数传具体核保状态即可，如‘’，需要和列表中文字保持一致"""
+        try:
+            #-----------------拖到可见
+            target = driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_hebaozhuangtai_css"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
+            if input_hebaohuangtai == driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_hebaozhuangtai_css"]).text:
+                logger.info(f'{sys._getframe().f_code.co_name}, 期望结果{input_hebaohuangtai},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_hebaozhuangtai_css"]).text},结果正确')
+            else:
+                logbug.debug(
+                    f'{sys._getframe().f_code.co_name}, 期望结果{input_hebaohuangtai},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_hebaozhuangtai_css"]).text},结果错误')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
 
 
+    def kehuliebiao_check_genjincishu(driver, input_genjincishu = 1):
+        """客户列表-验证列表中第一个跟进次数，参数传具体次数即可，如1"""
+        try:
+            #-----------------拖到可见
+            target = driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_genjincishu_css"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
+            if input_genjincishu == driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_genjincishu_css"]).text:
+                logger.info(f'{sys._getframe().f_code.co_name}, 期望结果{input_genjincishu},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_genjincishu_css"]).text},结果正确')
+            else:
+                logbug.debug(
+                    f'{sys._getframe().f_code.co_name}, 期望结果{input_genjincishu},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_genjincishu_css"]).text},结果错误')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
 
 
+    def kehuliebiao_check_genjinshijian(driver, input_genjinshijian = '09-01-01'):
+        """客户列表-验证列表中第一个跟进时间，参数传具体时间即可，如‘09-01-01’"""
+        try:
+            #-----------------拖到可见
+            target = driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_genjinshijian_css"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
+            if input_genjinshijian == driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_genjinshijian_css"]).text:
+                logger.info(f'{sys._getframe().f_code.co_name}, 期望结果{input_genjinshijian},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_genjinshijian_css"]).text},结果正确')
+            else:
+                logbug.debug(
+                    f'{sys._getframe().f_code.co_name}, 期望结果{input_genjinshijian},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_genjinshijian_css"]).text},结果错误')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
 
 
+    def kehuliebiao_check_genjinneirong(driver, input_genjinneirong = '09-01-01'):
+        """客户列表-验证列表中第一个跟进内容，参数传具体内容即可，如‘xxxx跟进结果’"""
+        try:
+            #-----------------拖到可见
+            target = driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_genjinneirong_css"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
+            if input_genjinneirong == driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_genjinneirong_css"]).text:
+                logger.info(f'{sys._getframe().f_code.co_name}, 期望结果{input_genjinneirong},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_genjinneirong_css"]).text},结果正确')
+            else:
+                logbug.debug(
+                    f'{sys._getframe().f_code.co_name}, 期望结果{input_genjinneirong},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_genjinneirong_css"]).text},结果错误')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
+
+    def kehuliebiao_check_jihuahuifang(driver, input_jihuahuifang = ''):
+        """客户列表-验证列表中第一个计划回访，参数传具体内容即可，如‘09-01-01’"""
+        try:
+            #-----------------拖到可见
+            target = driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_jihuahuifang_css"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
+            if input_jihuahuifang == driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_jihuahuifang_css"]).text:
+                logger.info(f'{sys._getframe().f_code.co_name}, 期望结果{input_jihuahuifang},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_jihuahuifang_css"]).text},结果正确')
+            else:
+                logbug.debug(
+                    f'{sys._getframe().f_code.co_name}, 期望结果{input_jihuahuifang},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_jihuahuifang_css"]).text},结果错误')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
+
+    def kehuliebiao_check_jigoumingcheng(driver, input_jigoumingcheng = ''):
+        """客户列表-验证列表中第一个机构名称，参数传具体名称即可，如‘09-01-01’"""
+        try:
+            #-----------------拖到可见
+            target = driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_jigoumingcheng_css"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
+            if input_jigoumingcheng == driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_jigoumingcheng_css"]).text:
+                logger.info(f'{sys._getframe().f_code.co_name}, 期望结果{input_jigoumingcheng},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_jigoumingcheng_css"]).text},结果正确')
+            else:
+                logbug.debug(
+                    f'{sys._getframe().f_code.co_name}, 期望结果{input_jigoumingcheng},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_jigoumingcheng_css"]).text},结果错误')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
+
+    def kehuliebiao_check_kehuzhuangtai(driver, input_kehuzhuangtai = '预约跟进'):
+        """客户列表-验证列表中第一个客户状态，参数传具体状态即可，如‘预约跟进’"""
+        try:
+            #-----------------拖到可见
+            target = driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_kehuzhuangtai_css"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
+            if input_kehuzhuangtai == driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_kehuzhuangtai_css"]).text:
+                logger.info(f'{sys._getframe().f_code.co_name}, 期望结果{input_kehuzhuangtai},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_kehuzhuangtai_css"]).text},结果正确')
+            else:
+                logbug.debug(
+                    f'{sys._getframe().f_code.co_name}, 期望结果{input_kehuzhuangtai},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_kehuzhuangtai_css"]).text},结果错误')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
 
 
+    def kehuliebiao_check_kehuleibie(driver, input_kehuleibie = '演示类别'):
+        """客户列表-验证列表中第一个客户类别，参数传具体类别即可，如‘演示类别’"""
+        try:
+            #-----------------拖到可见
+            target = driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_kehuleibie_css"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
+            if input_kehuleibie == driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_kehuleibie_css"]).text:
+                logger.info(f'{sys._getframe().f_code.co_name}, 期望结果{input_kehuleibie},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_kehuleibie_css"]).text},结果正确')
+            else:
+                logbug.debug(
+                    f'{sys._getframe().f_code.co_name}, 期望结果{input_kehuleibie},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_kehuleibie_css"]).text},结果错误')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
 
 
+    def kehuliebiao_check_yewuyuan(driver, input_yewuyuan = '马小翠'):
+        """客户列表-验证列表中第一个业务员，参数传具体业务员名称即可，如‘马小翠’"""
+        try:
+            #-----------------拖到可见
+            target = driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_yewuyuan_css"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
+            if input_yewuyuan == driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_yewuyuan_css"]).text:
+                logger.info(f'{sys._getframe().f_code.co_name}, 期望结果{input_yewuyuan},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_yewuyuan_css"]).text},结果正确')
+            else:
+                logbug.debug(
+                    f'{sys._getframe().f_code.co_name}, 期望结果{input_yewuyuan},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_yewuyuan_css"]).text},结果错误')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
+
+    def kehuliebiao_check_gengxinshijian(driver, input_gengxinshijian = '2019-09-27 09:18:15'):
+        """客户列表-验证列表中第一个更新时间，参数传具体时间即可，如‘2019-09-27 09:18:15’"""
+        try:
+            #-----------------拖到可见
+            target = driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_yewuyuan_css"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
+            if input_gengxinshijian == driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_gengxinshijian_css"]).text:
+                logger.info(f'{sys._getframe().f_code.co_name}, 期望结果{input_gengxinshijian},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_gengxinshijian_css"]).text},结果正确')
+            else:
+                logbug.debug(
+                    f'{sys._getframe().f_code.co_name}, 期望结果{input_gengxinshijian},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_gengxinshijian_css"]).text},结果错误')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
 
 
+    def kehuliebiao_check_bumenmingcheng(driver, input_bumenmingcheng = ''):
+        """客户列表-验证列表中第一个部门名称，参数传具体名称即可，如‘xxx部门’"""
+        try:
+            #-----------------拖到可见
+            target = driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_bumenmingcheng_css"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
+            if input_bumenmingcheng == driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_bumenmingcheng_css"]).text:
+                logger.info(f'{sys._getframe().f_code.co_name}, 期望结果{input_bumenmingcheng},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_bumenmingcheng_css"]).text},结果正确')
+            else:
+                logbug.debug(
+                    f'{sys._getframe().f_code.co_name}, 期望结果{input_bumenmingcheng},实际结果{driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_bumenmingcheng_css"]).text},结果错误')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
 
-
-
-
-
-
-
-
-
+# 以上为客户列表check方法
 
 
 
