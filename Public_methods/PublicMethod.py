@@ -212,3 +212,15 @@ class BasePage(object):
             return True
         except:
             return False
+
+    @staticmethod
+    def Regular_Designation(driver, element):
+        '''
+        正则筛选字符串内容去掉符号
+        :param driver:
+        :param element:
+        :return:
+        '''
+        r = '[’!"#$%&\'()*+,-/:;<=>?@[\\]^_`【】{|}~]+'# 英文逗号未添加
+        line = re.sub(r, '', element)
+        return line

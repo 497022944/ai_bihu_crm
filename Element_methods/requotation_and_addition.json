@@ -1,0 +1,79 @@
+{
+"报价返回车牌验证": "return $('.title.ant-col-3').eq(0).text()",
+"报价返回车型验证": "return $('.ant-col-21').eq(0).text()",
+"报价返回左侧验证": "return $('.sourceIcon.anticon~span').eq(0).text()",
+"报价返回详情验证": "return $('.ant-col-21').eq(1).text()",
+"报价返回报价内容验证": "return $('.ant-col-21.ant-col-offset-3').eq(0).text()",
+
+
+"详情保险公司切换验证": "return $('.sourceIcon.anticon').length",
+"报价返回保险公司验证": "return $('.quote-sources').text()",
+"报价返回详情出险信息": "return $('p>.ant-row').eq(5).text()",
+"报价返回详情系数信息": "return $('p>.ant-row').eq(6).text()",
+"报价返回详情核保信息": "return $('p>.ant-row').eq(7).text()",
+"报价返回详情报价渠道信息": "return $('p>.ant-row').eq(7).text()",
+
+
+
+"车损-报价返回详情险种信息": "return $('td:nth-child(1) > label').eq(0).attr('class')",
+"车损-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(2) > td:nth-child(5)').text()",
+"不计免赔车损-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(2) > td:nth-child(6)').text()",
+
+"三者-报价返回详情险种信息": "return $('td:nth-child(1) > label').eq(1).attr('class')",
+"三者金额-报价返回详情险种信息": "return $(\"[id='preRenewalInfo.xianZhong.sanZhe.baoE']\").text()",
+"三者-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(3) > td:nth-child(5)').text()",
+"不计免赔三者-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(3) > td:nth-child(6)').text()",
+
+"司机-报价返回详情险种信息": "return $('td:nth-child(1) > label').eq(2).attr('class')",
+"司机金额-报价返回详情险种信息": "return $(\"[id='preRenewalInfo.xianZhong.siJi.baoE']\").text()",
+"司机-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(4) > td:nth-child(5)').text()",
+"不计免赔司机-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(4) > td:nth-child(6)').text()",
+
+"乘客-报价返回详情险种信息": "return $('td:nth-child(1) > label').eq(3).attr('class')",
+"乘客金额-报价返回详情险种信息": "return $(\"[id='preRenewalInfo.xianZhong.chengKe.baoE']\").text()",
+"乘客-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(5) > td:nth-child(5)').text()",
+"不计免赔乘客-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(5) > td:nth-child(6)').text()",
+
+"盗抢-报价返回详情险种信息": "return $('td:nth-child(1) > label').eq(4).attr('class')",
+"盗抢-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(6) > td:nth-child(5)').text()",
+"不计免赔盗抢-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(6) > td:nth-child(6)').text()",
+
+"划痕-报价返回详情险种信息": "return $('td:nth-child(1) > label').eq(5).attr('class')",
+"划痕金额-报价返回详情险种信息": "return $('tr:nth-child(7) > td:nth-child(3) > div > div').text()",
+"划痕-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(7) > td:nth-child(5)').text()",
+"不计免赔划痕-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(7) > td:nth-child(6)').text()",
+
+"玻璃-报价返回详情险种信息": "return $('td:nth-child(1) > label').eq(6).attr('class')",
+"玻璃国进-报价返回详情险种信息": "return $(\"[id='preRenewalInfo.xianZhong.boLi.baoE']\").text()",
+"玻璃-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(8) > td:nth-child(5)').text()",
+
+
+"自燃-报价返回详情险种信息": "return $('td:nth-child(1) > label').eq(7).attr('class')",
+"自燃-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(9) > td:nth-child(5)').text()",
+"不计免赔自燃-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(9) > td:nth-child(6)').text()",
+
+"涉水-报价返回详情险种信息": "return $('td:nth-child(1) > label').eq(8).attr('class')",
+"涉水-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(10) > td:nth-child(5)').text()",
+"不计免赔涉水-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(10) > td:nth-child(6)').text()",
+
+"第三方-报价返回详情险种信息": "return $('td:nth-child(1) > label').eq(9).attr('class')",
+"第三方-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(11) > td:nth-child(5)').text()",
+
+"指定修理厂-报价返回详情险种信息": "return $('td:nth-child(1) > label').eq(10).attr('class')",
+"指定修理厂-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(12) > td:nth-child(5)').text()",
+"指定修理厂国进-报价返回详情险种信息": "return $(\"[id='preRenewalInfo.xianZhong.boLi.baoE']\").text()",
+
+"设备险-报价返回详情险种信息": "return $('td:nth-child(1) > label').eq(11).attr('class')",
+  "设备险-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(13) > td:nth-child(5)').text()",
+"不计免赔设备险-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(13) > td:nth-child(6)').text()",
+
+
+"节假日-报价返回详情险种信息": "return $('td:nth-child(1) > label').eq(12).attr('class')",
+  "节假日-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(14) > td:nth-child(5)').text()",
+
+"修理厂补偿险-报价返回详情险种信息": "return $('td:nth-child(1) > label').eq(13).attr('class')",
+"修理厂补偿险-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(18) > td:nth-child(5)').text()",
+
+
+  "tpy_总金额": "return $('.sourceIcon.anticon~p').eq(0).text()"
+}

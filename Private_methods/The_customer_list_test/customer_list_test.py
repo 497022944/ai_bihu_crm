@@ -853,30 +853,6 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def kehuxiangqing_kehuxinxi_kehuxingming(driver,input_kehuxingming = elements["test_chezhuxingming"]):
         """客户详情-客户信息-客户姓名修改，参数要传具体姓名，如‘梁浩’"""
         try:
@@ -893,7 +869,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name},{input_kehuxingming}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_kehuxingming} 修改失败')
-
 
     def kehuxiangqing_kehuxinxi_dianhua1(driver, input_dianhua1=elements["test_kehudianhua1"]):
         """客户详情-客户信息-客户电话1修改，参数要传具体电话，如‘13666668888’"""
@@ -1014,7 +989,6 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_chepaihao} 修改失败')
 
-
     # def kehuxiangqing_cheliangxinxi_chepaihaoleixing(driver, input_chepaihaoleixing=elements["test_licenseno"]):
     #     try:
     #         # ActionChains(driver).double_click(driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_kehuxingming_id"])).perform()
@@ -1030,7 +1004,6 @@ class customerlist:
     #         logger.info(f'{sys._getframe().f_code.co_name},{input_chepaihaoleixing}修改成功')
     #     except Exception:
     #         logbug.debug(f'{sys._getframe().f_code.co_name},{input_chepaihaoleixing} 修改失败')
-
 
     def kehuxiangqing_cheliangxinxi_chejiahao(driver, input_chejiahao=elements["test_vin"]):
         """客户详情-车辆信息-车架号修改，参数要传具体车架，如‘LSVDM49FX62182255’，此方法待完善"""
@@ -1051,7 +1024,6 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_chejiahao} 修改失败')
 
-
     def kehuxiangqing_cheliangxinxi_fadongjihao(driver, input_fadongjihao=elements["test_vin"]):
         """客户详情-车辆信息-发动机号修改，参数要传具体发动机号，如‘222569’"""
         try:
@@ -1070,7 +1042,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name},{input_fadongjihao}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_fadongjihao} 修改失败')
-
 
     def kehuxiangqing_cheliangxinxi_zhuceriqi(driver, input_zhuceriqi='2019-01-01'):
         """客户详情-车辆信息-注册日期修改，参数要传时间格式，如‘2019-01-01’
@@ -1116,7 +1087,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name},{input_pinpaixinghao}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_pinpaixinghao} 修改失败')
-
 
     def kehuxiangqing_cheliangxinxi_chexing(driver, input_chexing=elements["test_vin"]):
         """客户详情-车辆信息-车型修改，此方法待完善，有可能需要和品牌型号联动"""
@@ -1221,7 +1191,6 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_pailiang} 修改失败')
 
-
     def kehuxiangqing_cheliangxinxi_guohuche(driver , input_shifou = '是', input_guohuriqi='2019-01-01'):
         """客户详情-车辆信息-过户车修改，参数要传两个，第一个‘是’或‘否’，第二个日期，格式为‘2019-01-01’
         传‘是’，则必须传递日期，传‘否’，则无需传递日期"""
@@ -1252,9 +1221,6 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_shifou},{input_guohuriqi} 修改失败')
 
-
-
-
     def kehuxiangqing_cheliangxinxi_daikuanche(driver, input_shifou, input_diyishouyiren=elements["test_vin"]):
         """客户详情-车辆信息-贷款车修改，参数要传两个，第一个‘是’或‘否’，第二个第一受益人，参数要传具体人名，如‘刘海’
         传‘是’，则必须传递第一受益人，传‘否’，则无需传递第一受益人"""
@@ -1280,7 +1246,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name},{input_shifou}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_shifou} 修改失败')
-
 
     # def kehuxiangqing_cheliangxinxi_diyishouyiren(driver, input_diyishouyiren=elements["test_vin"]):
     #     try:
@@ -1378,7 +1343,6 @@ class customerlist:
     #     except Exception:
     #         logbug.debug(f'{sys._getframe().f_code.co_name},{input_cheliangshiyongxingzhi} 修改失败')
 
-
     def kehuxiangqing_cheliangxinxi_beizhuxinxi(driver, input_beizhuxinxi=elements["test_vin"]):
         """客户详情-车辆信息-备注信息修改，参数要传具体备注，如‘备注备注’"""
         try:
@@ -1396,7 +1360,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name},{input_beizhuxinxi}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_beizhuxinxi} 修改失败')
-
 
     def kehuxiangqing_shangniantoubaoxinxi_toubaogongsi(driver, input_toubaogongsi=elements["test_vin"]):
         """客户详情-上年投保信息-投保公司修改，参数要传具体公司，如‘太平洋车险’，和下拉框文本保持一致"""
@@ -1591,7 +1554,6 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_beibaoxianren}修改失败')
 
-
     def kehuxiangqing_shangniantoubaoxinxi_zhengjianleixing(driver,input_zhengjianleixing, input_zhengjianhaoma=elements["test_vin"]):
         """客户详情-上年投保信息-证件类型+号码修改，参数要传具体类型，如‘身份证’，和下拉框文本保持一致
         证件号码要传具体号码，如‘110100196609010009’"""
@@ -1645,7 +1607,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name},{input_zhengjianleixing}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_zhengjianleixing}修改失败')
-
 
     def kehuxiangqing_shangniantoubaoxinxi_jigoumingcheng(driver,input_jigoumingcheng=elements["test_vin"]):
         """客户详情-上年投保信息-机构名称修改，参数要传具体机构名称，如‘投保机构’"""
@@ -1748,8 +1709,6 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},修改失败')
 
-
-
     def kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_gonghu(driver):
         """客户详情-关系人信息-被保险人信息-快速选择‘公户’，无需传递参数"""
         try:
@@ -1766,7 +1725,6 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},修改失败')
 
-
     def kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_geren(driver):
         """客户详情-关系人信息-被保险人信息-快速选择‘个人’，无需传递参数"""
         try:
@@ -1782,7 +1740,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name},修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},修改失败')
-
 
     def kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_beibaoxianrenxingming(driver, input_beibaoxianrenxingming=elements["test_vin"]):
         """客户详情-关系人信息-被保险人信息-被保险人姓名，参数要传具体姓名，如‘李明’"""
@@ -1802,7 +1759,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name},{input_beibaoxianrenxingming}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_beibaoxianrenxingming} 修改失败')
-
 
     def kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhengjianleixing(driver, input_zhengjianleixing, input_zhengjianhaoma=elements["test_vin"]):
         """客户详情-关系人信息-被保险人信息-证件类型+号码，参数要传具体类型，如‘身份证’，与下拉框中文本保持一致
@@ -1892,8 +1848,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name},{input_beibaoxianrendianhua}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_beibaoxianrendianhua} 修改失败')
-
-
     def kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_beibaoxianrenyouxiang(driver,
                                                                               input_beibaoxianrenyouxiang=elements[
                                                                                   "test_vin"]):
@@ -1918,7 +1872,6 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_beibaoxianrenyouxiang} 修改失败')
 
-
     def kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_zhuzhi(driver, input_zhuzhi=elements["test_vin"]):
         """客户详情-关系人信息-被保险人信息-住址，参数要传具体住址，如‘北京市海淀区’"""
         try:
@@ -1938,7 +1891,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name},{input_zhuzhi}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_zhuzhi} 修改失败')
-
 
     def kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_minzu(driver, input_minzu=elements["test_vin"]):
         """客户详情-关系人信息-被保险人信息-民族，参数要传具体民族，如‘汉族’"""
@@ -1980,7 +1932,6 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_qianfajiguan} 修改失败')
 
-
     def kehuxiangqing_guanxirenxinxi_toubaorenxinxi_gonghu(driver):
         """客户详情-关系人信息-投保人信息-快速选择‘公户’，无需传递参数"""
         try:
@@ -1996,7 +1947,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name},修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},修改失败')
-
 
     def kehuxiangqing_guanxirenxinxi_toubaorenxinxi_geren(driver):
         """客户详情-关系人信息-投保人信息-快速选择‘个人’，无需传递参数"""
@@ -2084,7 +2034,6 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_zhengjianleixing} 修改失败')
 
-
     def kehuxiangqing_guanxirenxinxi_toubaorenxinxi_toubaorendianhua(driver, input_toubaorendianhua=elements["test_vin"]):
         """客户详情-关系人信息-投保人信息-投保人电话，参数要传具体电话，如‘13000009999’"""
         try:
@@ -2128,7 +2077,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name},{input_toubaorenyouxiang}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_toubaorenyouxiang} 修改失败')
-
 
     def kehuxiangqing_guanxirenxinxi_toubaorenxinxi_zhuzhi(driver, input_zhuzhi=elements["test_vin"]):
         """客户详情-关系人信息-投保人信息-住址，参数要传具体住址，如‘北京市海淀区’"""
@@ -2174,7 +2122,6 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_minzu} 修改失败')
 
-
     def kehuxiangqing_guanxirenxinxi_toubaorenxinxi_qianfajiguan(driver, input_qianfajiguan=elements["test_vin"]):
         """客户详情-关系人信息-投保人信息-签发机关，参数要传具体签发机关，如‘xx机关’"""
         try:
@@ -2196,8 +2143,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name},{input_qianfajiguan}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_qianfajiguan} 修改失败')
-
-
 
     def kehuxiangqing_guanxirenxinxi_chezhuxinxi_tongtoubaoren(driver,input_tongtoubaoren = '不同投保人'):
         """客户详情-关系人信息-车主信息-同投保人，参数要传相同或不同，如‘同投保人’‘不同投保人’"""
@@ -2230,7 +2175,6 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},修改失败')
 
-
     def kehuxiangqing_guanxirenxinxi_chezhuxinxi_gonghu(driver):
         """客户详情-关系人信息-车主信息-快速选择‘公户’，无需传递参数"""
         try:
@@ -2262,7 +2206,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name},修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},修改失败')
-
 
     def kehuxiangqing_guanxirenxinxi_chezhuxinxi_chezhuxingming(driver, input_chezhuxingming=elements["test_vin"]):
         """客户详情-关系人信息-车主信息-车主姓名，参数要传具体姓名，如‘李明’"""
@@ -2317,7 +2260,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name},{input_zhengjianleixing} 修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_zhengjianleixing} 修改失败')
-
 
     def kehuxiangqing_baojiaxinxi_toubaodiqu(driver, input_toubaodiqu=elements["test_vin"]):
         """客户详情-报价信息-投保地区，参数要传具体地区，如‘北京’，需要与下拉菜单文字保持一致
@@ -2384,7 +2326,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name},{input_toubaodiqu} 修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_toubaodiqu} 修改失败')
-
 
     def kehuxiangqing_baojiaxinxi_shangyeqibao(driver, input_shangyeqibao='2019-01-01 00:00:00'):
         """客户详情-报价信息-商业起保修改，参数要传时间格式，包括时分秒，如‘2019-01-01 00:00:00’
@@ -2647,7 +2588,6 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name}, {input_baojiagongsi} 修改失败')
 
-
     def kehuxiangqing_baojiaxinxi_hebaogongsi(driver, input_hebaogongsi):
         """客户详情-报价信息-选择核保公司，参数传数字即可，1=太平洋，2=平安，4=人保，8=国寿财
         如需多家，则数字相加，如太平洋+平安 = 3
@@ -2861,8 +2801,6 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name}, {input_hebaogongsi} 修改失败')
 
-
-
     def kehuxiangqing_baojiaxinxi_chesun(driver, is_zhuxian = 1, is_bujimian = 1):
         """客户详情-报价信息-车损，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
         is_bujimian为是否投保附加险，1投0不投"""
@@ -2928,7 +2866,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{is_bujimian}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{is_bujimian}修改失败')
-
 
     def kehuxiangqing_baojiaxinxi_sanzhe(driver, is_zhuxian = 1, is_bujimian = 1, bao_e = 5):
         """客户详情-报价信息-三者，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
@@ -3135,7 +3072,6 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{bao_e},{is_bujimian}修改失败')
 
-
     def kehuxiangqing_baojiaxinxi_siji(driver, is_zhuxian = 1, is_bujimian = 1, bao_e = 5):
         """客户详情-报价信息-司机，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
         is_bujimian为是否投保附加险，1投0不投
@@ -3274,7 +3210,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{bao_e},{is_bujimian}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{bao_e},{is_bujimian}修改失败')
-
 
     def kehuxiangqing_baojiaxinxi_chengke(driver, is_zhuxian = 1, is_bujimian = 1, bao_e = 5):
         """客户详情-报价信息-乘客，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
@@ -3415,7 +3350,6 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{bao_e},{is_bujimian}修改失败')
 
-
     def kehuxiangqing_baojiaxinxi_daoqiang(driver, is_zhuxian = 1, is_bujimian = 1):
         """客户详情-报价信息-盗抢，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
         is_bujimian为是否投保附加险，1投0不投"""
@@ -3481,7 +3415,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{is_bujimian}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{is_bujimian}修改失败')
-
 
     def kehuxiangqing_baojiaxinxi_huahen(driver, is_zhuxian = 1, is_bujimian = 1, bao_e = 2000):
         """客户详情-报价信息-划痕，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
@@ -3593,7 +3526,6 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{bao_e},{is_bujimian}修改失败')
 
-
     def kehuxiangqing_baojiaxinxi_boli(driver, is_zhuxian = 1, bao_e = '国产'):
         """客户详情-报价信息-玻璃，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
         is_bujimian为是否投保附加险，1投0不投
@@ -3639,7 +3571,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{bao_e},修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{bao_e},修改失败')
-
 
     def kehuxiangqing_baojiaxinxi_ziran(driver, is_zhuxian = 1, is_bujimian = 1):
         """客户详情-报价信息-自燃，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
@@ -3703,7 +3634,6 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{is_bujimian}修改失败')
 
-
     def kehuxiangqing_baojiaxinxi_sheshui(driver, is_zhuxian = 1, is_bujimian = 1):
         """客户详情-报价信息-涉水，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
         is_bujimian为是否投保附加险，1投0不投"""
@@ -3766,7 +3696,6 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{is_bujimian}修改失败')
 
-
     def kehuxiangqing_baojiaxinxi_chesunwufazhaodaodisanfang(driver, is_zhuxian = 1):
         """客户详情-报价信息-车损无法找到第三方，参数传数字即可，is_zhuxian为是否投保主险，1投0不投"""
         try:
@@ -3799,7 +3728,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name}, {is_zhuxian},修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name}, {is_zhuxian},修改失败')
-
 
     def kehuxiangqing_baojiaxinxi_zhidingxiulichang(driver, is_zhuxian = 1, bao_e = '国产'):
         """客户详情-报价信息-指定修理厂，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
@@ -3845,9 +3773,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{bao_e},修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{bao_e},修改失败')
-
-
-
 
     def kehuxiangqing_baojiaxinxi_xinzengshebeisunshi(driver, is_zhuxian = 1, is_bujimian = 1):
         """客户详情-报价信息-新增设备损失，参数传数字即可，is_zhuxian为是否投保主险，1投0不投
@@ -3917,7 +3842,6 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name}, {is_zhuxian},{is_bujimian}修改失败')
 
-
     def kehuxiangqing_baojiaxinxi_sanzexianfujiafadingjiejiarixianefanbei(driver, is_zhuxian = 1):
         """客户详情-报价信息-三责险附加法定节假日限额翻倍险，参数传数字即可，is_zhuxian为是否投保主险，1投0不投"""
         try:
@@ -3956,7 +3880,6 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name}, {is_zhuxian},修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name}, {is_zhuxian},修改失败')
-
 
     def kehuxiangqing_baojiaxinxi_xiuliqijianfeiyongbuchang(driver, is_zhuxian = 1, bao_e = 100, xishu = 1):
         """客户详情-报价信息-修理期间费用补偿险，参数传数字即可，is_zhuxian为是否投保主险，1投0不投

@@ -11,6 +11,7 @@ from Private_methods.The_new_quotation_test.new_quotation_tset import new_quotat
 from Private_methods.The_new_quotation_test.public_new_quotation import quotation_license
 from Private_methods.The_customer_list_test.customer_list_test import customerlist
 from Private_methods.The_customer_list_test.customer_list_test_check import list_check
+from Private_methods.The_customer_list_test.quotation_verification import Quotation_Verification
 
 logger = Log()
 #   说的读取配置文件
@@ -32,8 +33,11 @@ class Login(unittest.TestCase):
         quotation_license.kehuxiangqiang_xinzengbaojia(self.driver)
         quotation_license.quotation_license_input(self.driver, license1='')
         quotation_license.quotation_license_click(self.driver)
-        new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
-        quotation_license.quotation_license_claer(self.driver)
+        #new_quotation_case1.license_check_hint(self.driver, hint='请正确填写车牌号')
+        #quotation_license.quotation_license_claer(self.driver)
+        Quotation_Verification.License_Verification(self.driver, '京J97896')
+        Quotation_Verification.Division_switch(self.driver, 6)
+        Quotation_Verification.left_total_sum(self.driver, 2)
         #测试数据提示信息check
         # list_check1.Quotationzoom_check_hint(self.driver, 1)
         # list_check1.Quotationzoom_check_hint(self.driver, 2)
