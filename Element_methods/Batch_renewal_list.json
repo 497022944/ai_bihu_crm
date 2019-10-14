@@ -1,0 +1,37 @@
+{
+"任务状态-未执行":"$('.ant-select-dropdown-content > ul > li:eq(0)').click()",
+"任务状态-执行中":"$('.ant-select-dropdown-content > ul > li:eq(1)').click()",
+"任务状态-已完成":"$('.ant-select-dropdown-content > ul > li:eq(2)').click()",
+"操作人list":"return $('.ant-select-dropdown-content').eq(1).text()",
+"查询":"$('.content.ant-row > form > div:nth-child(2) > div.ant-col-5.submitBtn > div > div > div > span > button').click()",
+"新增导入":"$('.ant-btn.ant-btn-primary').eq(1).click()",
+"批量续保模板":"$('.fileBlink').click()",
+"投保地区":"return $('.ant-select-dropdown-menu.ant-select-dropdown-menu-vertical.ant-select-dropdown-menu-root').eq(2).text()",
+"上传文件":"div.ant-upload.ant-upload-select.ant-upload-select-text > span > input[type=\"file\"]'",
+"覆盖字段-业务员":"$('.ant-checkbox-input').click()",
+"批量导入":"$('.ant-btn.ant-btn-primary').eq(3).click()",
+"批量续保":"$('.ant-btn.ant-btn-default').eq(1).click()",
+"选择文件":"$('.ant-btn.ant-btn-default').eq(0).click()",
+"弹窗关闭":"$('.ant-modal-close-x').click()",
+"重新查询":"$('.defaultClick.notAllowed.anticon.anticon-search').click()",
+"平安车险":"$('.ant-checkbox-wrapper').eq(0).click()",
+"太平洋车险":"$('.ant-checkbox-wrapper').eq(1).click()",
+"人保车险":"$('.ant-checkbox-wrapper').eq(2).click()",
+"中国人寿财险":"$('.ant-checkbox-wrapper').eq(3).click()",
+"中华联合车险":"$('.ant-checkbox-wrapper').eq(4).click()",
+"大地车险":"$('.ant-checkbox-wrapper').eq(5).click()",
+"阳光车险":"$('.ant-checkbox-wrapper').eq(6).click()",
+"太平车险":"$('.ant-checkbox-wrapper').eq(7).click()",
+"华安车险":"$('.ant-checkbox-wrapper').eq(8).click()",
+"天安":"$('.ant-checkbox-wrapper').eq(9).click()",
+"英大泰和车险":"$('.ant-checkbox-wrapper').eq(10).click()",
+"安心车险":"$('.ant-checkbox-wrapper').eq(11).click()",
+"利宝车险":"$('.ant-checkbox-wrapper').eq(12).click()",
+"安邦车险":"$('.ant-checkbox-wrapper').eq(13).click()",
+"重新查询-确定按钮":"$('.ant-btn.ant-btn-primary').eq(2).click()",
+"重新查询-X按钮":"$('.ant-modal-close-icon.anticon.anticon-close').click()",
+
+
+"数据行-删除":"$('.icon-h-delete').click()"
+
+}

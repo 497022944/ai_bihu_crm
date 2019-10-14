@@ -75,5 +75,6 @@
 "修理厂补偿险-报价返回详情险种保费信息": "return $('.quote-result-detial > table > tr:nth-child(18) > td:nth-child(5)').text()",
 
 
-  "tpy_总金额": "return $('.sourceIcon.anticon~p').eq(0).text()"
+  "tpy_总金额": "return $('.sourceIcon.anticon~p').eq(0).text()",
+    "报价时间验证": "return $('#quoteInfo > .ant-collapse-header > div > div> label').text()"
 }

@@ -1,0 +1,11 @@
+{
+"车牌号id":"LicenseNo",
+"已分配":"$('.ant-select-dropdown-menu-item').eq(1).click()",
+"未分配":"$('.ant-select-dropdown-menu-item').eq(0).click()",
+"用户姓名":"return $('.ant-select-dropdown-content').eq(1).text()",
+"上年投保公司":"return $('.ant-select-dropdown-content').eq(2).text()",
+"摄像头名称":"$('#CameraCode').click()",
+"查询":"$('.ant-col-6.submitBtn > div > div > div > span > button').click()",
+"导出":"$('.fileBlink').click()",
+"提示":"return $('.ant-message').text()"
+}

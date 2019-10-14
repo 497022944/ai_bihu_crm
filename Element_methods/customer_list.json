@@ -230,7 +230,7 @@
 
 "报价信息start" : "start------------------------------------",
 "kehuxiangqing_baojiaxinxi_tab_css" : ".ditialAnchor.ant-anchor-wrapper>div>div>a[title = '报价信息']",
-"kehuxiangqing_baojiaxinxi_baocun_button_css" : "#quoteInfo > div.ant-collapse-header > div > div.collapse-operate > button",
+"kehuxiangqing_baojiaxinxi_baocun_button_css" : ".quote-result-detial > table > tr:nth-child(2) > td:nth-child(1) > label",
 "kehuxiangqing_baojiaxinxi_toubaodiqu_id" : "quoteInfo.cityCode",
 "kehuxiangqing_baojiaxinxi_toubaodiqu_css" : ".ant-select-dropdown-menu-item",
 "kehuxiangqing_baojiaxinxi_shangyeqibao_id" : "quoteInfo.bizStartDateTime",
@@ -245,7 +245,15 @@
 "kehuxiangqing_baojiaxinxi_xianzhong_unchecked_class" : "ant-checkbox-wrapper",
 "kehuxiangqing_baojiaxinxi_bujimian_checked_class" : "ant-switch ant-switch-checked ant-switch-small",
 "kehuxiangqing_baojiaxinxi_bujimian_unchecked_class" : "ant-switch ant-switch-small",
-"kehuxiangqing_baojiaxinxi_chesun_css" : "#quote-result-table > table > tr:nth-child(2) > td:nth-child(1) > label",
+"kehuxiangqing_baojiaxinxi_return车损险种" : "return $('.quote-result-detial > table > tr:nth-child(2) > td:nth-child(1) > label').attr('class')",
+  "kehuxiangqing_baojiaxinxi_点击车损险种" : "$('.quote-result-detial > table > tr:nth-child(2) > td:nth-child(1) > label > span > input').click()",
+    "kehuxiangqing_baojiaxinxi_return车损不计免赔险种" : "return $(\"[id='preRenewalInfo.xianZhong.cheSun.buJiMian']\").attr('class')",
+      "kehuxiangqing_baojiaxinxi_点击车损不计免赔险种" : "$(\"[id='preRenewalInfo.xianZhong.cheSun.buJiMian']\").click()",
+
+
+
+
+
 "kehuxiangqing_baojiaxinxi_chesun_bujimian_id" : "preRenewalInfo.xianZhong.cheSun.buJiMian",
 "kehuxiangqing_baojiaxinxi_sanzhe_css" : "#quote-result-table > table > tr:nth-child(3) > td:nth-child(1) > label",
 "kehuxiangqing_baojiaxinxi_sanzhe_baoe_id" : "preRenewalInfo.xianZhong.sanZhe.baoE",

@@ -145,7 +145,7 @@ class Quotation_Verification:
             if Vehicle in Vehicles:
                 logger.info(f'请求方法{sys._getframe().f_code.co_name},预期结果:{Vehicle},实际结果:{Vehicles}，报价返回车型验证验证通过')
             else:
-                logbug.debug(f'请求方法{sys._getframe().f_code.co_name},预期结果:{Vehicle},实际结果:{Vehicles}，报价返回车型验证验证通过')
+                logbug.debug(f'请求方法{sys._getframe().f_code.co_name},预期结果:{Vehicle},实际结果:{Vehicles}，报价返回车型验证验证异常')
         except Exception:
             logbug.debug(f'请求方法{sys._getframe().f_code.co_name},预期结果:{Vehicle}，报价返回车型验证代码执行异常')
 
@@ -164,8 +164,8 @@ class Quotation_Verification:
     '''报价返回报价内容 成功与失败'''
     def quotation_contents(driver):
         try:
-            quotation_contents = driver.execute_script(elements['报价返回报价内容验证'])
-            logger.info(f'请求方法{sys._getframe().f_code.co_name},实际结果:{quotation_contents}，报价返回车型验证验证通过')
+            quotation_content = driver.execute_script(elements['报价返回报价内容验证'])
+            logger.info(f'请求方法{sys._getframe().f_code.co_name},实际结果:{quotation_content}，报价返回车型验证验证通过')
 
         except Exception:
             logbug.debug(f'请求方法{sys._getframe().f_code.co_name}，报价返回报价状态报价内容 成功与失败代码执行异常')
@@ -490,6 +490,7 @@ class Quotation_Verification:
                                 listsumnew += heiyesyes
                                 listsumnew1 = ("{:.2f}".format(listsumnew))# 保留2位小数四舍五入
                             tpyjine = re.sub(r, '', zongjie)
+                            tpyjine1 = tpyjine.strip('元')
                             if tpyjine == listsumnew1:
                                 logger.info(f'请求方法{sys._getframe().f_code.co_name},太平洋相加总金额:{listsumnew1}，太平洋页面展示总金额{tpyjine}，太平洋页面总金额与险种相加金额验证通过')
                             else:
@@ -573,7 +574,8 @@ class Quotation_Verification:
                                 listsumnew += heiyesyes
                                 listsumnew1 = ("{:.2f}".format(listsumnew))# 保留2位小数四舍五入
                             pajine = re.sub(r, '', pinganzongjie)
-                            if pajine == listsumnew1:
+                            pajine1 = pajine.strip('元')
+                            if pajine1 == listsumnew1:
                                 logger.info(f'请求方法{sys._getframe().f_code.co_name},平安相加总金额:{listsumnew1}，平安页面展示总金额{pajine}，平安页面总金额与险种相加金额验证通过')
                             else:
                                 logbug.debug(f'请求方法{sys._getframe().f_code.co_name},平安相加总金额:{listsumnew1}，平安页面展示总金额{pajine}，平安页面总金额与险种相加金额验证异常')
@@ -635,7 +637,8 @@ class Quotation_Verification:
                                 listsumnew += heiyesyes
                                 listsumnew1 = ("{:.2f}".format(listsumnew))# 保留2位小数四舍五入
                             rbjine = re.sub(r, '', renbaozongjie)
-                            if rbjine == listsumnew1:
+                            rbjine1 = rbjine.strip('元')
+                            if rbjine1 == listsumnew1:
                                 logger.info(f'请求方法{sys._getframe().f_code.co_name},人保相加总金额:{listsumnew1}，人保页面展示总金额{rbjine}，人保页面总金额与险种相加金额验证通过')
                             else:
                                 logbug.debug(
@@ -698,12 +701,27 @@ class Quotation_Verification:
                                 listsumnew += heiyesyes
                                 listsumnew1 = ("{:.2f}".format(listsumnew))# 保留2位小数四舍五入
                             gscine = re.sub(r, '', guoshoucaijie)
-                            if gscine == listsumnew1:
+                            gscine1 = gscine.strip('元')
+                            if gscine1 == listsumnew1:
                                 logger.info(f'请求方法{sys._getframe().f_code.co_name},国寿财相加总金额:{listsumnew1}，国寿财页面展示总金额{gscine}，国寿财页面总金额与险种相加金额验证通过')
                             else:
                                 logbug.debug(f'请求方法{sys._getframe().f_code.co_name},国寿财相加总金额:{listsumnew1}，国寿财页面展示总金额{gscine}，国寿财页面总金额与险种相加金额验证异常')
         except Exception:
             logbug.debug(f'请求方法{sys._getframe().f_code.co_name}，报价左侧金额与险种总金额对比验证异常')
+
+    '''报价报价时间验证'''
+    # 报价后返回报价时间验证空或有值
+    def quotation_time(driver, timeyes):
+        try:
+            if timeyes == 1:
+                timeyestext = driver.execute_script(elements['报价时间验证'])
+                logger.info(f'请求方法{sys._getframe().f_code.co_name},预期结果:{timeyes}，实际结果{timeyestext},报价后返回报价时间验证有值通过')
+            else:
+                logbug.debug(f'请求方法{sys._getframe().f_code.co_name},预期结果:{timeyes},报价后返回报价时间验证无值异常')
+        except Exception:
+            logbug.debug(f'请求方法{sys._getframe().f_code.co_name},预期结果:{timeyes},报价后返回报价时间验证未找到元素')
+
+
 
 
 

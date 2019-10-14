@@ -2809,48 +2809,45 @@ class customerlist:
             time.sleep(1)
             if is_zhuxian == 1 and is_bujimian == 1: #车损 + 不计免
                 # 车损
-                if driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_chesun_css"]).get_attribute('class') == elements["kehuxiangqing_baojiaxinxi_xianzhong_checked_class"]:
+                if driver.execute_script(elements["kehuxiangqing_baojiaxinxi_return车损险种"]) == elements["kehuxiangqing_baojiaxinxi_xianzhong_checked_class"]:
                     pass
                 else:
-                    driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_chesun_css"]).click()
+                    driver.execute_script(elements["kehuxiangqing_baojiaxinxi_点击车损险种"])
                 time.sleep(1)
-
                 # 不计免
-                if driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_chesun_bujimian_id"]).get_attribute('class') == elements["kehuxiangqing_baojiaxinxi_bujimian_checked_class"]:
+                if driver.execute_script(elements["kehuxiangqing_baojiaxinxi_return车损不计免赔险种"]) == elements["kehuxiangqing_baojiaxinxi_bujimian_checked_class"]:
                     pass
                 else:
-                    driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_chesun_bujimian_id"]).click()
+                    driver.execute_script(elements["kehuxiangqing_baojiaxinxi_点击车损不计免赔险种"])
 
             elif is_zhuxian == 1 and is_bujimian == 0: #车损
                 # 车损
-                if driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_chesun_css"]).get_attribute(
-                        'class') == elements["kehuxiangqing_baojiaxinxi_xianzhong_checked_class"]:
+                if driver.execute_script(elements["kehuxiangqing_baojiaxinxi_return车损险种"]) == elements[
+                    "kehuxiangqing_baojiaxinxi_xianzhong_checked_class"]:
                     pass
                 else:
-                    driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_chesun_css"]).click()
+                    driver.execute_script(elements["kehuxiangqing_baojiaxinxi_点击车损险种"])
                 time.sleep(1)
 
                 # 不计免
-                if driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_chesun_bujimian_id"]).get_attribute(
-                        'class') == elements["kehuxiangqing_baojiaxinxi_bujimian_checked_class"]:
-                    driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_chesun_bujimian_id"]).click()
+                if driver.execute_script(elements["kehuxiangqing_baojiaxinxi_return车损不计免赔险种"]) == elements["kehuxiangqing_baojiaxinxi_bujimian_checked_class"]:
+                    driver.execute_script(elements["kehuxiangqing_baojiaxinxi_点击车损不计免赔险种"])
                 else:
                     pass
 
             elif is_zhuxian == 0 and is_bujimian == 0: #不上车损
                 # 车损
-                if driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_chesun_css"]).get_attribute(
-                        'class') == elements["kehuxiangqing_baojiaxinxi_xianzhong_checked_class"]:
-                    driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_chesun_css"]).click()
+                if driver.execute_script(elements["kehuxiangqing_baojiaxinxi_return车损险种"]) == elements[
+                    "kehuxiangqing_baojiaxinxi_xianzhong_checked_class"]:
+                    driver.execute_script(elements["kehuxiangqing_baojiaxinxi_点击车损险种"])
                 else:
                     pass
-
                 time.sleep(1)
 
                 # 不计免
-                if driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_chesun_bujimian_id"]).get_attribute(
-                        'class') == elements["kehuxiangqing_baojiaxinxi_bujimian_checked_class"]:
-                    driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_chesun_bujimian_id"]).click()
+                if driver.execute_script(elements=["kehuxiangqing_baojiaxinxi_return车损不计免赔险种"]) == elements[
+                    "kehuxiangqing_baojiaxinxi_bujimian_checked_class"]:
+                    driver.execute_script(elements=["kehuxiangqing_baojiaxinxi_点击车损不计免赔险种"])
                 else:
                     pass
 
