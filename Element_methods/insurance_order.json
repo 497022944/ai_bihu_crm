@@ -1,0 +1,25 @@
+{
+"待支付-点击":"$('.ant-tabs-tab').eq(0).click()",
+"已承保-点击":"$('.ant-tabs-tab').eq(1).click()",
+"已取消-点击":"$('.ant-tabs-tab').eq(2).click()",
+"已过期-点击":"$('.ant-tabs-tab').eq(3).click()",
+"全部-点击":"$('.ant-tabs-tab').eq(4).click()",
+"车险订单-暂无数据":"return $('.ant-empty-description').text()",
+
+"车险订单-投保公司":"return $('.ant-select-dropdown-content').text()",
+"车险订单-投保公司长度":"return $('.ant-select-dropdown-content').length",
+
+"车险订单-业务员":"return $('.ant-select-dropdown-content').eq(1).text()",
+"车险订单-业务员长度":"return $('.ant-select-dropdown-content').eq(1).length",
+
+"车险订单-出单员":"return $('.ant-select-dropdown-content').eq(2).text()",
+"车险订单-出单员长度":"return $('.ant-select-dropdown-content').eq(2).length",
+
+"车险订单-部门":"return $('.ant-select-dropdown-content').eq(3).text()",
+"车险订单-部门长度":"return $('.ant-select-dropdown-content').eq(3).length",
+"车险订单-查询":"$('.ant-btn.ant-btn-primary.submit').click()",
+"车险订单-导出":"$('.ant-btn.ant-btn-primary').click()",
+  "车险订单-下一页":"$('.ant-pagination-next').click()",
+  "车险订单-页码总数":"return $('.ant-pagination-next').text()",
+
+}

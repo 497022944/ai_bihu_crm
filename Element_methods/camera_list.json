@@ -7,5 +7,39 @@
 "摄像头名称":"$('#CameraCode').click()",
 "查询":"$('.ant-col-6.submitBtn > div > div > div > span > button').click()",
 "导出":"$('.fileBlink').click()",
-"提示":"return $('.ant-message').text()"
+"提示":"return $('.ant-message').text()",
+"进店历史-摄像头名称":"$('.ant-select-search__field').eq(0).click()",
+"进店历史-查询":"$('.ant-btn.ant-btn-primary').click()",
+"进店历史-车辆标签":"return $('.ant-table-row.ant-table-row-level-0 > td:gt(3)').eq(0).text()",
+"进店历史-勾选":"$('.ant-checkbox-input').click()",
+"进店历史-共条数":"return $('.dataNum.ant-col-sm-18').text()",
+"进店历史-说明":"return $('.ftext-row').text()",
+"进店历史-导出":"$('.fileBlink').click()",
+"进店设置-摄像头名称":"return $('.leftSide.ant-row').text()",
+"进店设置-摄像头名称长度":"return $('.leftSideList').length",
+"进店设置-摄像头名称点击":"return $('.leftSide.ant-row').text()",
+"进店设置-说明":"return $('.text-row').text()",
+"进店设置-摄像头id":"return $('.left').text()",
+  "进店设置-摄像头创建时间":"return $('.right').text()",
+    "进店设置-摄像头管理人员说明":"return $('.itemDec').eq(0).text()",
+      "进店设置-摄像头管理人员点击":"$('.ant-select-search__field').eq(0).click()",
+      "进店设置-摄像头管理人员保存":"$('.ant-btn-sm').eq(0).click()",
+  "进店设置-摄像头管理人员保存提示":"return $('.ant-modal-confirm-body').text()",
+
+
+   "进店设置-摄像头车型设置留存车型":"$('.ant-radio-wrapper').eq(0).click()",
+     "进店设置-摄像头车型设置过滤车型":"$('.ant-radio-wrapper').eq(1).click()",
+  "进店设置-摄像头车型设置保存":"$('.ant-btn-sm').eq(1).click()",
+    "进店设置-摄像头车型设置后验证":"return $('.mb10.ant-tag').text()",
+
+     "进店设置-摄像头匹配设置":"return $('.ant-select-dropdown-menu-root').eq(0).text()",
+  "进店设置-摄像头分配设置保存":"$('.ant-btn-sm').eq(2).click()",
+
+   "进店设置-摄像头提醒设置到期提醒":"$('.ant-radio-wrapper').eq(2).click()",
+     "进店设置-摄像头提醒设置全部提醒":"$('.ant-radio-wrapper').eq(3).click()",
+
+       "进店设置-摄像头提醒设置本年度":"$('.ant-checkbox-input').eq(0).click()",
+       "进店设置-摄像头提醒设置疑似次新车":"$('.ant-checkbox-input').eq(1).click()",
+    "进店设置-摄像头提醒设置保存":"$('.ant-btn-sm').eq(3).click()",
+     "进店设置-摄像头黑名单保存":"$('.ant-btn-sm').eq(4).click()"
 }

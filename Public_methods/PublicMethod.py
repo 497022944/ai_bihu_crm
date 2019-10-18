@@ -2,6 +2,7 @@ import os,time,re
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.action_chains import ActionChains
 from selenium import webdriver
 from time import sleep
 
@@ -224,3 +225,45 @@ class BasePage(object):
         r = '[’!"#$%&\'()*+,-/:;<=>?@[\\]^_`【】{|}~]+'# 英文逗号未添加
         line = re.sub(r, '', element)
         return line
+
+    @staticmethod
+    def monishijian(driver, typenew, element, numbers):
+        '''
+        鼠标模拟事件
+        需要值typenew = type
+        element
+        '''
+        try:
+            if typenew == 'id':
+                elements = driver.find_element_by_id(element)
+                webdriver.ActionChains(driver).move_to_element(elements)
+                elements.click()
+            elif typenew == 'class':
+                elements = driver.find_element_by_class_name(element)
+                webdriver.ActionChains(driver).move_to_element(elements)
+                elements.click()
+            elif typenew == 'sclass':
+                elements = driver.find_elements_by_class_name(element)[numbers]
+                webdriver.ActionChains(driver).move_to_element(elements)
+                elements.click()
+            elif typenew == 'name':
+                elements = driver.find_element_by_name(element)
+                webdriver.ActionChains(driver).move_to_element(elements)
+                elements.click()
+            elif typenew == 'css':
+                elements = driver.find_element_by_css_selector(element)
+                webdriver.ActionChains(driver).move_to_element(elements)
+                elements.click()
+            else:
+                pass
+        except Exception:
+            pass
+
+
+
+
+
+
+
+
+
