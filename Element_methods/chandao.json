@@ -1,0 +1,47 @@
+{
+  "禅道登录账号":"testaccount",
+  "禅道登录密码":"ceshi123456",
+  "禅道默认项目id":"61",
+
+  "禅道登录页_start" : "Start------------------------------------",
+    "禅道登录页_用户名输入框id":"account",
+    "禅道登录页_密码输入框name":"password",
+    "禅道登录页_登录按钮id":"submit",
+  "禅道登录页_end" : "End------------------------------------",
+
+  "禅道bug页_start" : "Start------------------------------------",
+    "禅道提bug按钮css" : "#mainMenu > div.btn-toolbar.pull-right > a.btn.btn-primary",
+    "禅道提bug页面_影响版本id" : "openedBuild_chosen",
+    "禅道提bug页面_影响版本_主干_css" : ".chosen-drop > ul > li[title= '主干']",
+    "禅道提bug页面_指派人id" : "assignedTo_chosen",
+      "禅道提bug页面_指派人id_输入css" : "#assignedTo_chosen > a > div.chosen-search > input[type=text]",
+      "禅道提bug页面_指派人id_输入css_搜索结果css" : "#assignedTo_chosen > div > ul > li",
+    "禅道提bug页面_重现步骤css" : "#dataform > table > tbody > tr:nth-child(6) > td > div.ke-container.ke-container-default > div.ke-edit > iframe",
+      "禅道提bug页面_重现步骤_步骤css（问题）" : "/html/body/p[1]",
+    "禅道提bug页面_相关任务id" : "task_chosen",
+      "禅道提bug页面_相关任务id_输入css" : "#task_chosen > a > div.chosen-search > input[type=text]",
+      "禅道提bug页面_相关任务id_输入css_搜索结果css" : "#task_chosen > div > ul > li",
+
+
+
+
+
+
+
+    "禅道提bug页面_标题id" : "title",
+    "禅道提bug页面_严重程度id":"severity",
+    "禅道提bug页面_优先级id" : "pri"
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
