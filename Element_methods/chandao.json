@@ -21,6 +21,7 @@
     "禅道提bug页面_相关任务id" : "task_chosen",
       "禅道提bug页面_相关任务id_输入css" : "#task_chosen > a > div.chosen-search > input[type=text]",
       "禅道提bug页面_相关任务id_输入css_搜索结果css" : "#task_chosen > div > ul > li",
+    "禅道提bug页面_保存按钮id": "submit",
 
 
 

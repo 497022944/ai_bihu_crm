@@ -117,59 +117,59 @@ class chandao:
             driver.find_element_by_css_selector(elements["禅道提bug按钮css"]).click()
             time.sleep(1)
 
-            # # 影响版本，选择主干
-            # driver.find_element_by_id(elements["禅道提bug页面_影响版本id"]).click()
-            # time.sleep(1)
-            # driver.find_element_by_css_selector(elements["禅道提bug页面_影响版本_主干_css"]).click()
-            # time.sleep(1)
-            # # 影响版本，选择主干
-            #
-            # # 输入bug标题
-            # driver.find_element_by_id(elements["禅道提bug页面_标题id"]).send_keys(input_biaoti)
-            # time.sleep(1)
-            # # 输入bug标题
-            #
-            # # 输入指派人
-            # driver.find_element_by_id(elements["禅道提bug页面_指派人id"]).click()
-            # time.sleep(1)
-            # driver.find_element_by_css_selector(elements["禅道提bug页面_指派人id_输入css"]).send_keys(input_zhipairen)
-            # time.sleep(1)
-            # driver.find_element_by_css_selector(elements["禅道提bug页面_指派人id_输入css_搜索结果css"]).click()
-            # time.sleep(1)
-            # # 输入指派人
-            #
-            #
-            #
-            #
-            # # 选择严重程度（默认为严重如果输入有误，则均按照‘严重’选择）
-            # driver.find_element_by_id(elements["禅道提bug页面_严重程度id"]).click()
-            # time.sleep(1)
-            # if input_yanzhongchengdu == '严重':
-            #     Select(driver.find_element_by_id(elements["禅道提bug页面_严重程度id"])).select_by_value('2')
-            # elif input_yanzhongchengdu == '一般':
-            #     Select(driver.find_element_by_id(elements["禅道提bug页面_严重程度id"])).select_by_value('3')
-            # elif input_yanzhongchengdu == '非常严重':
-            #     Select(driver.find_element_by_id(elements["禅道提bug页面_严重程度id"])).select_by_value('1')
-            # elif input_yanzhongchengdu == '轻微':
-            #     Select(driver.find_element_by_id(elements["禅道提bug页面_严重程度id"])).select_by_value('4')
-            # else:
-            #     Select(driver.find_element_by_id(elements["禅道提bug页面_严重程度id"])).select_by_value('2')
-            # time.sleep(1)
-            # # 选择严重程度（默认为‘严重’，如果输入有误，则均按照‘严重’选择）
-            #
-            # # 选择优先级（默认为‘中’，如果输入有误，则均按照‘中’选择）
-            # driver.find_element_by_id(elements["禅道提bug页面_优先级id"]).click()
-            # time.sleep(1)
-            # if input_youxianji == '中':
-            #     Select(driver.find_element_by_id(elements["禅道提bug页面_优先级id"])).select_by_value('2')
-            # elif input_youxianji == '高':
-            #     Select(driver.find_element_by_id(elements["禅道提bug页面_优先级id"])).select_by_value('1')
-            # elif input_youxianji == '低':
-            #     Select(driver.find_element_by_id(elements["禅道提bug页面_优先级id"])).select_by_value('3')
-            # else:
-            #     Select(driver.find_element_by_id(elements["禅道提bug页面_优先级id"])).select_by_value('2')
-            # time.sleep(1)
-            # # 选择优先级（默认为‘中’，如果输入有误，则均按照‘中’选择）
+            # 影响版本，选择主干
+            driver.find_element_by_id(elements["禅道提bug页面_影响版本id"]).click()
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["禅道提bug页面_影响版本_主干_css"]).click()
+            time.sleep(1)
+            # 影响版本，选择主干
+
+            # 输入bug标题
+            driver.find_element_by_id(elements["禅道提bug页面_标题id"]).send_keys(input_biaoti)
+            time.sleep(1)
+            # 输入bug标题
+
+            # 输入指派人
+            driver.find_element_by_id(elements["禅道提bug页面_指派人id"]).click()
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["禅道提bug页面_指派人id_输入css"]).send_keys(input_zhipairen)
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["禅道提bug页面_指派人id_输入css_搜索结果css"]).click()
+            time.sleep(1)
+            # 输入指派人
+
+
+
+
+            # 选择严重程度（默认为严重如果输入有误，则均按照‘严重’选择）
+            driver.find_element_by_id(elements["禅道提bug页面_严重程度id"]).click()
+            time.sleep(1)
+            if input_yanzhongchengdu == '严重':
+                Select(driver.find_element_by_id(elements["禅道提bug页面_严重程度id"])).select_by_value('2')
+            elif input_yanzhongchengdu == '一般':
+                Select(driver.find_element_by_id(elements["禅道提bug页面_严重程度id"])).select_by_value('3')
+            elif input_yanzhongchengdu == '非常严重':
+                Select(driver.find_element_by_id(elements["禅道提bug页面_严重程度id"])).select_by_value('1')
+            elif input_yanzhongchengdu == '轻微':
+                Select(driver.find_element_by_id(elements["禅道提bug页面_严重程度id"])).select_by_value('4')
+            else:
+                Select(driver.find_element_by_id(elements["禅道提bug页面_严重程度id"])).select_by_value('2')
+            time.sleep(1)
+            # 选择严重程度（默认为‘严重’，如果输入有误，则均按照‘严重’选择）
+
+            # 选择优先级（默认为‘中’，如果输入有误，则均按照‘中’选择）
+            driver.find_element_by_id(elements["禅道提bug页面_优先级id"]).click()
+            time.sleep(1)
+            if input_youxianji == '中':
+                Select(driver.find_element_by_id(elements["禅道提bug页面_优先级id"])).select_by_value('2')
+            elif input_youxianji == '高':
+                Select(driver.find_element_by_id(elements["禅道提bug页面_优先级id"])).select_by_value('1')
+            elif input_youxianji == '低':
+                Select(driver.find_element_by_id(elements["禅道提bug页面_优先级id"])).select_by_value('3')
+            else:
+                Select(driver.find_element_by_id(elements["禅道提bug页面_优先级id"])).select_by_value('2')
+            time.sleep(1)
+            # 选择优先级（默认为‘中’，如果输入有误，则均按照‘中’选择）
 
 
             # # 输入重现步骤（未完成，无法定位到输入框）
@@ -194,6 +194,17 @@ class chandao:
             driver.find_element_by_css_selector(elements["禅道提bug页面_相关任务id_输入css_搜索结果css"]).click()
             time.sleep(1)
             # 输入相关任务
+
+            # 点击保存按钮
+            #-----------------拖到可见
+            target = driver.find_element_by_id(elements["禅道提bug页面_保存按钮id"])
+            driver.execute_script("arguments[0].scrollIntoView();", target)
+            # -----------------拖到可见
+
+            driver.find_element_by_id(elements["禅道提bug页面_保存按钮id"]).click()
+            time.sleep(1)
+            # 点击保存按钮
+
 
 
 
