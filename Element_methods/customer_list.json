@@ -12,8 +12,8 @@
 "kehuliebiao_tab_css" : ".ant-tabs-nav.ant-tabs-nav-animated>div>div",
 "kehuliebiao_sousuo1_dropdown_css" : ".ant-select-selection__rendered>div[title = '车牌/车架']",
 "kehuliebiao_sousuo1_dropdown_selection_css" : ".ant-select-dropdown.ant-select-dropdown--single.ant-select-dropdown-placement-bottomLeft>div>ul>li[role = 'option']",
-"kehuliebiao_sousuo1_textbox_css" : ".ant-form-item-control-wrapper>.ant-form-item-control>span>input[placeholder = '请输入车牌号或车架号']",
-"kehuliebiao_sousuo_result_chepaihao_css" : "#components-layout-demo-custom-trigger > div.ant-layout > div.ant-layout-content > div > div.main_content > div.ant-table-wrapper > div > div > div > div > div.ant-table-fixed-left > div > div > table > tbody > tr > td:nth-child(2) > a",
+"kehuliebiao_sousuo1_textbox_css" : "#app > section > section > main > div > div > div.customer_search.ant-row > form > div:nth-child(1) > div > div > span > div > span > input",
+"kehuliebiao_sousuo_result_chepaihao_css" : "#app > section > section > main > div > div > div.el-row > div:nth-child(1) > div > div.el-table__fixed > div.el-table__fixed-body-wrapper > table > tbody > tr:nth-child(1) > td.el-table_1_column_2.tabel-col > div > a",
   "kehuliebiao_sousuo_result_kehumingcheng_css" : "#components-layout-demo-custom-trigger > div.ant-layout > div.ant-layout-content > div > div.main_content > div.ant-table-wrapper > div > div > div > div > div.ant-table-scroll > div > table > tbody > tr > td:nth-child(3) > span",
   "kehuliebiao_sousuo_result_chejiahao_css" : "#components-layout-demo-custom-trigger > div.ant-layout > div.ant-layout-content > div > div.main_content > div.ant-table-wrapper > div > div > div > div > div.ant-table-scroll > div > table > tbody > tr > td:nth-child(4) > span",
   "kehuliebiao_sousuo_result_pinpaixinghao_css" : "#components-layout-demo-custom-trigger > div.ant-layout > div.ant-layout-content > div > div.main_content > div.ant-table-wrapper > div > div > div > div > div.ant-table-scroll > div > table > tbody > tr > td:nth-child(5) > span",
@@ -36,6 +36,8 @@
 
 
 "kehuliebiao_sousuo2_daoqishijian_id" : "dateTimeDueRange",
+  "kehuliebiao_sousuo2_daoqishijian_qishishijian_css" : "body > div:nth-child(22) > div > div > div > div > div.ant-calendar-date-panel > div.ant-calendar-range-part.ant-calendar-range-left > div.ant-calendar-input-wrap > div > input",
+  "kehuliebiao_sousuo2_daoqishijian_jieshushijian_css" : "body > div:nth-child(22) > div > div > div > div > div.ant-calendar-date-panel > div.ant-calendar-range-part.ant-calendar-range-right > div.ant-calendar-input-wrap > div > input",
 
 "kehuliebiao_sousuo3_kehuleibie_id" : "categoryinfoIds",
 "kehuliebiao_sousuo3_kehuleibie_dropdown_input_css" : "#categoryinfoIds > div > div > ul > li > div > input",
@@ -53,8 +55,15 @@
 "kehuliebiao_sousuo6_shangchuanpici_css" : ".ant-select-dropdown-menu-item",
 
 "kehuliebiao_sousuo7_shangyedaoqishijian_id" : "lastBizDateRange",
+  "kehuliebiao_sousuo7_shangyedaoqishijian_qishishijian_css" : "body > div:nth-child(23) > div > div > div > div > div.ant-calendar-date-panel > div.ant-calendar-range-part.ant-calendar-range-left > div.ant-calendar-input-wrap > div > input",
+  "kehuliebiao_sousuo7_shangyedaoqishijian_jieshushijian_css" : "body > div:nth-child(23) > div > div > div > div > div.ant-calendar-date-panel > div.ant-calendar-range-part.ant-calendar-range-right > div.ant-calendar-input-wrap > div > input",
+
 
 "kehuliebiao_sousuo8_jiaoqiangdaoqishijian_id" : "lastForceDateRange",
+  "kehuliebiao_sousuo8_jiaoqiangdaoqishijian_qishishijian_css" : "body > div:nth-child(23) > div > div > div > div > div.ant-calendar-date-panel > div.ant-calendar-range-part.ant-calendar-range-left > div.ant-calendar-input-wrap > div > input",
+  "kehuliebiao_sousuo8_jiaoqiangdaoqishijian_jieshushijian_css" : "body > div:nth-child(23) > div > div > div > div > div.ant-calendar-date-panel > div.ant-calendar-range-part.ant-calendar-range-right > div.ant-calendar-input-wrap > div > input",
+
+
 
 
 "kehuliebiao_sousuo9_shangyedaoqiyuefen_id" : "lastBizMonth",
@@ -64,6 +73,10 @@
 "kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_css" : ".ant-select-dropdown-menu-item",
 
 "kehuliebiao_sousuo11_zhuceshijian_id" : "registerDate",
+  "kehuliebiao_sousuo11_zhuceshijian_qishishijian_css" : "body > div:nth-child(23) > div > div > div > div > div.ant-calendar-date-panel > div.ant-calendar-range-part.ant-calendar-range-left > div.ant-calendar-input-wrap > div > input",
+  "kehuliebiao_sousuo11_zhuceshijian_jieshushijian_css" : "body > div:nth-child(23) > div > div > div > div > div.ant-calendar-date-panel > div.ant-calendar-range-part.ant-calendar-range-right > div.ant-calendar-input-wrap > div > input",
+
+
 
 "kehuliebiao_sousuo12_zhuceyuefen_id" : "registerMonth",
 "kehuliebiao_sousuo12_zhuceyuefen_dropdown_css" : ".ant-select-dropdown.ant-select-dropdown--single.ant-select-dropdown-placement-bottomLeft>div>ul>li[role = 'option']",
@@ -83,16 +96,28 @@
 "kehuliebiao_sousuo16_fenpeizhuangtai_yifenpei_css" : "#distributedStatus > label:nth-child(2) > span.ant-checkbox > input",
 
 "kehuliebiao_sousuo17_fenpeishijian_id" : "distributedDateRange",
+  "kehuliebiao_sousuo17_fenpeishijian_qishishijian_css" : "body > div:nth-child(22) > div > div > div > div > div.ant-calendar-date-panel > div.ant-calendar-range-part.ant-calendar-range-left > div.ant-calendar-input-wrap > div > input",
+  "kehuliebiao_sousuo17_fenpeishijian_jieshushijian_css" : "body > div:nth-child(22) > div > div > div > div > div.ant-calendar-date-panel > div.ant-calendar-range-part.ant-calendar-range-right > div.ant-calendar-input-wrap > div > input",
+
 
 "kehuliebiao_sousuo18_yuyueshijian_id" : "plannedFollowUpDateRange",
+  "kehuliebiao_sousuo18_yuyueshijian_qishishijian_css" : "body > div:nth-child(22) > div > div > div > div > div.ant-calendar-date-panel > div.ant-calendar-range-part.ant-calendar-range-left > div.ant-calendar-input-wrap > div > input",
+  "kehuliebiao_sousuo18_yuyueshijian_jieshushijian_css" : "body > div:nth-child(22) > div > div > div > div > div.ant-calendar-date-panel > div.ant-calendar-range-part.ant-calendar-range-right > div.ant-calendar-input-wrap > div > input",
+
 
 "kehuliebiao_sousuo19_huifangshijian_id" : "followUpDateRange",
+  "kehuliebiao_sousuo19_huifangshijian_qishishijian_css" : "body > div:nth-child(22) > div > div > div > div > div.ant-calendar-date-panel > div.ant-calendar-range-part.ant-calendar-range-left > div.ant-calendar-input-wrap > div > input",
+  "kehuliebiao_sousuo19_huifangshijian_jieshushijian_css" : "body > div:nth-child(22) > div > div > div > div > div.ant-calendar-date-panel > div.ant-calendar-range-part.ant-calendar-range-right > div.ant-calendar-input-wrap > div > input",
+
 
 "kehuliebiao_sousuo20_lurufangshi_id" : "renewalTypes",
 "kehuliebiao_sousuo20_lurufangshi_input_css" : "#renewalTypes > div > div > ul > li > div > input",
 "kehuliebiao_sousuo20_lurufangshi_css" : ".ant-select-dropdown-menu-item",
 
 "kehuliebiao_sousuo21_jindianshijian_id" : "cameraTimeRange",
+  "kehuliebiao_sousuo21_jindianshijian_qishishijian_css" : "body > div:nth-child(22) > div > div > div > div > div.ant-calendar-date-panel > div.ant-calendar-range-part.ant-calendar-range-left > div.ant-calendar-input-wrap > div > input",
+  "kehuliebiao_sousuo21_jindianshijian_jieshushijian_css" : "body > div:nth-child(22) > div > div > div > div > div.ant-calendar-date-panel > div.ant-calendar-range-part.ant-calendar-range-right > div.ant-calendar-input-wrap > div > input",
+
 
 "kehuliebiao_sousuo22_kehudianhua_you_css" : "#isHasClientMobile > label:nth-child(1) > span.ant-checkbox > input",
 "kehuliebiao_sousuo22_kehehudianhua_wu_css" : "#isHasClientMobile > label:nth-child(2) > span.ant-checkbox > input",
@@ -106,6 +131,9 @@
 "kehuliebiao_sousuo24_bumenmingcheng_css" : ".ant-select-dropdown-menu-item",
 
 "kehuliebiao_sousuo25_gengxinshijian_id" : "updateTime",
+  "kehuliebiao_sousuo25_gengxinshijian_qishishijian_css" : "body > div:nth-child(22) > div > div > div > div > div.ant-calendar-date-panel > div.ant-calendar-range-part.ant-calendar-range-left > div.ant-calendar-input-wrap > div > input",
+  "kehuliebiao_sousuo25_gengxinshijian_jieshushijian_css" : "body > div:nth-child(22) > div > div > div > div > div.ant-calendar-date-panel > div.ant-calendar-range-part.ant-calendar-range-right > div.ant-calendar-input-wrap > div > input",
+
 
 
 "kehuliebiao_sousuo_button_css" : ".floatRight.ant-col-5>button.floatRight.margiRight10.ant-btn.ant-btn-primary",
