@@ -92,7 +92,7 @@ class customerlist:
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_dropdown_css"]).click()
             time.sleep(1)
-            driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo1_dropdown_selection_css"])[0].click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_dropdown_selection1_chepaichejia_css"]).click()
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_textbox_css"]).send_keys(input_chepai)
             time.sleep(1)
@@ -107,7 +107,7 @@ class customerlist:
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_dropdown_css"]).click()
             time.sleep(1)
-            driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo1_dropdown_selection_css"])[0].click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_dropdown_selection1_chepaichejia_css"]).click()
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_textbox_css"]).send_keys(input_chepai)
             time.sleep(1)
@@ -124,7 +124,7 @@ class customerlist:
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_dropdown_css"]).click()
             time.sleep(1)
-            driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo1_dropdown_selection_css"])[0].click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_dropdown_selection1_chepaichejia_css"]).click()
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_textbox_css"]).send_keys(input_chejia)
             time.sleep(1)
@@ -140,7 +140,7 @@ class customerlist:
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_dropdown_css"]).click()
             time.sleep(1)
-            driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo1_dropdown_selection_css"])[1].click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_dropdown_selection2_chezhuxingming_css"]).click()
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_textbox_css"]).send_keys(input_chezhuxingming)
             time.sleep(1)
@@ -150,27 +150,12 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_chezhuxingming} 搜索失败')
 
-    def search_1_3_kehumingcheng(driver,input_kehumingcheng = elements["test_kehumingcheng"]):
-        """客户列表-客户名称搜索，参数要传具体客户名称，如‘梁浩途观’"""
-        try:
-            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_dropdown_css"]).click()
-            time.sleep(1)
-            driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo1_dropdown_selection_css"])[2].click()
-            time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_textbox_css"]).send_keys(input_kehumingcheng)
-            time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_button_css"]).click()
-            time.sleep(1)
-            logger.info(f'{sys._getframe().f_code.co_name},{input_kehumingcheng} 搜索成功')
-        except Exception:
-            logbug.debug(f'{sys._getframe().f_code.co_name},{input_kehumingcheng} 搜索失败')
-
-    def search_1_4_kehudianhua(driver, input_kehudianhua=elements["test_kehudianhua1"]):
+    def search_1_3_kehudianhua(driver, input_kehudianhua=elements["test_kehudianhua1"]):
         """客户列表-客户电话搜索，参数要传具体电话，如‘13666668888’"""
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_dropdown_css"]).click()
             time.sleep(1)
-            driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo1_dropdown_selection_css"])[3].click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_dropdown_selection3_kehudianhua_css"]).click()
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_textbox_css"]).send_keys(
                 input_kehudianhua)
@@ -181,7 +166,20 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_kehudianhua} 搜索失败')
 
-
+    def search_1_4_kehuxingming(driver,input_kehuxingming = elements["test_kehuxingming"]):
+        """客户列表-客户姓名搜索，参数要传具体客户姓名，如‘梁浩途观’"""
+        try:
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_dropdown_css"]).click()
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_dropdown_selection4_kehuxingming_css"]).click()
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo1_textbox_css"]).send_keys(input_kehuxingming)
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_button_css"]).click()
+            time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},{input_kehuxingming} 搜索成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_kehuxingming} 搜索失败')
 
     def search_2_daoqishijian(driver, input_daoqishijian='2019-01-11+2019-01-12'):
         """客户列表-到期时间搜索，参数要传时间格式，包括起始时间和结束时间，必须传递两个时间，中间加号分割,如‘2019-01-01+2019-01-02’
@@ -189,7 +187,7 @@ class customerlist:
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuliebiao_sousuo2_daoqishijian_id"]).click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo2_daoqishijian_css"]).click()
             time.sleep(1)
             input_daoqishijian = input_daoqishijian.split('+')
             driver.find_element_by_css_selector(
@@ -207,15 +205,34 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_daoqishijian} 搜索失败')
 
 
-    def search_3_kehuleibie(driver, input_kehuleibie='测试'):
-        """客户列表-客户类别搜索，此方法待完善"""
+    def search_3_kehuleibie(driver, input_kehuleibie='新转续+续转续+潜转续+间转续+首次新增+空值'):
+        """客户列表-客户类别搜索，参数要传具体类别，可以单个也可以多传，中间加号分隔，文字必须保持和列表一致，如‘新转续+空值’"""
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
             # driver.find_element_by_css_selector(elements["kehuliebiao_sousuo3_kehuleibie_css"]).click()
-            driver.find_element_by_id(elements["kehuliebiao_sousuo3_kehuleibie_id"]).click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo3_kehuleibie_css"]).click()
             time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo3_kehuleibie_dropdown_input_css"]).send_keys(input_kehuleibie)
+            input_kehuleibie = input_kehuleibie.split('+')
+            for kehuleibie in input_kehuleibie:
+                if kehuleibie == '新转续':
+                    driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo3_kehuleibie_selection_css"])[0].click()
+                    time.sleep(1)
+                if kehuleibie == '续转续':
+                    driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo3_kehuleibie_selection_css"])[1].click()
+                    time.sleep(1)
+                if kehuleibie == '潜转续':
+                    driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo3_kehuleibie_selection_css"])[2].click()
+                    time.sleep(1)
+                if kehuleibie == '间转续':
+                    driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo3_kehuleibie_selection_css"])[3].click()
+                    time.sleep(1)
+                if kehuleibie == '首次新增':
+                    driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo3_kehuleibie_selection_css"])[4].click()
+                    time.sleep(1)
+                if kehuleibie == '空值':
+                    driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo3_kehuleibie_selection_css"])[5].click()
+                    time.sleep(1)
             time.sleep(1)
             # driver.find_element_by_css_selector(elements["kehuliebiao_sousuo3_kehuleibie_dropdown_input_css"]).
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_button_css"]).click()
@@ -856,7 +873,7 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},功能有误')
 
 
-    def kehuliebiao_check_kehumingcheng(driver, input_kehumingcheng = elements["test_kehumingcheng"]):
+    def kehuliebiao_check_kehumingcheng(driver, input_kehumingcheng = elements["test_kehuxingming"]):
         """客户列表-验证列表中第一个客户名称，参数传具体名称即可，如‘xx测试’"""
         try:
             if input_kehumingcheng == driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_result_kehumingcheng_css"]).text:
