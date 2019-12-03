@@ -248,7 +248,7 @@ class customerlist:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
             # driver.find_element_by_css_selector(elements["kehuliebiao_sousuo3_kehuleibie_css"]).click()
-            driver.find_element_by_id(elements["kehuliebiao_sousuo4_pinpaixinghao_id"]).send_keys(input_pinpaixinghao)
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo4_pinpaixinghao_css"]).send_keys(input_pinpaixinghao)
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_button_css"]).click()
             time.sleep(1)
@@ -261,11 +261,11 @@ class customerlist:
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuliebiao_sousuo5_shangniantoubaogongsi_id"]).click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo5_shangniantoubaogongsi_css"]).click()
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo5_shangniantoubaogongsi_input_css"]).send_keys(input_shangniantoubaogongsi)
             time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo5_shangniantoubaogongsi_css"]).click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo5_shangniantoubaogongsi_select_css"]).click()
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_button_css"]).click()
             time.sleep(1)
@@ -273,16 +273,16 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_shangniantoubaogongsi} 搜索失败')
 
-    def search_6_shangchuanpici(driver, input_shangchuanpici=elements["test_kehudianhua1"]):
+    def search_6_shangchuanpici(driver, input_shangchuanpici='6956'):
         """客户列表-上传批次搜索，参数可模糊传递，但必须保证列表中能搜索到结果，如‘批次a’‘a’都可以，选择搜索结果中第一个"""
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuliebiao_sousuo6_shangchuanpici_id"]).click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo6_shangchuanpici_css"]).click()
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo6_shangchuanpici_input_css"]).send_keys(input_shangchuanpici)
             time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo6_shangchuanpici_css"]).click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo6_shangchuanpici_select_css"]).click()
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_button_css"]).click()
             time.sleep(1)
@@ -297,7 +297,7 @@ class customerlist:
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuliebiao_sousuo7_shangyedaoqishijian_id"]).click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo7_shangyedaoqishijian_css"]).click()
             time.sleep(1)
             input_shangyedaoqishijian=input_shangyedaoqishijian.split('+')
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo7_shangyedaoqishijian_qishishijian_css"]).send_keys(input_shangyedaoqishijian[0])
@@ -321,7 +321,7 @@ class customerlist:
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuliebiao_sousuo8_jiaoqiangdaoqishijian_id"]).click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo8_jiaoqiangdaoqishijian_css"]).click()
             time.sleep(1)
             input_jiaoqiangdaoqishijian = input_jiaoqiangdaoqishijian.split('+')
             driver.find_element_by_css_selector(
@@ -347,43 +347,43 @@ class customerlist:
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_id"]).click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_css"]).click()
             time.sleep(1)
             if input_shangyedaoqiyuefen == '01月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_css"])[0].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_select_css"])[0].click()
                 time.sleep(1)
             elif input_shangyedaoqiyuefen == '02月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_css"])[1].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_select_css"])[1].click()
                 time.sleep(1)
             elif input_shangyedaoqiyuefen == '03月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_css"])[2].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_select_css"])[2].click()
                 time.sleep(1)
             elif input_shangyedaoqiyuefen == '04月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_css"])[3].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_select_css"])[3].click()
                 time.sleep(1)
             elif input_shangyedaoqiyuefen == '05月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_css"])[4].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_select_css"])[4].click()
                 time.sleep(1)
             elif input_shangyedaoqiyuefen == '06月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_css"])[5].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_select_css"])[5].click()
                 time.sleep(1)
             elif input_shangyedaoqiyuefen == '07月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_css"])[6].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_select_css"])[6].click()
                 time.sleep(1)
             elif input_shangyedaoqiyuefen == '08月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_css"])[7].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_select_css"])[7].click()
                 time.sleep(1)
             elif input_shangyedaoqiyuefen == '09月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_css"])[8].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_select_css"])[8].click()
                 time.sleep(1)
             elif input_shangyedaoqiyuefen == '10月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_css"])[9].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_select_css"])[9].click()
                 time.sleep(1)
             elif input_shangyedaoqiyuefen == '11月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_css"])[10].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_select_css"])[10].click()
                 time.sleep(1)
             elif input_shangyedaoqiyuefen == '12月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_css"])[11].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo9_shangyedaoqiyuefen_select_css"])[11].click()
                 time.sleep(1)
             else:
                 pass
@@ -399,43 +399,43 @@ class customerlist:
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_id"]).click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_css"]).click()
             time.sleep(1)
             if input_jiaoqiangdaoqiyuefen == '01月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_css"])[0].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_select_css"])[0].click()
                 time.sleep(1)
             elif input_jiaoqiangdaoqiyuefen == '02月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_css"])[1].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_select_css"])[1].click()
                 time.sleep(1)
             elif input_jiaoqiangdaoqiyuefen == '03月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_css"])[2].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_select_css"])[2].click()
                 time.sleep(1)
             elif input_jiaoqiangdaoqiyuefen == '04月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_css"])[3].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_select_css"])[3].click()
                 time.sleep(1)
             elif input_jiaoqiangdaoqiyuefen == '05月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_css"])[4].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_select_css"])[4].click()
                 time.sleep(1)
             elif input_jiaoqiangdaoqiyuefen == '06月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_css"])[5].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_select_css"])[5].click()
                 time.sleep(1)
             elif input_jiaoqiangdaoqiyuefen == '07月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_css"])[6].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_select_css"])[6].click()
                 time.sleep(1)
             elif input_jiaoqiangdaoqiyuefen == '08月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_css"])[7].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_select_css"])[7].click()
                 time.sleep(1)
             elif input_jiaoqiangdaoqiyuefen == '09月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_css"])[8].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_select_css"])[8].click()
                 time.sleep(1)
             elif input_jiaoqiangdaoqiyuefen == '10月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_css"])[9].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_select_css"])[9].click()
                 time.sleep(1)
             elif input_jiaoqiangdaoqiyuefen == '11月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_css"])[10].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_select_css"])[10].click()
                 time.sleep(1)
             elif input_jiaoqiangdaoqiyuefen == '12月份到期':
-                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_css"])[11].click()
+                driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo10_jiaoqiangdaoqiyuefen_select_css"])[11].click()
                 time.sleep(1)
             else:
                 pass
@@ -452,7 +452,7 @@ class customerlist:
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuliebiao_sousuo11_zhuceshijian_id"]).click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo11_zhuceshijian_css"]).click()
             time.sleep(1)
             input_zhuceshijian = input_zhuceshijian.split('+')
             driver.find_element_by_css_selector(
@@ -475,12 +475,12 @@ class customerlist:
 
 
 
-    def search_12_zhuceyuefen(driver, input_zhuceyuefen='01月份'):
+    def search_12_zhuceyuefen(driver, input_zhuceyuefen='02月份'):
         """客户列表-注册月份搜索，参数要传具体月份，与下拉框文本保持一致，如‘01月份’"""
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuliebiao_sousuo12_zhuceyuefen_id"]).click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo12_zhuceyuefen_css"]).click()
             time.sleep(1)
             if input_zhuceyuefen == '01月份':
                 driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo12_zhuceyuefen_dropdown_css"])[0].click()
@@ -527,16 +527,20 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_zhuceyuefen} 搜索失败')
 
 
-    def search_13_kehuzhuangtai(driver, input_kehuzhuangtai=elements["test_kehudianhua1"]):
-        """客户列表-客户状态搜索，此方法待完善"""
+    def search_13_kehuzhuangtai(driver, input_kehuzhuangtai='0+1+2+3+4'):
+        """客户列表-客户状态搜索，参数可模糊传递，但必须保证列表中能搜索到结果，可以单个也可以多传，中间加号分隔，文字必须保持和列表一致，
+        如‘预约到店+战败’都可以，选择搜索结果中第一个"""
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuliebiao_sousuo13_kehuzhuangtai_id"]).click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo13_kehuzhuangtai_css"]).click()
             time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo13_kehuzhuangtai_input_css"]).send_keys(
-                input_kehuzhuangtai)
-            # time.sleep(1)
+            input_kehuzhuangtai = input_kehuzhuangtai.split('+')
+            for kehuzhuangtai in input_kehuzhuangtai:
+                driver.find_element_by_css_selector(elements["kehuliebiao_sousuo13_kehuzhuangtai_input_css"]).send_keys(kehuzhuangtai)
+                time.sleep(1)
+                driver.find_element_by_css_selector(elements["kehuliebiao_sousuo13_kehuzhuangtai_select_css"]).click()
+                time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_button_css"]).click()
             time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name},{input_kehuzhuangtai} 搜索成功')
@@ -544,60 +548,38 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_kehuzhuangtai} 搜索失败')
 
 
-    def search_14_xubaozhuangtai(driver, input_xubaozhuangtai='续保失败+续保成功+报价解析+只取到行驶本+未处理'):
+    def search_14_xubaozhuangtai(driver, input_xubaozhuangtai='0+1+2+3'):
         """客户列表-续保状态搜索，参数可单独传递，如‘续保失败’，也可多传，如'续保失败+续保成功+报价解析+只取到行驶本+未处理'，中间加号分隔"""
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuliebiao_sousuo14_xubaozhuangtai_id"]).click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo14_xubaozhuangtai_css"]).click()
             time.sleep(1)
             input_xubaozhuangtai=input_xubaozhuangtai.split('+')
             for xubaozhuangtai in input_xubaozhuangtai:
-                if xubaozhuangtai == '续保失败':
-                    driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo14_xubaozhuangtai_css"])[0].click()
-                    time.sleep(1)
-                if xubaozhuangtai == '续保成功':
-                    driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo14_xubaozhuangtai_css"])[1].click()
-                    time.sleep(1)
-                if xubaozhuangtai == '报价解析':
-                    driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo14_xubaozhuangtai_css"])[2].click()
-                    time.sleep(1)
-                if xubaozhuangtai == '只取到行驶本':
-                    driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo14_xubaozhuangtai_css"])[3].click()
-                    time.sleep(1)
-                if xubaozhuangtai == '未处理':
-                    driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo14_xubaozhuangtai_css"])[4].click()
-                    time.sleep(1)
+                driver.find_element_by_css_selector(elements["kehuliebiao_sousuo14_xubaozhuangtai_input_css"]).send_keys(xubaozhuangtai)
+                time.sleep(1)
+                driver.find_element_by_css_selector(elements["kehuliebiao_sousuo14_xubaozhuangtai_select_css"]).click()
+                time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_button_css"]).click()
             time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name},{input_xubaozhuangtai}, 搜索成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_xubaozhuangtai},搜索失败')
 
-    def search_15_baojiazhuangtai(driver, input_baojiazhuangtai='报价失败+未报价+报价成功+'):
+    def search_15_baojiazhuangtai(driver, input_baojiazhuangtai='未报价+报价失败+报价成功'):
         """客户列表-报价状态搜索，参数可单独传递，如‘报价失败’，也可多传，如'报价失败+未报价+成功+失败+重复投保'，中间加号分隔"""
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuliebiao_sousuo15_baojiazhuangtai_id"]).click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo15_baojiazhuangtai_css"]).click()
             time.sleep(1)
             input_baojiazhuangtai=input_baojiazhuangtai.split('+')
             for baojiazhuangtai in input_baojiazhuangtai:
-                if baojiazhuangtai == '未报价':
-                    driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo15_baojiazhuangtai_css"])[0].click()
-                    time.sleep(1)
-                if baojiazhuangtai == '报价失败':
-                    driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo15_baojiazhuangtai_css"])[1].click()
-                    time.sleep(1)
-                if baojiazhuangtai == '报价成功':
-                    driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo15_baojiazhuangtai_css"])[2].click()
-                    time.sleep(1)
-                # if baojiazhuangtai == '失败':
-                #     driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo15_baojiazhuangtai_css"])[3].click()
-                #     time.sleep(1)
-                # if baojiazhuangtai == '重复投保':
-                #     driver.find_elements_by_css_selector(elements["kehuliebiao_sousuo15_baojiazhuangtai_css"])[4].click()
-                #     time.sleep(1)
+                driver.find_element_by_css_selector(elements["kehuliebiao_sousuo15_baojiazhuangtai_input_css"]).send_keys(baojiazhuangtai)
+                time.sleep(1)
+                driver.find_element_by_css_selector(elements["kehuliebiao_sousuo15_baojiazhuangtai_select_css"]).click()
+                time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuliebiao_sousuo_button_css"]).click()
             time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name},{input_baojiazhuangtai} 搜索成功')
@@ -632,7 +614,7 @@ class customerlist:
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuliebiao_sousuo17_fenpeishijian_id"]).click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo17_fenpeishijian_css"]).click()
             time.sleep(1)
             input_fenpeishijian = input_fenpeishijian.split('+')
             driver.find_element_by_css_selector(
@@ -662,7 +644,7 @@ class customerlist:
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuliebiao_sousuo18_yuyueshijian_id"]).click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo18_yuyueshijian_css"]).click()
             time.sleep(1)
             input_yuyueshijian = input_yuyueshijian.split('+')
             driver.find_element_by_css_selector(
@@ -690,7 +672,7 @@ class customerlist:
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuliebiao_sousuo19_huifangshijian_id"]).click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo19_huifangshijian_css"]).click()
             time.sleep(1)
             input_huifangshijian = input_huifangshijian.split('+')
             driver.find_element_by_css_selector(
@@ -717,7 +699,7 @@ class customerlist:
         try:
             driver.find_element_by_css_selector(elements["kehuliebiao_zhankai_css"]).click()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuliebiao_sousuo20_lurufangshi_id"]).click()
+            driver.find_element_by_css_selector(elements["kehuliebiao_sousuo20_lurufangshi_css"]).click()
             time.sleep(1)
             input_lurufangshi = input_lurufangshi.split('+')
             for lurufangshi in input_lurufangshi:
