@@ -1,5 +1,5 @@
 {
-"test_licenseno" : "京N519F2",
+"test_licenseno" : "京FBV623",
 "test_vin" : "LSVXZ65N8H2067616",
 "test_chezhuxingming" : "梁浩",
 "test_kehuxingming" : "梁浩途观",
@@ -45,6 +45,7 @@
   "kehuliebiao_sousuo2_daoqishijian_jieshushijian_css" : "body > div:nth-child(22) > div > div > div > div > div.ant-calendar-date-panel > div.ant-calendar-range-part.ant-calendar-range-right > div.ant-calendar-input-wrap > div > input",
 
 "kehuliebiao_sousuo3_kehuleibie_css" : "#app > section > section > main > div > div > div.customer_search.el-row > form > div > div:nth-child(3) > div > div > div",
+  "kehuliebiao_sousuo3_kehuleibie_input_css" : "#app > section > section > main > div > div > div.customer_search.el-row > form > div > div:nth-child(3) > div > div > div > div > div > ul > li > div > input",
   "kehuliebiao_sousuo3_kehuleibie_selection_css" : ".ant-select-dropdown-menu-item",
 
 "kehuliebiao_sousuo4_pinpaixinghao_css" : "#app > section > section > main > div > div > div.customer_search.el-row > form > div > div:nth-child(4) > div > div > div > input",
@@ -159,10 +160,10 @@
 "客户信息start" : "start------------------------------------",
 "kehuxiangqing_kehuxinxi_tab_css" : ".ant-spin-container > div > ul > li[role = 'menuitem']",
 "kehuxiangqing_kehuxinxi_baocun_button_css" : ".el-collapse-item__header > span > button[class = 'ant-btn ant-btn-primary ant-btn-sm']",
-"kehuxiangqing_kehuxinxi_kehuxingming_css" : ".el-form-item__content > div > input[type = 'text']",
+"kehuxiangqing_kehuxinxi_kehuxingming_css" : ".el-form-item.el-form-item--mini > div > div > input[type = 'text']",
 "kehuxiangqing_kehuxinxi_dianhua1_css" : ".el-form-item__content > div > input[type = 'text']",
 "kehuxiangqing_kehuxinxi_dianhua2_css" : ".el-form-item__content > div > input[type = 'text']",
-"kehuxiangqing_kehuxinxi_leibie_id" : "cutomerInfo.categoryId",
+"kehuxiangqing_kehuxinxi_leibie_css" : ".el-form-item__content > div > div.el-input.el-input--mini.el-input--suffix",
 "kehuxiangqing_kehuxinxi_dizhi_css" : ".el-form-item__content > div > input[type = 'text']",
 "kehuxiangqing_kehuxinxi_beizhu1_css" : ".el-form-item__content > div > input[type = 'text']",
 "kehuxiangqing_kehuxinxi_beizhu2_css" : ".el-form-item__content > div > input[type = 'text']",
@@ -170,7 +171,7 @@
 
 "车辆信息start" : "start------------------------------------",
 "kehuxiangqing_cheliangxinxi_tab_css" : ".ant-spin-container > div > ul > li[role = 'menuitem']",
-"kehuxiangqing_cheliangxinxi_baocun_button_css" : ".el-collapse-item__header > span > button[class = 'ant-btn ant-btn-primary ant-btn-sm']",
+"kehuxiangqing_cheliangxinxi_baocun_button_css" : ".el-collapse-item__header > span > button[class = 'el-button el-button--primary el-button--small']",
 "kehuxiangqing_cheliangxinxi_chepaihao_css" : ".el-form-item__content > div > input[type = 'text']",
 "kehuxiangqing_cheliangxinxi_chepaihaoleixing_id" : "licenseType",
 "kehuxiangqing_cheliangxinxi_chejiahao_input_css" : "#carInfo\\.carVin > input",
