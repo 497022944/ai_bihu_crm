@@ -1373,51 +1373,60 @@ class customerlist:
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_chepaihao} 修改失败')
 
-    # def kehuxiangqing_cheliangxinxi_chepaihaoleixing(driver, input_chepaihaoleixing=elements["test_licenseno"]):
-    #     try:
-    #         # ActionChains(driver).double_click(driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_kehuxingming_id"])).perform()
-    #         # time.sleep(1)
-    #         driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_tab_css"]).click()
-    #         time.sleep(1)
-    #         driver.find_element_by_id(elements["kehuxiangqing_cheliangxinxi_chepaihaoleixing_id"]).clear()
-    #         time.sleep(1)
-    #         driver.find_element_by_id(elements["kehuxiangqing_cheliangxinxi_chepaihaoleixing_id"]).send_keys(input_chepaihaoleixing)
-    #         time.sleep(1)
-    #         driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
-    #         time.sleep(1)
-    #         logger.info(f'{sys._getframe().f_code.co_name},{input_chepaihaoleixing}修改成功')
-    #     except Exception:
-    #         logbug.debug(f'{sys._getframe().f_code.co_name},{input_chepaihaoleixing} 修改失败')
 
     def kehuxiangqing_cheliangxinxi_chejiahao(driver, input_chejiahao=elements["test_vin"]):
-        """客户详情-车辆信息-车架号修改，参数要传具体车架，如‘LSVDM49FX62182255’，此方法待完善"""
+        """客户详情-车辆信息-车架号修改，参数要传具体车架，如‘LSVDM49FX62182255’"""
         try:
             # ActionChains(driver).double_click(driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_kehuxingming_id"])).perform()
             # time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_tab_css"]).click()
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_cheliangxinxi_tab_css"])[1].click()
             time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_chejiahao_input_css"]).clear()
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_cheliangxinxi_chejiahao_input_css"])[9].clear()
             time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_chejiahao_input_css"]).send_keys(input_chejiahao)
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_cheliangxinxi_chejiahao_input_css"])[9].send_keys(input_chejiahao)
             time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_chejiahao_sousuo_css"]).click()
-            time.sleep(1)
+            # driver.find_elements_by_css_selector(elements["kehuxiangqing_cheliangxinxi_chejiahao_sousuo_css"])[2].click()
+            # time.sleep(5)
             driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
             time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name},{input_chejiahao}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_chejiahao} 修改失败')
 
+    def kehuxiangqing_cheliangxinxi_chejiahao_chaxunchexing(driver):
+        """客户详情-车辆信息-车架号查车型，无需传递参数，直接按照所填数据查询
+        选择展示在最上面（最低）车型"""
+        try:
+            # ActionChains(driver).double_click(driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_kehuxingming_id"])).perform()
+            # time.sleep(1)
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_cheliangxinxi_tab_css"])[1].click()
+            time.sleep(1)
+            # driver.find_elements_by_css_selector(elements["kehuxiangqing_cheliangxinxi_chejiahao_input_css"])[9].clear()
+            # time.sleep(1)
+            # driver.find_elements_by_css_selector(elements["kehuxiangqing_cheliangxinxi_chejiahao_input_css"])[9].send_keys(input_chejiahao)
+            # time.sleep(1)
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_cheliangxinxi_chejiahao_sousuo_css"])[2].click()
+            time.sleep(15)
+            driver.execute_script(
+                "$('body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(1) > span').click()")
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
+            time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},查询成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},查询失败')
+
+
     def kehuxiangqing_cheliangxinxi_fadongjihao(driver, input_fadongjihao=elements["test_vin"]):
         """客户详情-车辆信息-发动机号修改，参数要传具体发动机号，如‘222569’"""
         try:
             # ActionChains(driver).double_click(driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_kehuxingming_id"])).perform()
             # time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_tab_css"]).click()
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_cheliangxinxi_tab_css"])[1].click()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuxiangqing_cheliangxinxi_fadongjihao_id"]).clear()
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_cheliangxinxi_fadongjihao_css"])[10].clear()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuxiangqing_cheliangxinxi_fadongjihao_id"]).send_keys(input_fadongjihao)
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_cheliangxinxi_fadongjihao_css"])[10].send_keys(input_fadongjihao)
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
             time.sleep(1)
@@ -1433,13 +1442,13 @@ class customerlist:
         try:
             # ActionChains(driver).double_click(driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_kehuxingming_id"])).perform()
             # time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_tab_css"]).click()
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_cheliangxinxi_tab_css"])[1].click()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuxiangqing_cheliangxinxi_zhuceriqi_id"]).click()
+            # driver.find_elements_by_css_selector(elements["kehuxiangqing_cheliangxinxi_zhuceriqi_id"])[11].click()
+            # time.sleep(1)
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_cheliangxinxi_zhuceriqi_input_css"])[11].clear()
             time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_zhuceriqi_input_css"]).clear()
-            time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_zhuceriqi_input_css"]).send_keys(input_zhuceriqi)
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_cheliangxinxi_zhuceriqi_input_css"])[11].send_keys(input_zhuceriqi)
             time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
             time.sleep(1)
@@ -1450,20 +1459,20 @@ class customerlist:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_zhuceriqi} 修改失败')
 
     def kehuxiangqing_cheliangxinxi_pinpaixinghao(driver, input_pinpaixinghao=elements["test_vin"]):
-        """客户详情-车辆信息-品牌型号修改，参数要传具体品牌，如‘帕萨特SVW7183MJi轿车’，此方法待完善"""
+        """客户详情-车辆信息-品牌型号修改，参数要传具体品牌，如‘帕萨特SVW7183MJi轿车’"""
         try:
             # ActionChains(driver).double_click(driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_kehuxingming_id"])).perform()
             # time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_tab_css"]).click()
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_cheliangxinxi_tab_css"])[1].click()
             time.sleep(1)
-            driver.find_element_by_css_selector(
-                elements["kehuxiangqing_cheliangxinxi_pinpaixinghao_input_css"]).clear()
+            driver.find_elements_by_css_selector(
+                elements["kehuxiangqing_cheliangxinxi_pinpaixinghao_input_css"])[12].clear()
             time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_pinpaixinghao_input_css"]).send_keys(
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_cheliangxinxi_pinpaixinghao_input_css"])[12].send_keys(
                 input_pinpaixinghao)
             time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_pinpaixinghao_sousuo_css"]).click()
-            time.sleep(1)
+            # driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_pinpaixinghao_sousuo_css"]).click()
+            # time.sleep(1)
             driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
             time.sleep(1)
             # driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
@@ -1471,6 +1480,37 @@ class customerlist:
             logger.info(f'{sys._getframe().f_code.co_name},{input_pinpaixinghao}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_pinpaixinghao} 修改失败')
+
+
+    def kehuxiangqing_cheliangxinxi_pinpaixinghaohao_chaxunchexing(driver):
+        """客户详情-车辆信息-品牌型号查车型，无需传递参数，直接按照所填数据查询
+        选择展示在最上面（最低）车型"""
+        try:
+            # ActionChains(driver).double_click(driver.find_element_by_id(elements["kehuxiangqing_kehuxinxi_kehuxingming_id"])).perform()
+            # time.sleep(1)
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_cheliangxinxi_tab_css"])[1].click()
+            time.sleep(1)
+            # driver.find_elements_by_css_selector(elements["kehuxiangqing_cheliangxinxi_chejiahao_input_css"])[9].clear()
+            # time.sleep(1)
+            # driver.find_elements_by_css_selector(elements["kehuxiangqing_cheliangxinxi_chejiahao_input_css"])[9].send_keys(input_chejiahao)
+            # time.sleep(1)
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_cheliangxinxi_chejiahao_sousuo_css"])[2].click()
+            time.sleep(15)
+            driver.execute_script(
+                "$('body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(1) > span').click()")
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
+            time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},{input_chejiahao}修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_chejiahao} 修改失败')
+
+
+
+
+
+
+
 
     def kehuxiangqing_cheliangxinxi_chexing(driver, input_chexing=elements["test_vin"]):
         """客户详情-车辆信息-车型修改，此方法待完善，有可能需要和品牌型号联动"""
