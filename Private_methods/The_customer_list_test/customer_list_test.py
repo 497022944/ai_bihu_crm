@@ -2513,53 +2513,53 @@ class customerlist:
     #         logbug.debug(f'{sys._getframe().f_code.co_name},{input_qianfajiguan} 修改失败')
 
 
-    # 被保险人和投保人保持一致，以下被保险人防范，暂时注释
-    # def kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_tongtoubaoren(driver,input_tongtoubaoren = '不同投保人'):
-    #     """客户详情-关系人信息-被保险人信息-同投保人，参数要传相同或不同，如‘同投保人’‘不同投保人’"""
-    #     try:
-    #         driver.find_elements_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"])[3].click()
-    #         time.sleep(1)
-    #         if input_tongtoubaoren == '同投保人':
-    #             if driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_tongtoubaoren_css"]).get_attribute('class') == elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_tongtoubaoren_checked_class"]:
-    #                 pass
-    #                 time.sleep(1)
-    #             else:
-    #                 driver.find_elements_by_css_selector(
-    #                     elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_tongtoubaoren_css"])[1].click()
-    #                 time.sleep(1)
-    #         elif input_tongtoubaoren == '不同投保人':
-    #             if driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_tongtoubaoren_css"]).get_attribute('class') == elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_tongtoubaoren_checked_class"]:
-    #                 driver.find_elements_by_css_selector(
-    #                     elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_tongtoubaoren_css"])[1].click()
-    #                 time.sleep(1)
-    #             else:
-    #                 pass
-    #                 time.sleep(1)
-    #         else:
-    #             pass
-    #         driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_baocun_button_css"]).click()
-    #         time.sleep(1)
-    #         # driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
-    #         # time.sleep(1)
-    #         logger.info(f'{sys._getframe().f_code.co_name},修改成功')
-    #     except Exception:
-    #         logbug.debug(f'{sys._getframe().f_code.co_name},修改失败')
-    #
-    # def kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_gonghu(driver):
-    #     """客户详情-关系人信息-被保险人信息-快速选择‘公户’，无需传递参数"""
-    #     try:
-    #         driver.find_elements_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"])[3].click()
-    #         time.sleep(1)
-    #         driver.find_elements_by_css_selector(
-    #             elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_quickselect_gonghu_css"])[3].click()
-    #         time.sleep(1)
-    #         driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_baocun_button_css"]).click()
-    #         time.sleep(1)
-    #         # driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
-    #         # time.sleep(1)
-    #         logger.info(f'{sys._getframe().f_code.co_name},修改成功')
-    #     except Exception:
-    #         logbug.debug(f'{sys._getframe().f_code.co_name},修改失败')
+#-----------------------------------------------------------------以下内容暂未维护
+    def kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_tongtoubaoren(driver,input_tongtoubaoren = '不同投保人'):
+        """客户详情-关系人信息-被保险人信息-同投保人，参数要传相同或不同，如‘同投保人’‘不同投保人’"""
+        try:
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"])[3].click()
+            time.sleep(1)
+            if input_tongtoubaoren == '同投保人':
+                if driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_tongtoubaoren_css"]).get_attribute('class') == elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_tongtoubaoren_checked_class"]:
+                    pass
+                    time.sleep(1)
+                else:
+                    driver.find_element_by_css_selector(
+                        elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_tongtoubaoren_css"]).click()
+                    time.sleep(1)
+            elif input_tongtoubaoren == '不同投保人':
+                if driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_tongtoubaoren_css"]).get_attribute('class') == elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_tongtoubaoren_checked_class"]:
+                    driver.find_element_by_css_selector(
+                        elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_tongtoubaoren_css"]).click()
+                    time.sleep(1)
+                else:
+                    pass
+                    time.sleep(1)
+            else:
+                pass
+            driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_baocun_button_css"]).click()
+            time.sleep(1)
+            # driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
+            # time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},修改失败')
+
+    def kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_gonghu(driver):
+        """客户详情-关系人信息-被保险人信息-快速选择‘公户’，无需传递参数"""
+        try:
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_tab_css"])[3].click()
+            time.sleep(1)
+            driver.find_elements_by_css_selector(
+                elements["kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_quickselect_gonghu_css"])[4].click()
+            time.sleep(1)
+            driver.find_element_by_css_selector(elements["kehuxiangqing_guanxirenxinxi_baocun_button_css"]).click()
+            time.sleep(1)
+            # driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
+            # time.sleep(1)
+            logger.info(f'{sys._getframe().f_code.co_name},修改成功')
+        except Exception:
+            logbug.debug(f'{sys._getframe().f_code.co_name},修改失败')
     #
     # def kehuxiangqing_guanxirenxinxi_beibaoxianrenxinxi_geren(driver):
     #     """客户详情-关系人信息-被保险人信息-快速选择‘个人’，无需传递参数"""
@@ -2767,130 +2767,165 @@ class customerlist:
     #         logger.info(f'{sys._getframe().f_code.co_name},{input_qianfajiguan}修改成功')
     #     except Exception:
     #         logbug.debug(f'{sys._getframe().f_code.co_name},{input_qianfajiguan} 修改失败')
+# -----------------------------------------------------------------以上内容暂未维护
 
 
+#-----------------拖到可见
+# target = driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"])
+# driver.execute_script("arguments[0].scrollIntoView();", target)
+# -----------------拖到可见
 
-
-
-    def kehuxiangqing_baojiaxinxi_toubaodiqu(driver, input_toubaodiqu=elements["test_vin"]):
-        """客户详情-报价信息-投保地区，参数要传具体地区，如‘北京’，需要与下拉菜单文字保持一致
+    def kehuxiangqing_baojiaxinxi_toubaodiqu(driver, input_toubaodiqu='3'):
+        """客户详情-报价信息-投保地区，参数传数字即可，如‘1’，数字代表在下拉菜单中排第几的选项，
         修改后不报价，需要和后续方法一起调用"""
         try:
-            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"])[4].click()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_id"]).click()
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[9].click()
             time.sleep(1)
-            if input_toubaodiqu == '北京':
-                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[4].click()
+            if input_toubaodiqu == '1':
+                driver.execute_script(
+                    "$('body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(1)').click()")
                 time.sleep(1)
-            elif input_toubaodiqu == '成都':
-                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[5].click()
+            elif input_toubaodiqu == '2':
+                driver.execute_script(
+                    "$('body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(2)').click()")
                 time.sleep(1)
-            elif input_toubaodiqu == '昆明':
-                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[6].click()
+            elif input_toubaodiqu == '3':
+                driver.execute_script(
+                    "$('body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(3)').click()")
                 time.sleep(1)
-            elif input_toubaodiqu == '上海':
-                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[7].click()
+            elif input_toubaodiqu == '4':
+                driver.execute_script(
+                    "$('body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(4)').click()")
                 time.sleep(1)
-            elif input_toubaodiqu == '南京':
-                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[8].click()
+            elif input_toubaodiqu == '5':
+                driver.execute_script(
+                    "$('body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(5)').click()")
                 time.sleep(1)
-            elif input_toubaodiqu == '杭州':
-                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[9].click()
+            elif input_toubaodiqu == '6':
+                driver.execute_script(
+                    "$('body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(6)').click()")
                 time.sleep(1)
-            elif input_toubaodiqu == '深圳':
-                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[10].click()
+            elif input_toubaodiqu == '7':
+                driver.execute_script(
+                    "$('body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(7)').click()")
                 time.sleep(1)
-            elif input_toubaodiqu == '东莞':
-                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[11].click()
+            elif input_toubaodiqu == '8':
+                driver.execute_script(
+                    "$('body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(8)').click()")
                 time.sleep(1)
-            elif input_toubaodiqu == '济南':
-                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[12].click()
+            elif input_toubaodiqu == '9':
+                driver.execute_script(
+                    "$('body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(9)').click()")
                 time.sleep(1)
-            elif input_toubaodiqu == '佛山':
-                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[13].click()
+            elif input_toubaodiqu == '10':
+                driver.execute_script(
+                    "$('body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(10)').click()")
                 time.sleep(1)
-            elif input_toubaodiqu == '长春':
-                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[14].click()
+            elif input_toubaodiqu == '11':
+                driver.execute_script(
+                    "$('body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(11)').click()")
                 time.sleep(1)
-            elif input_toubaodiqu == '青岛':
-                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[15].click()
+            elif input_toubaodiqu == '12':
+                driver.execute_script(
+                    "$('body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(12)').click()")
                 time.sleep(1)
-            elif input_toubaodiqu == '合肥':
-                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[16].click()
+            elif input_toubaodiqu == '13':
+                driver.execute_script(
+                    "$('body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(13)').click()")
                 time.sleep(1)
-            elif input_toubaodiqu == '宁波':
-                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[17].click()
+            elif input_toubaodiqu == '14':
+                driver.execute_script(
+                    "$('body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(14)').click()")
                 time.sleep(1)
-            elif input_toubaodiqu == '呼和浩特':
-                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[18].click()
+            elif input_toubaodiqu == '15':
+                driver.execute_script(
+                    "$('body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(15)').click()")
                 time.sleep(1)
-            elif input_toubaodiqu == '南宁':
-                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_toubaodiqu_css"])[19].click()
+            elif input_toubaodiqu == '16':
+                driver.execute_script(
+                    "$('body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(16)').click()")
                 time.sleep(1)
             else:
                 pass
-            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
-            time.sleep(1)
             # driver.find_element_by_css_selector(elements["kehuxiangqing_cheliangxinxi_baocun_button_css"]).click()
             # time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name},{input_toubaodiqu} 修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name},{input_toubaodiqu} 修改失败')
 
-    def kehuxiangqing_baojiaxinxi_shangyeqibao(driver, input_shangyeqibao='2019-01-01 00:00:00'):
-        """客户详情-报价信息-商业起保修改，参数要传时间格式，包括时分秒，如‘2019-01-01 00:00:00’
+    def kehuxiangqing_baojiaxinxi_shangyexianqibao(driver, input_shangyexianqibaodate='2020-01-01', input_shangyexianqibaotime = '23:59:59'):
+        """客户详情-报价信息-商业险起保修改，参数要传2个，前面是日期，格式如‘2019-01-01’，后面是时间，格式如：‘23：59：59’
+        如果想选择‘此刻’，则日期参数要传‘此刻’，时间参数无需传递
         另：时间必须真实存在，且与业务要求吻合，不要输入不存在，不可选择的时间"""
         try:
-            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"])[4].click()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_shangyeqibao_id"]).click()
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_shangyexianqibao_css"])[32].click()
             time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_shangyeqibao_input_css"]).clear()
+            if input_shangyexianqibaodate == '此刻':
+                driver.find_element_by_css_selector(
+                    elements["kehuxiangqing_baojiaxinxi_shangyexianqibao_cike_css"]).click()
+                time.sleep(1)
+            else:
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_shangyexianqibao_inputdate_css"])[0].clear()
+                time.sleep(1)
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_shangyexianqibao_inputdate_css"])[0].send_keys(input_shangyexianqibaodate)
+                time.sleep(1)
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_shangyexianqibao_inputtime_css"])[1].clear()
+                time.sleep(1)
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_shangyexianqibao_inputtime_css"])[1].send_keys(input_shangyexianqibaotime)
+                time.sleep(1)
+                # 点一下确认，收回时间框
+                driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_shangyexianqibao_inputtime_queding_css"]).click()
+                time.sleep(1)
+                driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_shangyexianqibao_queren_css"]).click()
+                time.sleep(1)
+                # 点一下确认，收回时间框
             time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_shangyeqibao_input_css"]).send_keys(input_shangyeqibao)
-            time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_shangyeqibao_queding_button_css"]).click()
-            time.sleep(1)
-            #-----------------拖到可见
-            target = driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"])
-            driver.execute_script("arguments[0].scrollIntoView();", target)
-            # -----------------拖到可见
-            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
-            time.sleep(1)
-            logger.info(f'{sys._getframe().f_code.co_name},{input_shangyeqibao} 修改成功')
+            logger.info(f'{sys._getframe().f_code.co_name},{input_shangyexianqibaodate},{input_shangyexianqibaotime} 修改成功')
         except Exception:
-            logbug.debug(f'{sys._getframe().f_code.co_name},{input_shangyeqibao} 修改失败')
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_shangyexianqibaodate},{input_shangyexianqibaotime} 修改失败')
 
-    def kehuxiangqing_baojiaxinxi_jiaoqiangqibao(driver, input_jiaoqiangqibao='2019-01-01 00:00:00'):
-        """客户详情-报价信息-交强起保修改，参数要传时间格式，包括时分秒，如‘2019-01-01 00:00:00’
+    def kehuxiangqing_baojiaxinxi_jiaoqiangxianqibao(driver, input_jiaoqiangxianqibaodate='2019-01-01', input_jiaoqiangxianqibaotime = '23:59:59'):
+        """客户详情-报价信息-交强险起保修改，参数要传2个，前面是日期，格式如‘2019-01-01’，后面是时间，格式如：‘23：59：59’
+        如果想选择‘此刻’，则日期参数要传‘此刻’，时间参数无需传递
         另：时间必须真实存在，且与业务要求吻合，不要输入不存在，不可选择的时间"""
         try:
-            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"])[4].click()
             time.sleep(1)
-            driver.find_element_by_id(elements["kehuxiangqing_baojiaxinxi_jiaoqiangqibao_id"]).click()
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_jiaoqiangxianqibao_css"])[33].click()
             time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_jiaoqiangqibao_input_css"]).clear()
+            if input_jiaoqiangxianqibaodate == '此刻':
+                driver.find_element_by_css_selector(
+                    elements["kehuxiangqing_baojiaxinxi_jiaoqiangxianqibao_cike_css"]).click()
+                time.sleep(1)
+            else:
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_jiaoqiangxianqibao_inputdate_css"])[0].clear()
+                time.sleep(1)
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_jiaoqiangxianqibao_inputdate_css"])[0].send_keys(input_jiaoqiangxianqibaodate)
+                time.sleep(1)
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_jiaoqiangxianqibao_inputtime_css"])[1].clear()
+                time.sleep(1)
+                driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_jiaoqiangxianqibao_inputtime_css"])[1].send_keys(input_jiaoqiangxianqibaotime)
+                time.sleep(1)
+                # 点一下确认，收回时间框
+                driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_jiaoqiangxianqibao_inputtime_queding_css"]).click()
+                time.sleep(1)
+                driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_jiaoqiangxianqibao_queren_css"]).click()
+                time.sleep(1)
+                # 点一下确认，收回时间框
             time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_jiaoqiangqibao_input_css"]).send_keys(input_jiaoqiangqibao)
-            time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_jiaoqiangqibao_queding_button_css"]).click()
-            time.sleep(1)
-            #-----------------拖到可见
-            target = driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"])
-            driver.execute_script("arguments[0].scrollIntoView();", target)
-            # -----------------拖到可见
-            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
-            time.sleep(1)
-            logger.info(f'{sys._getframe().f_code.co_name},{input_jiaoqiangqibao} 修改成功')
+            logger.info(f'{sys._getframe().f_code.co_name},{input_jiaoqiangxianqibaodate},{input_jiaoqiangxianqibaotime} 修改成功')
         except Exception:
-            logbug.debug(f'{sys._getframe().f_code.co_name},{input_jiaoqiangqibao} 修改失败')
+            logbug.debug(f'{sys._getframe().f_code.co_name},{input_jiaoqiangxianqibaodate},{input_jiaoqiangxianqibaotime} 修改失败')
 
-    def kehuxiangqing_baojiaxinxi_baojiagongsi(driver, input_baojiagongsi):
+    def kehuxiangqing_baojiaxinxi_baojiagongsi(driver, input_baojiagongsi = 11):
         """客户详情-报价信息-选择报价公司，参数传数字即可，1=太平洋，2=平安，4=人保，8=国寿财
         如需多家，则数字相加，如太平洋+平安 = 3"""
         try:
-            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"])[4].click()
             time.sleep(1)
 
             # 取消勾选--------------
@@ -3087,24 +3122,16 @@ class customerlist:
             else:
                 pass
             # 勾选保险公司--------------
-
-            #-----------------拖到可见
-            target = driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"])
-            driver.execute_script("arguments[0].scrollIntoView();", target)
-            # -----------------拖到可见
-            time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
-            time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name}, {input_baojiagongsi}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name}, {input_baojiagongsi} 修改失败')
 
-    def kehuxiangqing_baojiaxinxi_hebaogongsi(driver, input_hebaogongsi):
+    def kehuxiangqing_baojiaxinxi_hebaogongsi(driver, input_hebaogongsi = 11):
         """客户详情-报价信息-选择核保公司，参数传数字即可，1=太平洋，2=平安，4=人保，8=国寿财
         如需多家，则数字相加，如太平洋+平安 = 3
         另：核保公司最好和报价公司保持一致"""
         try:
-            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"]).click()
+            driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_tab_css"])[4].click()
             time.sleep(1)
 
             # 取消勾选--------------
@@ -3121,7 +3148,7 @@ class customerlist:
 
             # 勾选核保公司--------------
             if input_hebaogongsi == 1: #太平洋
-                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"]))):
+                for xuhao in range(0, len(driver.find_elements_by_css_selector(elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"])[1])):
                     text_path = elements["kehuxiangqing_baojiaxinxi_hebaogongsi_checkbox_css"] + ":nth-child(" + str(xuhao+1) + ")> span:nth-child(2)"
                     if driver.find_element_by_css_selector(text_path).text == '太平洋':
                         driver.find_elements_by_css_selector(
@@ -3300,14 +3327,6 @@ class customerlist:
                         pass
             else:
                 pass
-            # 勾选核保公司--------------
-            #-----------------拖到可见
-            target = driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"])
-            driver.execute_script("arguments[0].scrollIntoView();", target)
-            # -----------------拖到可见
-            time.sleep(1)
-            driver.find_element_by_css_selector(elements["kehuxiangqing_baojiaxinxi_baocun_button_css"]).click()
-            time.sleep(1)
             logger.info(f'{sys._getframe().f_code.co_name}, {input_hebaogongsi}修改成功')
         except Exception:
             logbug.debug(f'{sys._getframe().f_code.co_name}, {input_hebaogongsi} 修改失败')
